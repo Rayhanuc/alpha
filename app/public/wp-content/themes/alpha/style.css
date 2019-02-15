@@ -1,0 +1,180 @@
+/*
+Theme Name: Alpha
+Theme URL:
+Author: HELLO DOLLY
+Author URI: http://industry-rayhan.ml
+Description: Our First HyperMinimal Theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0html
+Tags: blog, education
+Text Domain: alpha
+*/
+
+h1.heading {
+    font-family: "Arial Black";
+    width: 700px;
+    margin: auto;
+    margin-bottom: 70px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+h3.tagline{
+    font-family: Arial;
+    margin:auto;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    width: 700px;
+    text-align: center;
+}
+
+h2.post-title {
+    margin-bottom: 30px;
+}
+
+.post {
+    margin-bottom: 50px;
+}
+
+.post p{
+    font-family: "Helvetica Neue";
+    line-height: 1.7em;
+    font-size: 18px;
+}
+
+.post p img {
+    max-width: 100%;
+    height: auto;
+}
+
+.post .row:nth-child(2) {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.post:last-child .row:nth-child(2){
+    border-bottom:none;
+}
+
+.footer{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #222;
+    color:#ccc;
+}
+
+.tags li{
+    color: #3D9970;
+}
+
+.post-pagination {
+    margin-bottom: 50px;
+}
+
+.prev.page-numbers,
+.next.page-numbers {
+    background: #dedddd;
+    padding: 5px 15px;
+    border-radius: 50px;
+    color: #000;
+    text-decoration: none;
+}
+
+span.page-numbers.current {
+    font-weight: 700;
+}
+
+.prev.page-numbers:hover, .next.page-numbers:hover {
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+}
+
+.page-header{
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 30px;
+    /* padding:170px 0px; */
+}
+
+.page-header h1.heading a {
+    color: #fd00de;
+    text-decoration: none;
+}
+
+.page-header h1.heading a:hover {
+    color: #960b40;
+}
+
+.header-logo {
+    margin-top: 50px;
+}
+
+.header-logo img {
+    border-radius: 50px;
+}
+
+.error-page {
+    padding: 250px 0;
+}
+
+/* 404 page css start */
+.error-page {
+    color: red;
+}
+
+.error-page h1 {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+
+/* 404 page css end */
+
+/* post type css start */
+.dashicons {
+    color: #ccc;
+    font-size: 100px;
+}
+/* post type css end */
+
+.authorimage img {
+    border-radius: 50px;
+    margin-top: 35px;
+}
+
+.authorsection {
+    border: 1px solid #ababab;
+    padding: 25px;
+}
+
+.authorpage {
+    margin-bottom: 30px;
+}
+
+/* testimonial section style start */
+.testi-heading {
+    padding: 50px 0;
+}
+
+.testimonials img {
+    border-radius: 50%;
+}
+/* testimonial section style end */
+
+/* search-form start */
+.search-form {
+    padding-top: 30px;
+}
+/* search-form end */
+
+/* search-highlight start */
+.search-highlight {
+    color: red;
+    background-color: #ff0;
+    font-weight: 700;
+}
+/* search-highlight end */
