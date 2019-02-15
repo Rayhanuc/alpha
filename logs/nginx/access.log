@@ -1,0 +1,4 @@
+127.0.0.1 - - [15/Feb/2019:14:47:27 +0000] "GET /2019/02/15/hello-world/ HTTP/1.0" 200 17368 "http://alpha.local/2019/02/15/hello-world/" "WordPress/5.0.3; http://alpha.local"
+127.0.0.1 - - [15/Feb/2019:14:47:32 +0000] "POST /wp-cron.php?doing_wp_cron=1550242051.8104588985443115234375 HTTP/1.0" 499 0 "http://alpha.local/wp-cron.php?doing_wp_cron=1550242051.8104588985443115234375" "WordPress/5.0.3; http://alpha.local"
+127.0.0.1 - - [15/Feb/2019:14:55:31 +0000] "GET / HTTP/1.0" 200 10592 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.81 Safari/537.36"
+127.0.0.1 - - [15/Feb/2019:14:55:40 +0000] "GET /favicon.ico HTTP/1.0" 200 0 "http://alpha.local/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.81 Safari/537.36"
