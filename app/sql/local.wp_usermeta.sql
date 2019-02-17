@@ -23,4 +23,5 @@ INSERT INTO `wp_usermeta` VALUES
 (19,1,"metaboxhidden_nav-menus","a:2:{i:0;s:12:\"add-post_tag\";i:1;s:15:\"add-post_format\";}"),
 (20,1,"wp_user-settings","libraryContent=browse"),
 (21,1,"wp_user-settings-time","1550298343"),
-(22,1,"nav_menu_recently_edited","2");
+(22,1,"nav_menu_recently_edited","2"),
+(23,1,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}");

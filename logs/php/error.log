@@ -12,3 +12,4 @@
 [16-Feb-2019 12:53:55 UTC] PHP Warning:  substr() expects parameter 1 to be string, array given in /app/public/wp-includes/functions.php on line 627
 [16-Feb-2019 15:38:29 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /app/public/wp-content/themes/alpha/cq.php on line 15
 [16-Feb-2019 15:40:42 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /app/public/wp-content/themes/alpha/cq.php on line 15
+[17-Feb-2019 15:26:26 UTC] PHP Parse error:  syntax error, unexpected '$post_ids' (T_VARIABLE) in /app/public/wp-content/themes/alpha/cq.php on line 17

@@ -11,10 +11,15 @@
 <div class="posts text-center"><!-- posts start div -->
     
     <?php
+        $paged = get_query_var("paged")?get_query_var("paged"):1;
+        $posts_per_page = 2;
+        $total_post = 9;
+        $post_ids = array(41,45,26,39,35,36,32);
         $_p = get_posts(array(
-			'posts_per_page'=> 3,
-            'post__in' => array(41,45,26,39,35),
-            'orderby' => 'post__in'
+			'posts_per_page'=> $posts_per_page,
+            'numberposts' => $total_post,
+            'orderby' => 'post__in',
+            'paged' => $paged,
         ));
         foreach ($_p as $post) {
             setup_postdata( $post );
@@ -29,13 +34,11 @@
 	<div class="container post-pagination">
         <div class="row">
             <div class="col-md-4"></div>
-            <div class="col-md-8">
+            <div class="col-md-8 text-center">
                 <?php
-                    the_posts_pagination(array(
-                        "screen_reader_text" => " ",
-                        "prev_text" => __("New Posts", "alpha"),
-                        "next_text" => __("Next Posts", "alpha"),
-                    ));
+                   echo paginate_links( array(
+                       'total' => ceil($total_post/$posts_per_page),
+                   ) )
                 ?>
             </div>
         </div>
