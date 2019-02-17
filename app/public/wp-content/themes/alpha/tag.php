@@ -17,7 +17,7 @@
         }
     ?><!-- end While loop for post -->
 
-    <div class="continer post-pagination">
+    <div class="container post-pagination">
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-8">
