@@ -10,4 +10,8 @@ INSERT INTO `wp_terms` VALUES
 (6,"post-format-quote","post-format-quote",0),
 (7,"post-format-video","post-format-video",0),
 (8,"post-format-audio","post-format-audio",0),
-(9,"post-format-gallery","post-format-gallery",0);
+(9,"post-format-gallery","post-format-gallery",0),
+(10,"new","new",0),
+(11,"something","something",0),
+(12,"Business","business",0),
+(13,"Market","market",0);

@@ -12,13 +12,12 @@
     
     <?php
         $paged = get_query_var("paged")?get_query_var("paged"):1;
-        $posts_per_page = 2;
+        $posts_per_page = 3;
         $total_post = 9;
         $post_ids = array(41,45,35,26,39,36,32);
         $_p = new WP_Query(array(
-			// 'posts_per_page'=> $posts_per_page,
-            'numberposts' => $total_post,
-            'orderby' => 'post__in',
+            'category_name' => 'new',
+            'posts_per_page' => $posts_per_page,
             'paged' => $paged,
         ));
         while ($_p->have_posts()) {
@@ -33,9 +32,16 @@
 
 	<div class="container post-pagination">
         <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-8 text-center">
-                <!-- pagination setting -->
+            <div class="col-md-12">
+                <?php
+                echo paginate_links(array(
+                    'total' => $_p->max_num_pages,
+                    'current' => $paged,
+                    'prev_next'=> false,
+                    /* 'prev_text' => __('Old posts', 'alpha'),
+                    'next_text' => __('Next posts', 'alpha'), */
+                ))
+                ?>
             </div>
         </div>
     </div>

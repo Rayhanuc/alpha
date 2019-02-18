@@ -17,7 +17,7 @@ INSERT INTO `wp_usermeta` VALUES
 (13,1,"wp_user_level","10"),
 (14,1,"dismissed_wp_pointers","wp496_privacy"),
 (15,1,"show_welcome_panel","1"),
-(16,1,"session_tokens","a:1:{s:64:\"d26214905dd21cf92f5f25f175bdab00268332498e0a6bacc3afb5c35c91256f\";a:4:{s:10:\"expiration\";i:1550420077;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.81 Safari/537.36\";s:5:\"login\";i:1550247277;}}"),
+(16,1,"session_tokens","a:1:{s:64:\"14c696f8609d8cd38cf320cf5898e343ac2f5e412ed97f726f9442824f1a891d\";a:4:{s:10:\"expiration\";i:1550646650;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.81 Safari/537.36\";s:5:\"login\";i:1550473850;}}"),
 (17,1,"wp_dashboard_quick_press_last_post_id","4"),
 (18,1,"managenav-menuscolumnshidden","a:5:{i:0;s:11:\"link-target\";i:1;s:11:\"css-classes\";i:2;s:3:\"xfn\";i:3;s:11:\"description\";i:4;s:15:\"title-attribute\";}"),
 (19,1,"metaboxhidden_nav-menus","a:2:{i:0;s:12:\"add-post_tag\";i:1;s:15:\"add-post_format\";}"),

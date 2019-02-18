@@ -13,3 +13,12 @@
 [16-Feb-2019 15:38:29 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /app/public/wp-content/themes/alpha/cq.php on line 15
 [16-Feb-2019 15:40:42 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /app/public/wp-content/themes/alpha/cq.php on line 15
 [17-Feb-2019 15:26:26 UTC] PHP Parse error:  syntax error, unexpected '$post_ids' (T_VARIABLE) in /app/public/wp-content/themes/alpha/cq.php on line 17
+[18-Feb-2019 10:09:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function pagination_links() in /app/public/wp-content/themes/alpha/cq-wpq.php:38
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/alpha/cq-wpq.php on line 38
+[18-Feb-2019 13:07:22 UTC] PHP Warning:  strpos() expects parameter 1 to be string, array given in /app/public/wp-includes/functions.php on line 627
+[18-Feb-2019 13:07:22 UTC] PHP Warning:  substr() expects parameter 1 to be string, array given in /app/public/wp-includes/functions.php on line 627
