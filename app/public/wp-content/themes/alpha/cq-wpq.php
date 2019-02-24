@@ -13,12 +13,25 @@
     <?php
         $paged = get_query_var("paged")?get_query_var("paged"):1;
         $posts_per_page = 3;
-        $total_post = 9;
         $post_ids = array(41,45,35,26,39,36,32);
         $_p = new WP_Query(array(
-            'category_name' => 'new',
+            // 'category_name' => 'new',
+            // 'tag' => 'special',
             'posts_per_page' => $posts_per_page,
             'paged' => $paged,
+            'tax_query' => array(
+                'relation' => 'OR',
+                array(
+                    'taxonomy' => 'category',
+                    'field' => 'slug',
+                    'terms' => array('new')
+                ),
+                array(
+                    'taxonomy' => 'post_tag',
+                    'field' => 'slug',
+                    'terms' => array('special')
+                )
+            )
         ));
         while ($_p->have_posts()) {
             $_p->the_post();
