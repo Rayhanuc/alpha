@@ -17,7 +17,7 @@
         $_p = new WP_Query(array(
             // 'category_name' => 'new',
             // 'tag' => 'special',
-            'posts_per_page' => $posts_per_page,
+            /* 'posts_per_page' => $posts_per_page,
             'paged' => $paged,
             'tax_query' => array(
                 'relation' => 'OR',
@@ -31,7 +31,11 @@
                     'field' => 'slug',
                     'terms' => array('special')
                 )
-            )
+            ) */
+
+            'monthnum' => 2,
+            'year' => 2019,
+            'post_status ' => 'draft'
         ));
         while ($_p->have_posts()) {
             $_p->the_post();
