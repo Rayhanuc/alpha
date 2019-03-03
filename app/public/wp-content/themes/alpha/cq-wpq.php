@@ -19,18 +19,8 @@
             // 'tag' => 'special',
             'posts_per_page' => $posts_per_page,
             'paged' => $paged,
-            'tax_query' => array(
-                'relation' => 'OR',
-                array(
-                    'taxonomy' => 'post_format',
-                    'field' => 'slug',
-                    'terms' => array(
-                        'post-format-audio',
-                        'post-format-video'
-                    ),
-                    'operator'=>"NOT IN"
-                )
-            )
+            'meta_key'=> 'featured',
+            'meta_value'=> '1',
 
             /* 'monthnum' => 2,
             'year' => 2019,
