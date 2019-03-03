@@ -24,4 +24,5 @@ INSERT INTO `wp_usermeta` VALUES
 (20,1,"wp_user-settings","libraryContent=browse"),
 (21,1,"wp_user-settings-time","1550298343"),
 (22,1,"nav_menu_recently_edited","2"),
-(23,1,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}");
+(23,1,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}"),
+(24,1,"enable_custom_fields","1");

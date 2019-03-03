@@ -244,3 +244,12 @@ if(!function_exists("alpha_todays_date")){
         echo date("d/m/y");
     }
 }
+
+
+function alpha_modify_main_query($wpq) {
+    if(is_home() && $wpq->is_main_query()) {
+        $wpq->set("tag__not_in",array(12));
+    }
+    
+}
+add_action( "pre_get_posts", "alpha_modify_main_query" );
