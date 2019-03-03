@@ -64,3 +64,4 @@
 [03-Mar-2019 10:25:49] NOTICE: ready to handle connections
 [03-Mar-2019 12:10:04] NOTICE: fpm is running, pid 89
 [03-Mar-2019 12:10:04] NOTICE: ready to handle connections
+[03-Mar-2019 13:13:25] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it

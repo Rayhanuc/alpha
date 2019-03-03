@@ -19,8 +19,19 @@
             // 'tag' => 'special',
             'posts_per_page' => $posts_per_page,
             'paged' => $paged,
-            'meta_key'=> 'featured',
-            'meta_value'=> '1',
+            'meta_query'=> array(
+                'relation' => 'AND',
+                array(
+                    'key'=> 'featured',
+                    'value'=> '1',
+                    'compare'=> '=',
+                ),
+                array(
+                    'key'=> 'homepage',
+                    'value'=> '1',
+                    'compare'=> '=',
+                ),
+            )
 
             /* 'monthnum' => 2,
             'year' => 2019,
