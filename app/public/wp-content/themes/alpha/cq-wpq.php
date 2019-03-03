@@ -17,25 +17,24 @@
         $_p = new WP_Query(array(
             // 'category_name' => 'new',
             // 'tag' => 'special',
-            /* 'posts_per_page' => $posts_per_page,
+            'posts_per_page' => $posts_per_page,
             'paged' => $paged,
             'tax_query' => array(
                 'relation' => 'OR',
                 array(
-                    'taxonomy' => 'category',
+                    'taxonomy' => 'post_format',
                     'field' => 'slug',
-                    'terms' => array('new')
-                ),
-                array(
-                    'taxonomy' => 'post_tag',
-                    'field' => 'slug',
-                    'terms' => array('special')
+                    'terms' => array(
+                        'post-format-audio',
+                        'post-format-video'
+                    ),
+                    'operator'=>"NOT IN"
                 )
-            ) */
+            )
 
-            'monthnum' => 2,
+            /* 'monthnum' => 2,
             'year' => 2019,
-            'post_status ' => 'draft'
+            'post_status ' => 'draft' */
         ));
         while ($_p->have_posts()) {
             $_p->the_post();

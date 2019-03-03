@@ -9,7 +9,7 @@ INSERT INTO `wp_term_taxonomy` VALUES
 (5,5,"post_format","",0,1),
 (6,6,"post_format","",0,1),
 (7,7,"post_format","",0,1),
-(8,8,"post_format","",0,1),
+(8,8,"post_format","",0,3),
 (9,9,"post_format","",0,1),
 (10,10,"category","",0,12),
 (11,11,"category","",0,2),
