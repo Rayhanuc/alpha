@@ -69,6 +69,35 @@ if (!is_active_sidebar("sidebar-1")) {
                                         }
                                         
                                         the_content();
+
+                                        if(get_post_format() == "image") :
+                                        ?>
+                                        <div class="metainfo">
+                                            <strong>Camera Model : </strong> <?php the_field("camera_model") ; ?> <br>
+                                            <strong>Location : </strong>
+                                                <?php
+                                                    $alpha_location = get_field("location") ;
+                                                    echo esc_html($alpha_location)
+                                                ?> 
+                                            <br>
+                                            <strong>Date : </strong> <?php the_field("date") ; ?> <br>
+                                            
+                                            <?php
+                                            if(get_field("licensed")) :
+                                            ?>
+                                            <p>
+                                                <?php echo apply_filters("the_content", get_field("license_information")) ; ?>
+                                            </p>
+
+                                            <?php endif; ?>
+                                        </div>
+
+                                        <?php
+                                        endif;
+                                        ?>
+
+
+                                        <?php
                                         
 
                                         // this is just for test of image size
