@@ -17,12 +17,14 @@ INSERT INTO `wp_usermeta` VALUES
 (13,1,"wp_user_level","10"),
 (14,1,"dismissed_wp_pointers","wp496_privacy"),
 (15,1,"show_welcome_panel","1"),
-(16,1,"session_tokens","a:1:{s:64:\"f3fbf03c61326710cd9cca7a9d90e210c8b2e858cd5dafcf1813363a332a62ee\";a:4:{s:10:\"expiration\";i:1552126997;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36\";s:5:\"login\";i:1551954197;}}"),
-(17,1,"wp_dashboard_quick_press_last_post_id","124"),
+(16,1,"session_tokens","a:1:{s:64:\"e3270ed1c95ae1c31ccf3b088bea9cc4ed890d11846fcf8815ce49e8a9e9cdf5\";a:4:{s:10:\"expiration\";i:1553755289;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36\";s:5:\"login\";i:1553582489;}}"),
+(17,1,"wp_dashboard_quick_press_last_post_id","125"),
 (18,1,"managenav-menuscolumnshidden","a:5:{i:0;s:11:\"link-target\";i:1;s:11:\"css-classes\";i:2;s:3:\"xfn\";i:3;s:11:\"description\";i:4;s:15:\"title-attribute\";}"),
 (19,1,"metaboxhidden_nav-menus","a:2:{i:0;s:12:\"add-post_tag\";i:1;s:15:\"add-post_format\";}"),
 (20,1,"wp_user-settings","libraryContent=browse"),
 (21,1,"wp_user-settings-time","1550298343"),
 (22,1,"nav_menu_recently_edited","2"),
 (23,1,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}"),
-(24,1,"enable_custom_fields","1");
+(24,1,"enable_custom_fields","1"),
+(25,1,"closedpostboxes_post","a:1:{i:0;s:18:\"attachments-slider\";}"),
+(26,1,"metaboxhidden_post","a:0:{}");

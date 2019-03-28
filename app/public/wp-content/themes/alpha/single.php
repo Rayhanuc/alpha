@@ -70,7 +70,7 @@ if (!is_active_sidebar("sidebar-1")) {
                                         
                                         the_content();
 
-                                        if(get_post_format() == "image" && function_exists("the_field")  :
+                                        if(get_post_format() == "image" && function_exists("the_field")) :
                                         ?>
                                         <div class="metainfo">
                                             <strong>Camera Model : </strong> <?php the_field("camera_model") ; ?> <br>

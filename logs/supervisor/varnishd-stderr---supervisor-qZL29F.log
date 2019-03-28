@@ -1,7 +1,0 @@
-Debug: Platform: Linux,4.9.93-boot2docker,x86_64,-jnone,-smalloc,-smalloc,-hcritbit
-
-Error: Could not create _.vsm.49: File exists
-Debug: Platform: Linux,4.9.93-boot2docker,x86_64,-jnone,-smalloc,-smalloc,-hcritbit
-
-Debug: Child (212) Started
-Info: Child (212) said Child starts

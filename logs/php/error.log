@@ -60,3 +60,5 @@ Stack trace:
 #3 {main}
   thrown in /app/public/wp-content/themes/alpha/single.php on line 97
 [27-Mar-2019 16:53:23 UTC] PHP Parse error:  syntax error, unexpected 'esc_url' (T_STRING), expecting ',' or ';' in /app/public/wp-content/themes/alpha/single.php on line 99
+[28-Mar-2019 06:41:53 UTC] PHP Parse error:  syntax error, unexpected ':' in /app/public/wp-content/themes/alpha/single.php on line 73
+[28-Mar-2019 06:42:05 UTC] PHP Parse error:  syntax error, unexpected ':' in /app/public/wp-content/themes/alpha/single.php on line 73
