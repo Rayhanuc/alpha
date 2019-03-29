@@ -96,9 +96,26 @@ if (!is_active_sidebar("sidebar-1")) {
                                                     $alpha_image = get_field("rendom_image");
                                                     $alpha_image_details = wp_get_attachment_image_src($alpha_image,"alpha-square");
                                                     echo "<img src='" . esc_url($alpha_image_details [0]) . "'/>'";
-
                                                 ?>
                                             </p>
+
+
+                                            <p>                                                
+                                                <?php
+                                                $file = get_field("attachment");
+                                                if($file){
+                                                    $file_url = wp_get_attachment_url( $file );
+                                                    $file_thumb = get_field("thumbnail", $file);
+                                                    if($file_thumb){
+                                                        $file_thumbnail_details = wp_get_attachment_image_src( $file_thumb, "thumbnail" );
+                                                        echo "<a target='_blank' href='{$file_url}'><img src='" . esc_url($file_thumbnail_details [0]) . "'/>'</a>";
+                                                    }else {
+                                                        echo "<a target='_blank' href='{$file_url}'>{$file_url}</a>";
+                                                    }
+                                                }
+                                                ?>                                                
+                                            </p>
+
                                         </div>
 
                                         <?php
@@ -132,7 +149,7 @@ if (!is_active_sidebar("sidebar-1")) {
                                 <div class="row">
                                     <div class="col-md-2 authorimage">
                                         <?php 
-                                            echo get_avatar(get_the_author_meta( "id" ));
+                                            echo get_avatar(get_the_author_meta( "ID" ));
                                         ?>
                                     </div>
                                     <div class="col-md-10">
@@ -141,7 +158,18 @@ if (!is_active_sidebar("sidebar-1")) {
                                         </h4>
                                         <p>
                                             <?php echo get_the_author_meta("description");?>
-                                        </p>              
+                                        </p>
+
+
+                                        <?php if(function_exists("the_field")) : ?>
+                                        <p>
+                                            Facebook URL: <?php the_field("facebook", "user_".get_the_author_meta( "ID" ));?>
+                                            <br/>
+                                            Twitter URL: <?php the_field("twitter", "user_".get_the_author_meta( "ID" ));?>
+                                            <br/>
+                                            Linkedin URL: <?php the_field("linkedin", "user_".get_the_author_meta( "ID" ));?>
+                                        </p>
+                                        <?php endif; ?>
                                     </div>
                                 </div>                            
                             </div>
