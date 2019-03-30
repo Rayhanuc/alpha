@@ -1,6 +1,7 @@
 <?php
 
 require_once get_theme_file_path('/inc/tgm.php');
+require_once get_theme_file_path('/inc/acf-mb.php');
 
 // attachments.php file include
 if ( class_exists( 'Attachments' ) ) {
@@ -255,3 +256,6 @@ function alpha_modify_main_query($wpq) {
     
 }
 add_action( "pre_get_posts", "alpha_modify_main_query" );
+
+
+// add_filter('acf/settings/show_admin', '__return_false');

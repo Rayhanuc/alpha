@@ -71,6 +71,10 @@ if (!is_active_sidebar("sidebar-1")) {
                                         the_content();
 
                                         if(get_post_format() == "image" && function_exists("the_field")) :
+
+                                            /* $camera_model = get_post_meta(get_the_ID(), "camera_model", true);                                            
+                                            $related_posts = get_post_meta(get_the_ID(), "related_posts", true);
+                                            print_r($related_posts); */
                                         ?>
                                         <div class="metainfo">
                                             <strong>Camera Model : </strong> <?php the_field("camera_model") ; ?> <br>
@@ -115,6 +119,27 @@ if (!is_active_sidebar("sidebar-1")) {
                                                 }
                                                 ?>                                                
                                             </p>
+
+                                            <?php if(function_exists("the_field")) : ?>
+                                                <div>
+                                                    <h1><?php _e("Reloated Posts", "alpha");?></h1>
+                                                    <?php
+                                                        $related_posts = get_field("related_posts");
+                                                        $alpha_rp   = new WP_Query(array(
+                                                            'post__in' => $related_posts,
+                                                            'orderby' => 'post__in',
+                                                        ));
+
+                                                        while ($alpha_rp->have_posts() ) {
+                                                            $alpha_rp->the_post();
+                                                            ?>
+                                                            <h4><?php the_title() ; ?></h4>
+                                                            <?php
+                                                                }
+                                                                wp_reset_query(  );
+                                                            ?>
+                                                </div>
+                                            <?php endif; ?>
 
                                         </div>
 
