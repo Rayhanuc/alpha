@@ -148,6 +148,43 @@ if (!is_active_sidebar("sidebar-1")) {
                                         ?>
 
 
+
+                                        <!-- for cmb2 start -->
+                                        <?php
+                                        if(get_post_format() == "image" && class_exists("CMB2")) :
+
+                                            $alpha_camera_model = get_post_meta(get_the_ID(), "_alpha_camera_model", true);
+                                            $alpha_location = get_post_meta(get_the_ID(), "_alpha_location", true);
+                                            $alpha_date = get_post_meta(get_the_ID(), "_alpha_date", true);
+                                            $alpha_licensed = get_post_meta(get_the_ID(), "_alpha_licensed", true);
+                                            $alpha_license_information = get_post_meta(get_the_ID(), "_alpha_licensed_information", true);
+                                            ?>
+                                            <div class="metainfo">
+                                                <strong>Camera Model : </strong> <?php echo esc_html($alpha_camera_model) ; ?> <br>
+                                                <strong>Location : </strong>
+                                                    <?php
+                                                        echo esc_html($alpha_location)
+                                                    ?> 
+                                                <br>
+                                                <strong>Date : </strong> <?php echo esc_html($alpha_date) ; ?> <br>
+
+                                                <?php if($alpha_licensed) :  ?>
+
+                                                <p>
+                                                    <?php echo apply_filters("the_content", $alpha_license_information) ; ?>
+                                                </p>
+
+                                                <?php endif; ?>                                           
+
+                                            </div>
+
+                                            <?php
+                                            endif;
+                                            ?>
+
+                                            <!-- for cmb2 end -->
+
+
                                         <?php
                                         
 
