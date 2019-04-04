@@ -174,7 +174,25 @@ if (!is_active_sidebar("sidebar-1")) {
                                                     <?php echo apply_filters("the_content", $alpha_license_information) ; ?>
                                                 </p>
 
-                                                <?php endif; ?>                                           
+                                                <?php endif; ?>    
+
+                                                <p>
+                                                    <?php 
+                                                        $alpha_image = get_post_meta(get_the_ID(), "_alpha_image_id", true);
+                                                        $alpha_image_details = wp_get_attachment_image_src($alpha_image,"alpha-square");
+                                                        echo "<img src='" . esc_url($alpha_image_details [0]) . "'/>'";
+                                                    ?>
+                                                </p> 
+
+
+                                                <p>
+                                                    <?php 
+                                                        $alpha_file = get_post_meta(get_the_ID(), "_alpha_resume", true);
+                                                        echo esc_url($alpha_file);
+                                                        /* $alpha_image_details = wp_get_attachment_image_src($alpha_image,"alpha-square");
+                                                        echo "<img src='" . esc_url($alpha_image_details [0]) . "'/>'"; */
+                                                    ?>
+                                                </p>                                       
 
                                             </div>
 

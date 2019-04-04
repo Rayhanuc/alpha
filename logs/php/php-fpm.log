@@ -94,3 +94,7 @@
 [31-Mar-2019 10:50:19] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
 [01-Apr-2019 14:59:59] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
 [01-Apr-2019 15:43:18] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[02-Apr-2019 06:12:26] NOTICE: Terminating ...
+[02-Apr-2019 06:12:26] NOTICE: exiting, bye-bye!
+[02-Apr-2019 07:15:48] NOTICE: fpm is running, pid 57
+[02-Apr-2019 07:15:48] NOTICE: ready to handle connections

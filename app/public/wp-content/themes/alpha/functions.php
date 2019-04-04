@@ -68,6 +68,8 @@ function alpha_assets(){
     // Dashicons enqueue
     wp_enqueue_style("dashicons");
     wp_enqueue_style("tns-style", "//cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css");
+    wp_enqueue_style("fontawesome", "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
     wp_enqueue_style("alpha", get_stylesheet_uri(), null, VERSION);
 
     // This is test file enqueue
@@ -260,3 +262,16 @@ add_action( "pre_get_posts", "alpha_modify_main_query" );
 
 
 // add_filter('acf/settings/show_admin', '__return_false');
+
+
+function alpha_admin_assets($hook){
+    if(isset($_REQUEST['post']) || isset($_REQUEST['post_ID'])){
+        $post_id = empty($_REQUEST['post_ID']) ? $_REQUEST['post'] : $_REQUEST['post_ID'];
+    }
+    if("post.php" == $hook){
+        $post_format = get_post_format($post_id);
+        wp_enqueue_script( "admin-js", get_theme_file_uri("/assets/js/admin.js"), array("jquery"),VERSION, true );
+        wp_localize_script("admin-js", "alpha_pf", array("format"=> $post_format));
+    }
+}
+add_action( "admin_enqueue_scripts", "alpha_admin_assets" );
