@@ -3,7 +3,6 @@
 /*!40103 SET TIME_ZONE='+00:00' */;
 INSERT INTO `wp_terms` VALUES
 (1,"Uncategorized","uncategorized",0),
-(2,"Main menu","main-menu",0),
 (3,"Social Links Menu","social-links-menu",0),
 (4,"post-format-link","post-format-link",0),
 (5,"post-format-image","post-format-image",0),
@@ -15,4 +14,5 @@ INSERT INTO `wp_terms` VALUES
 (11,"something","something",0),
 (12,"Business","business",0),
 (13,"Market","market",0),
-(14,"special","special",0);
+(14,"special","special",0),
+(15,"Main menu","main-menu",0);
