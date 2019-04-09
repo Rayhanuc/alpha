@@ -1,6 +1,7 @@
 <?php
 
 require_once get_theme_file_path( "/inc/tgm.php" );
+require_once get_theme_file_path( "/lib/attachments.php" );
 
 //FOR DYNAMIC VERSION
 if(site_url() == "http://hellodolly.local"){
