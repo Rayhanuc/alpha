@@ -7,12 +7,13 @@ INSERT INTO `wp_term_taxonomy` VALUES
 (4,4,"post_format","",0,1),
 (5,5,"post_format","",0,1),
 (6,6,"post_format","",0,1),
-(7,7,"post_format","",0,1),
+(7,7,"post_format","",0,2),
 (8,8,"post_format","",0,4),
 (9,9,"post_format","",0,1),
-(10,10,"category","",0,12),
-(11,11,"category","",0,2),
+(10,10,"category","",0,13),
+(11,11,"category","",0,3),
 (12,12,"post_tag","",0,1),
 (13,13,"post_tag","",0,1),
 (14,14,"post_tag","",0,1),
-(15,15,"nav_menu","",0,9);
+(15,15,"nav_menu","",0,9),
+(16,16,"category","",0,1);

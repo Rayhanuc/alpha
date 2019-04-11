@@ -125,3 +125,5 @@
 [08-Apr-2019 18:53:38] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
 [08-Apr-2019 18:54:20] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
 [08-Apr-2019 18:56:04] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[09-Apr-2019 18:03:50] NOTICE: Terminating ...
+[09-Apr-2019 18:03:50] NOTICE: exiting, bye-bye!

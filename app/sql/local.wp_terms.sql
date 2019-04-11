@@ -15,4 +15,5 @@ INSERT INTO `wp_terms` VALUES
 (12,"Business","business",0),
 (13,"Market","market",0),
 (14,"special","special",0),
-(15,"Main menu","main-menu",0);
+(15,"Main menu","main-menu",0),
+(16,"One more","one-more",0);
