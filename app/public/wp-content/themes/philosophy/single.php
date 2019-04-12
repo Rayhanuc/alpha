@@ -112,7 +112,7 @@ get_header();
         ================================================== -->
         <?php
         if(!post_password_required()){
-            comments_template()
+            comments_template();
         }
         ?>
         <!-- end comments-wrap -->

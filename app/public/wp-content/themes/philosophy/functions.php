@@ -61,3 +61,22 @@ function philosophy_pagination(){
     $links = str_replace("next pgn__num", "pgn__next",$links);
     echo $links;
 }
+
+
+remove_action( "term_description", "wpautop" );
+
+
+
+/*For About us page*/
+function philosophy_widgets() {
+    register_sidebar( array(
+        'name'          => __( 'About us page', 'philosophy' ),
+        'id'            => 'about-us',
+        'description'   => __('Widgets in this area will be shown on about us page.','philosophy'),
+        'before_widget' => '<div id="%1$s" class="%2$s col-block">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="quarter-top-margin">',
+        'after_title'   => '</h3>',
+    ) );
+}
+add_action( "widgets_init", "philosophy_widgets");
