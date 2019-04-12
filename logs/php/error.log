@@ -269,3 +269,24 @@ Stack trace:
 [09-Apr-2019 08:50:30 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /app/public/wp-content/themes/philosophy/template-parts/post-formats/post-gallery.php on line 18
 [09-Apr-2019 08:50:44 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /app/public/wp-content/themes/philosophy/template-parts/post-formats/post-gallery.php on line 18
 [09-Apr-2019 08:50:45 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /app/public/wp-content/themes/philosophy/template-parts/post-formats/post-gallery.php on line 18
+[11-Apr-2019 17:42:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_avater() in /app/public/wp-content/themes/philosophy/single.php:47
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/philosophy/single.php on line 47
+[11-Apr-2019 19:16:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_nextious_post() in /app/public/wp-content/themes/philosophy/single.php:94
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/philosophy/single.php on line 94
+[11-Apr-2019 19:52:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_author_meta() in /app/public/wp-content/themes/philosophy/single.php:51
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/philosophy/single.php on line 51

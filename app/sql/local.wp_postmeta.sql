@@ -150,7 +150,7 @@ INSERT INTO `wp_postmeta` VALUES
 (218,34,"_edit_lock","1554612673:1"),
 (221,34,"_thumbnail_id","58"),
 (222,34,"_edit_last","1"),
-(229,26,"_edit_lock","1554805506:1"),
+(229,26,"_edit_lock","1555004844:1"),
 (230,42,"_edit_lock","1554800305:1"),
 (231,45,"_edit_lock","1551618950:1"),
 (232,29,"_edit_lock","1554802089:1"),
@@ -629,4 +629,6 @@ INSERT INTO `wp_postmeta` VALUES
 (1007,210,"featured","1"),
 (1008,210,"_featured","field_5ca8fb6ba95f5"),
 (1009,210,"source_file","325910798"),
-(1010,210,"_source_file","field_5cac5ef8d4a62");
+(1010,210,"_source_file","field_5cac5ef8d4a62"),
+(1013,212,"_edit_lock","1555005783:1"),
+(1014,212,"_edit_last","1");
