@@ -137,3 +137,15 @@
 [11-Apr-2019 20:01:21] NOTICE: exiting, bye-bye!
 [12-Apr-2019 10:58:14] NOTICE: fpm is running, pid 53
 [12-Apr-2019 10:58:14] NOTICE: ready to handle connections
+[12-Apr-2019 19:56:25] NOTICE: Terminating ...
+[12-Apr-2019 19:56:26] NOTICE: exiting, bye-bye!
+[13-Apr-2019 07:18:38] NOTICE: fpm is running, pid 47
+[13-Apr-2019 07:18:38] NOTICE: ready to handle connections
+[13-Apr-2019 07:20:11] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[13-Apr-2019 18:17:19] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[13-Apr-2019 18:27:55] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[13-Apr-2019 18:59:50] NOTICE: Terminating ...
+[13-Apr-2019 18:59:50] NOTICE: exiting, bye-bye!
+[14-Apr-2019 05:44:07] NOTICE: fpm is running, pid 56
+[14-Apr-2019 05:44:07] NOTICE: ready to handle connections
+[14-Apr-2019 10:02:58] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it

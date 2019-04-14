@@ -18,4 +18,5 @@ INSERT INTO `wp_terms` VALUES
 (15,"Main menu","main-menu",0),
 (16,"One more","one-more",0),
 (17,"Slim","slim",0),
-(18,"Shop","shop",0);
+(18,"Shop","shop",0),
+(19,"No Posts","noposts",0);
