@@ -1,7 +1,10 @@
 <?php
 
 require_once get_theme_file_path( "/inc/tgm.php" );
+require_once get_theme_file_path( "/inc/cmb2-mb.php" );
 require_once get_theme_file_path( "/lib/attachments.php" );
+
+if ( ! isset( $content_width ) ) $content_width = 960;
 
 //FOR DYNAMIC VERSION
 if(site_url() == "http://hellodolly.local"){
@@ -13,9 +16,13 @@ if(site_url() == "http://hellodolly.local"){
 function philosophy_theme_setup() {
     load_theme_textdomain( "philosophy" );
     add_theme_support("post-thumbnails");
+    add_theme_support( "automatic-feed-links" );
+
     add_theme_support("title-tag");
+    add_theme_support("custom-logo");
     add_theme_support('html5', array('search-form', 'comment-list'));
     add_theme_support("post-formats", array("image","gallery","quote","audio","video","link"));
+    add_theme_support( 'automatic-feed-links' );
     add_editor_style( "/assets/css/editor-style.css" );
 
 
@@ -30,6 +37,11 @@ function philosophy_theme_setup() {
     add_image_size("philosophy-home-square",400,400,true);
 }
 add_action("after_setup_theme", "philosophy_theme_setup");
+
+function wpse_add_title_support() {
+    add_theme_support( 'title-tag' );
+}
+add_action ( 'after_setup_theme', 'wpse_add_title_support' );
 
 
 
@@ -46,6 +58,10 @@ function philosophy_assets() {
     wp_enqueue_script("modernizr-js",get_theme_file_uri("/assets/js/modernizr.js"),null,"1.0");
     wp_enqueue_script("pace-js",get_theme_file_uri("/assets/js/pace.min.js"),null,"1.0");
     wp_enqueue_script("plugins-js",get_theme_file_uri("/assets/js/plugins.js"),array("jquery"),"1.0",true);
+
+    if ( is_singular() ) {
+        wp_enqueue_script( "comment-reply" );
+    }
     wp_enqueue_script("main-js",get_theme_file_uri("/assets/js/main.js"),array("jquery"),"1.0",true);
 }
 add_action("wp_enqueue_scripts", "philosophy_assets");
@@ -65,7 +81,7 @@ function philosophy_pagination(){
     $links = str_replace("<ul class='pgn__num'>", "<ul>",$links);
     $links = str_replace("prev pgn__num", "pgn__prev",$links);
     $links = str_replace("next pgn__num", "pgn__next",$links);
-    echo $links;
+    echo wp_kses_post($links);
 }
 
 
@@ -134,5 +150,37 @@ function philosophy_widgets() {
         'before_title'  => '',
         'after_title'   => '',
     ) );
+
+
+    register_sidebar( array(
+        'name'          => __( 'Header Seciton', 'philosophy' ),
+        'id'            => 'header-section',
+        'description'   => __('Widgets in this area will be shown on header section.','philosophy'),
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>',
+    ) );
 }
 add_action( "widgets_init", "philosophy_widgets");
+
+
+
+function philosophy_search_form($form){
+    $homedir = home_url("/");
+    $label = __( "Search for:", "philosophy" );
+    $button_label = __("Search","philosophy");
+    $newform = <<<FORM
+<form role="search" method="get" class="header__search-form" action="{$homedir}">
+    <label>
+        <span class="hide-content">{$label}</span>
+        <input type="search" class="search-field" placeholder="Type Keywords" value="" name="s" title="{$label}" autocomplete="off">
+    </label>
+    <input type="submit" class="search-submit" value="{$button_label}">
+</form>
+
+FORM;
+
+    return $newform;
+}
+add_filter( "get_search_form", "philosophy_search_form" );

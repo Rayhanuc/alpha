@@ -15,7 +15,7 @@
         )
     );
     $philosophy_menu = str_replace("menu-item-has-children", "menu-item-has-children has-children", $philosophy_menu);
-    echo $philosophy_menu;
+    echo wp_kses_post($philosophy_menu);
 
     ?> <!-- end header__nav -->
 

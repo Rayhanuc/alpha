@@ -85,6 +85,12 @@ function philosophy_register_required_plugins() {
 			'slug'      => 'contact-form-7',
 			'required'  => false,
 		),
+        // CMB2
+		array(
+			'name'      => 'CMB2',
+			'slug'      => 'cmb2',
+			'required'  => false,
+		),
 		
 	);
 
