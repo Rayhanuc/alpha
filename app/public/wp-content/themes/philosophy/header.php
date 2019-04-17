@@ -22,7 +22,10 @@
     <!-- pageheader
     ================================================== -->
     <section class="s-pageheader 
-        <?php if(is_home())echo "s-pageheader--home"?>">
+        <?php
+        echo apply_filters( "philisophy_home_banner_class", "s-pageheader--home" );
+        ?>"
+    >
 
         <header class="header">
             <div class="header__content row">
