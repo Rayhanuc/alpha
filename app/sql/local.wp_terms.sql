@@ -19,4 +19,11 @@ INSERT INTO `wp_terms` VALUES
 (16,"One more","one-more",0),
 (17,"Slim","slim",0),
 (18,"Shop","shop",0),
-(19,"No Posts","noposts",0);
+(19,"No Posts","noposts",0),
+(20,"Gole","gole",0),
+(21,"Bang Bang","bang-bang",0),
+(22,"Fine","fine",0),
+(23,"Good","good",0),
+(24,"Footer Left Menu","footer-left-menu",0),
+(25,"Footer Middle Menu","footer-middle-menu",0),
+(26,"Footer Right Menu","footer-right-menu",0);

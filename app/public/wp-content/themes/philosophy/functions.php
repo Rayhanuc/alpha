@@ -184,3 +184,36 @@ FORM;
     return $newform;
 }
 add_filter( "get_search_form", "philosophy_search_form" );
+
+
+function category_before_title(){
+    echo "<p>Before Title</p>";
+}
+add_action("philosophy_before_category_title","category_before_title");
+
+function category_after_title(){
+    echo "<p>after Title</p>";
+}
+add_action("philosophy_after_category_title","category_after_title");
+
+
+// description
+function category_after_description(){
+    echo "<p>After Description</p>";
+}
+add_action("philosophy_after_category_description","category_after_description");
+
+
+
+
+
+
+function beginning_category_page($category_title) {
+    if ("New" == $category_title) {
+        $visit_count = get_option( 'category_new' );
+        $visit_count = $visit_count ? $visit_count:0;
+        $visit_count++;
+        update_option("category_new", $visit_count);
+    }
+}
+add_action( "philosophy_category_page", "beginning_category_page" );
