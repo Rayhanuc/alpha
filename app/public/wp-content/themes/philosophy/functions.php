@@ -203,11 +203,6 @@ function category_after_description(){
 }
 add_action("philosophy_after_category_description","category_after_description");
 
-
-
-
-
-
 function beginning_category_page($category_title) {
     if ("New" == $category_title) {
         $visit_count = get_option( 'category_new' );
@@ -217,3 +212,8 @@ function beginning_category_page($category_title) {
     }
 }
 add_action( "philosophy_category_page", "beginning_category_page" );
+
+function capital_text($text){
+    return strtoupper($text);
+}
+add_filter( "philisophy_text", "capital_text" );

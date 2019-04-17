@@ -10,6 +10,9 @@
 
         <div class="row narrow">
             <div class="col-full s-content__header" data-aos="fade-up">
+
+                <!-- apply filters example -->
+                <?php echo apply_filters( "philisophy_text", "hello world" ); ?>
                 
                 <!-- before action hoke -->
                 <?php do_action( 'philosophy_before_category_title' ) ; ?>
