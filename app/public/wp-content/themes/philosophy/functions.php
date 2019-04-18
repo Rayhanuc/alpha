@@ -66,7 +66,7 @@ function philosophy_assets() {
 }
 add_action("wp_enqueue_scripts", "philosophy_assets");
 
-
+// Plugabble function
 if (!function_exists("philosophy_pagination")) {
     function philosophy_pagination(){
         global $wp_query;

@@ -15,7 +15,7 @@
     <div class="entry__meta">
         <span class="entry__meta-links">
             <?php 
-            echo get_the_tag_list() ;
+            echo get_the_tag_list();
             ?>
         </span>
     </div>
