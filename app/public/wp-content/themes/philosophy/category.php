@@ -12,10 +12,10 @@
             <div class="col-full s-content__header" data-aos="fade-up">
 
                 <!-- apply filters example -->
-                <?php echo apply_filters("philisophy_text","hello","wornderful","world");?>
+                <?php // echo apply_filters("philisophy_text","hello","wornderful","world");?>
                 
                 <!-- before action hoke -->
-                <?php do_action( 'philosophy_before_category_title' ) ; ?>
+                <?php do_action('philosophy_before_category_title');?>
                 <h1>
                 <?php single_cat_title(  ) ; ?>
                 </h1>

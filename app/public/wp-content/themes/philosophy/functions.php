@@ -186,22 +186,40 @@ FORM;
 add_filter( "get_search_form", "philosophy_search_form" );
 
 
-function category_before_title(){
-    echo "<p>Before Title</p>";
+function category_before_title1(){
+    echo "<p>Before Title 1</p>";
 }
-add_action("philosophy_before_category_title","category_before_title");
+add_action("philosophy_before_category_title","category_before_title1");
+
+function category_before_title2(){
+    echo "<p>Before Title 2</p>";
+}
+add_action("philosophy_before_category_title","category_before_title2",1);
+
+function category_before_title3(){
+    echo "<p>Before Title 3</p>";
+}
+add_action("philosophy_before_category_title","category_before_title3",8);
 
 function category_after_title(){
     echo "<p>after Title</p>";
 }
 add_action("philosophy_after_category_title","category_after_title");
 
-
 // description
 function category_after_description(){
     echo "<p>After Description</p>";
 }
 add_action("philosophy_after_category_description","category_after_description");
+
+
+// Remove hook
+remove_action("philosophy_before_category_title", "category_before_title1");
+remove_action("philosophy_before_category_title", "category_before_title2",1);
+remove_action("philosophy_before_category_title", "category_before_title3",8);
+remove_action("philosophy_after_category_title", "category_after_title");
+remove_action("philosophy_after_category_description", "category_after_description");
+
 
 function beginning_category_page($category_title) {
     if ("New" == $category_title) {
