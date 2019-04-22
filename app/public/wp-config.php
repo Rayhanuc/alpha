@@ -19,6 +19,10 @@
  */
 
 // ** MySQL settings ** //
+
+
+define('WPLANG', 'en_US');
+
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'local' );
 

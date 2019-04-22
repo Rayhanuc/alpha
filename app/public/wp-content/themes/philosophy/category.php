@@ -16,6 +16,10 @@
                 
                 <!-- before action hoke -->
                 <?php do_action('philosophy_before_category_title');?>
+
+                <h3><?php _e( "New Translatable Text", "philosophy" ); ?></h3>
+                <h3><?php printf(__( "%s New Translatable Text 2", "philosophy" ),"Hi,"); ?></h3>
+
                 <h1>
                 <?php single_cat_title(  ) ; ?>
                 </h1>

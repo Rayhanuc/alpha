@@ -632,7 +632,6 @@ INSERT INTO `wp_postmeta` VALUES
 (1010,210,"_source_file","field_5cac5ef8d4a62"),
 (1013,212,"_edit_lock","1555005783:1"),
 (1014,212,"_edit_last","1"),
-(1015,216,"_edit_lock","1555078997:1"),
 (1016,217,"_menu_item_type","custom"),
 (1017,217,"_menu_item_menu_item_parent","0"),
 (1018,217,"_menu_item_object_id","217"),
@@ -801,4 +800,8 @@ INSERT INTO `wp_postmeta` VALUES
 (1206,242,"_wp_trash_meta_status","publish"),
 (1207,242,"_wp_trash_meta_time","1555308295"),
 (1208,243,"_wp_trash_meta_status","publish"),
-(1209,243,"_wp_trash_meta_time","1555308858");
+(1209,243,"_wp_trash_meta_time","1555308858"),
+(1210,248,"_edit_lock","1555774121:1"),
+(1211,249,"_edit_lock","1555774257:1"),
+(1212,250,"_edit_lock","1555774364:1"),
+(1213,251,"_edit_lock","1555774402:1");

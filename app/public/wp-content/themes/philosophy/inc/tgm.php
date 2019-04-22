@@ -91,6 +91,12 @@ function philosophy_register_required_plugins() {
 			'slug'      => 'cmb2',
 			'required'  => false,
 		),
+        // Custom Post Type UI
+		array(
+			'name'      => 'Custom Post Type UI',
+			'slug'      => 'custom-post-type-ui',
+			'required'  => false,
+		),
 		
 	);
 
