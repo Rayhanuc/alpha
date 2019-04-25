@@ -177,3 +177,7 @@
 [23-Apr-2019 18:01:08] NOTICE: exiting, bye-bye!
 [24-Apr-2019 12:23:35] NOTICE: fpm is running, pid 49
 [24-Apr-2019 12:23:35] NOTICE: ready to handle connections
+[24-Apr-2019 18:52:52] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[24-Apr-2019 18:54:11] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[25-Apr-2019 12:48:31] NOTICE: Terminating ...
+[25-Apr-2019 12:48:31] NOTICE: exiting, bye-bye!
