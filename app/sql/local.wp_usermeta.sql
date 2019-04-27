@@ -17,7 +17,7 @@ INSERT INTO `wp_usermeta` VALUES
 (13,1,"wp_user_level","10"),
 (14,1,"dismissed_wp_pointers","wp496_privacy,text_widget_custom_html"),
 (15,1,"show_welcome_panel","1"),
-(16,1,"session_tokens","a:1:{s:64:\"37f6d93fb432a6aeab349b25c08f24bcbf7d6ef9492628e0986c19eadff912cb\";a:4:{s:10:\"expiration\";i:1556281580;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36\";s:5:\"login\";i:1556108780;}}"),
+(16,1,"session_tokens","a:1:{s:64:\"c668fd2f9bebbe9f420766b838de0ce5e596d2a36706b1bdc1bd42ca62f9849c\";a:4:{s:10:\"expiration\";i:1556455709;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.108 Safari/537.36\";s:5:\"login\";i:1556282909;}}"),
 (17,1,"wp_dashboard_quick_press_last_post_id","247"),
 (18,1,"managenav-menuscolumnshidden","a:4:{i:0;s:11:\"link-target\";i:1;s:15:\"title-attribute\";i:2;s:3:\"xfn\";i:3;s:11:\"description\";}"),
 (19,1,"metaboxhidden_nav-menus","a:2:{i:0;s:12:\"add-post_tag\";i:1;s:15:\"add-post_format\";}"),
@@ -53,4 +53,6 @@ INSERT INTO `wp_usermeta` VALUES
 (49,1,"linkedin","https://www.linkedin.com/in/rayhan-uddin-chy/"),
 (50,1,"_linkedin","field_5caf816886fa2"),
 (51,1,"closedpostboxes_page","a:3:{i:0;s:24:\"attachments-testimonials\";i:1;s:16:\"attachments-team\";i:2;s:23:\"_alpha_pt_pricing_table\";}"),
-(52,1,"metaboxhidden_page","a:8:{i:0;s:10:\"postcustom\";i:1;s:16:\"commentstatusdiv\";i:2;s:11:\"commentsdiv\";i:3;s:7:\"slugdiv\";i:4;s:9:\"authordiv\";i:5;s:35:\"cmb-group-_alpha_pt_pricing_table-0\";i:6;s:35:\"cmb-group-_alpha_pt_pricing_table-1\";i:7;s:35:\"cmb-group-_alpha_pt_pricing_table-2\";}");
+(52,1,"metaboxhidden_page","a:8:{i:0;s:10:\"postcustom\";i:1;s:16:\"commentstatusdiv\";i:2;s:11:\"commentsdiv\";i:3;s:7:\"slugdiv\";i:4;s:9:\"authordiv\";i:5;s:35:\"cmb-group-_alpha_pt_pricing_table-0\";i:6;s:35:\"cmb-group-_alpha_pt_pricing_table-1\";i:7;s:35:\"cmb-group-_alpha_pt_pricing_table-2\";}"),
+(53,1,"closedpostboxes_chapter","a:1:{i:0;s:9:\"submitdiv\";}"),
+(54,1,"metaboxhidden_chapter","a:1:{i:0;s:7:\"slugdiv\";}");

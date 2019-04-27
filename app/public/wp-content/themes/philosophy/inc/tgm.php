@@ -91,6 +91,13 @@ function philosophy_register_required_plugins() {
 			'slug'      => 'cmb2',
 			'required'  => false,
 		),
+        // CMB2
+		array(
+			'name'      => 'CMB2 Attached Posts',
+			'slug'      => 'cmb2-attached-posts',
+			'required'  => true,
+			'source' => 'https://github.com/CMB2/cmb2-attached-posts/archive/master.zip'
+		),
         // Custom Post Type UI
 		array(
 			'name'      => 'Custom Post Type UI',
