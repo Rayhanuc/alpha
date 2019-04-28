@@ -11,16 +11,25 @@ $philosophy_query_arg = array(
 	'tax_query' => array(
 		'relation' => 'AND',
 		array(
-			'taxonomy' => 'language',
-			'field' => 'slug',
-			'terms' => array('bangla')
+			'relation' => 'AND',
+			array(
+				'taxonomy' => 'language',
+				'field' => 'slug',
+				'terms' => array('english')
+			),
+
+			array(
+				'taxonomy' => 'language',
+				'field' => 'slug',
+				'terms' => array('bangla'),
+				'operator' => "NOT IN"
+			),
 		),
 
 		array(
-			'taxonomy' => 'language',
+			'taxonomy' => 'genre',
 			'field' => 'slug',
-			'terms' => array('english'),
-			'operator' => 'NOT IN'
+			'terms' => array('horror'),
 		),
 	),
 );
