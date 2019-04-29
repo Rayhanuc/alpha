@@ -26,4 +26,10 @@ INSERT INTO `wp_term_taxonomy` VALUES
 (23,23,"post_tag","",0,1),
 (24,24,"nav_menu","",0,6),
 (25,25,"nav_menu","",0,3),
-(26,26,"nav_menu","",0,3);
+(26,26,"nav_menu","",0,3),
+(27,27,"language","",0,7),
+(28,28,"language","",0,2),
+(29,29,"language","",0,0),
+(30,30,"genre","",0,3),
+(31,31,"genre","",0,2),
+(32,32,"genre","",0,3);

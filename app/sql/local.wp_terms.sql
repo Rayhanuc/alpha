@@ -26,4 +26,10 @@ INSERT INTO `wp_terms` VALUES
 (23,"Good","good",0),
 (24,"Footer Left Menu","footer-left-menu",0),
 (25,"Footer Middle Menu","footer-middle-menu",0),
-(26,"Footer Right Menu","footer-right-menu",0);
+(26,"Footer Right Menu","footer-right-menu",0),
+(27,"English","english",0),
+(28,"Bangla","bangla",0),
+(29,"Friench","friench",0),
+(30,"Classic","classic",0),
+(31,"Thriller","thriller",0),
+(32,"Horror","horror",0);

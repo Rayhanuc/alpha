@@ -72,3 +72,43 @@ function create_book_cpt() {
 
 }
 add_action( 'init', 'create_book_cpt', 0 );
+
+
+function philosophy_button($attributes){
+	$default = array(
+		'type' => 'primary',
+		'title' => __('Button','philosophy'),
+		'url' => ''
+	);
+
+	$button_attributes = shortcode_atts($default, $attributes);
+
+	return sprintf('<a target="_blank" class="btn btn--%s full-width" href="%s">%s</a>',
+		$button_attributes['type'],
+		$button_attributes['url'],
+		$button_attributes['title']
+	);
+}
+add_shortcode( 'button','philosophy_button' );
+
+
+function philosophy_button2($attributes, $content=''){
+
+	$default = array(
+		'type' => 'primary',
+		'title' => __('Button','philosophy'),
+		'url' => ''
+	);
+
+	$button_attributes = shortcode_atts($default, $attributes);
+
+	return sprintf('<a target="_blank" class="btn btn--%s full-width" href="%s">%s</a>',
+		$button_attributes['type'],
+		$button_attributes['url'],
+		$content
+	);
+}
+add_shortcode( 'button2','philosophy_button2' );
+
+
+
