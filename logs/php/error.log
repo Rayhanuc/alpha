@@ -495,3 +495,27 @@ Stack trace:
 [29-Apr-2019 13:21:40 UTC] PHP Notice:  Undefined index: url in /app/public/wp-content/plugins/philosophy_companion/philosophy-companion.php on line 87
 [29-Apr-2019 13:22:47 UTC] PHP Notice:  Undefined index: url in /app/public/wp-content/plugins/philosophy_companion/philosophy-companion.php on line 87
 [29-Apr-2019 13:22:47 UTC] PHP Notice:  Undefined index: url in /app/public/wp-content/plugins/philosophy_companion/philosophy-companion.php on line 87
+[29-Apr-2019 13:59:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function strlower() in /app/public/wp-content/plugins/philosophy_companion/philosophy-companion.php:115
+Stack trace:
+#0 /app/public/wp-includes/shortcodes.php(319): philosophy_uppercase('', 'Facebook', 'uc')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 /app/public/wp-includes/shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(uc)(?!...', 'do_shortcode_ta...', '[uc]Facebook[/u...')
+#3 /app/public/wp-content/plugins/philosophy_companion/philosophy-companion.php(108): do_shortcode('[uc]Facebook[/u...')
+#4 /app/public/wp-includes/shortcodes.php(319): philosophy_button2(Array, '[uc]Facebook[/u...', 'button2')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /app/public/wp-includes/shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(button...', 'do_shortcode_ta...', '[button type="p...')
+#7 /app/public/wp-includes/class-wp-hook.php(286): do_shortcode('[button type="p...')
+#8 /app/public/wp-includes/plugin.php(203): WP_Hook->apply_filters('[button type="p...', Array)
+ in /app/public/wp-content/plugins/philosophy_companion/philosophy-companion.php on line 115
+[29-Apr-2019 14:00:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function strlower() in /app/public/wp-content/plugins/philosophy_companion/philosophy-companion.php:115
+Stack trace:
+#0 /app/public/wp-includes/shortcodes.php(319): philosophy_uppercase('', 'Facebook', 'uc')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 /app/public/wp-includes/shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(uc)(?!...', 'do_shortcode_ta...', '[uc]Facebook[/u...')
+#3 /app/public/wp-content/plugins/philosophy_companion/philosophy-companion.php(108): do_shortcode('[uc]Facebook[/u...')
+#4 /app/public/wp-includes/shortcodes.php(319): philosophy_button2(Array, '[uc]Facebook[/u...', 'button2')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /app/public/wp-includes/shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(button...', 'do_shortcode_ta...', '[button type="p...')
+#7 /app/public/wp-includes/class-wp-hook.php(286): do_shortcode('[button type="p...')
+#8 /app/public/wp-includes/plugin.php(203): WP_Hook->apply_filters('[button type="p...', Array)
+ in /app/public/wp-content/plugins/philosophy_companion/philosophy-companion.php on line 115

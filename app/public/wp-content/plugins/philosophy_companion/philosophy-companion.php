@@ -105,10 +105,13 @@ function philosophy_button2($attributes, $content=''){
 	return sprintf('<a target="_blank" class="btn btn--%s full-width" href="%s">%s</a>',
 		$button_attributes['type'],
 		$button_attributes['url'],
-		$content
+		do_shortcode( $content)
 	);
 }
 add_shortcode( 'button2','philosophy_button2' );
 
 
-
+function philosophy_uppercase($attributes, $content=''){
+	return strtoupper(do_shortcode( $content));
+}
+add_shortcode( 'uc', 'philosophy_uppercase' );
