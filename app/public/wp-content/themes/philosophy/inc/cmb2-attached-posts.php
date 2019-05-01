@@ -20,6 +20,7 @@ function cmb2_attached_posts_field_metaboxes_example() {
 		$post_id = empty($_REQUEST['post_ID']) ? $_REQUEST['post'] : $_REQUEST['post_ID'];
 	}
 
+
 	$example_meta = new_cmb2_box( array(
 		'id'           => 'cmb2_attached_posts_field',
 		'title'        => __( 'Attached Posts', 'philosophy' ),

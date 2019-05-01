@@ -104,6 +104,12 @@ function philosophy_register_required_plugins() {
 			'slug'      => 'custom-post-type-ui',
 			'required'  => false,
 		),
+        // Shortcake (Shortcode UI)
+		array(
+			'name'      => 'Shortcake (Shortcode UI)',
+			'slug'      => 'shortcode-ui',
+			'required'  => false,
+		),
 		
 	);
 
