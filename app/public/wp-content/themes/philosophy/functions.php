@@ -4,6 +4,8 @@ require_once get_theme_file_path( "/inc/tgm.php" );
 require_once get_theme_file_path( "/inc/cmb2-mb.php" );
 require_once get_theme_file_path( "/inc/cmb2-attached-posts.php" );
 require_once get_theme_file_path( "/lib/attachments.php" );
+require_once get_theme_file_path( "/lib/csf/cs-framework.php" );
+
 
 if ( ! isset( $content_width ) ) $content_width = 960;
 
