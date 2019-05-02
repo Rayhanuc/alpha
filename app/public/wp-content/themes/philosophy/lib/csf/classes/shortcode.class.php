@@ -76,10 +76,10 @@ class CSFramework_Shortcode_Manager extends CSFramework_Abstract{
 
     global $post;
 
-    $post_type = ( isset( $post->post_type ) ) ? $post->post_type : '';
+    $post_type = ( isset( $post ) ) ? $post->post_type : '';
 
     if( ! in_array( $post_type, $this->exclude_post_types ) ) {
-      echo '<a href="#" class="button button-primary cs-shortcode" data-editor-id="'. $editor_id .'">'. esc_html__( 'Add Shortcode', 'cs-framework' ) .'</a>';
+      echo '<a href="#" class="button button-primary cs-shortcode" data-editor-id="'. $editor_id .'">'. __( 'Add Shortcode', CS_TEXTDOMAIN ) .'</a>';
     }
 
   }
@@ -87,9 +87,9 @@ class CSFramework_Shortcode_Manager extends CSFramework_Abstract{
   // shortcode dialog
   public function shortcode_dialog() {
   ?>
-    <div id="cs-shortcode-dialog" class="cs-dialog" title="<?php esc_html_e( 'Add Shortcode', 'cs-framework' ); ?>">
+    <div id="cs-shortcode-dialog" class="cs-dialog" title="<?php _e( 'Add Shortcode', CS_TEXTDOMAIN ); ?>">
       <div class="cs-dialog-header">
-        <select class="<?php echo ( is_rtl() ) ? 'chosen-rtl ' : ''; ?>cs-dialog-select" data-placeholder="<?php esc_html_e( 'Select a shortcode', 'cs-framework' ); ?>">
+        <select class="chosen <?php echo ( is_rtl() ) ? 'chosen-rtl' : ''; ?> cs-dialog-select" data-placeholder="<?php _e( 'Select a shortcode', CS_TEXTDOMAIN ); ?>">
           <option value=""></option>
           <?php
             foreach ( $this->options as $group ) {
@@ -105,7 +105,7 @@ class CSFramework_Shortcode_Manager extends CSFramework_Abstract{
       </div>
       <div class="cs-dialog-load"></div>
       <div class="cs-insert-button hidden">
-        <a href="#" class="button button-primary cs-dialog-insert"><?php esc_html_e( 'Insert Shortcode', 'cs-framework' ); ?></a>
+        <a href="#" class="button button-primary cs-dialog-insert"><?php _e( 'Insert Shortcode', CS_TEXTDOMAIN ); ?></a>
       </div>
     </div>
   <?php
@@ -114,10 +114,9 @@ class CSFramework_Shortcode_Manager extends CSFramework_Abstract{
   // shortcode generator function for dialog
   public function shortcode_generator() {
 
-    $request = cs_get_var( 'shortcode' );
+    if( ! isset( $_REQUEST['shortcode'] ) ) { die(); }
 
-    if( empty( $request ) ) { die(); }
-
+    $request   = $_REQUEST['shortcode'];
     $shortcode = $this->shortcodes[$request];
 
     if( isset( $shortcode['fields'] ) ) {
@@ -127,7 +126,6 @@ class CSFramework_Shortcode_Manager extends CSFramework_Abstract{
         if( isset( $field['id'] ) ) {
           $field['attributes'] = ( isset( $field['attributes'] ) ) ? wp_parse_args( array( 'data-atts' => $field['id'] ), $field['attributes'] ) : array( 'data-atts' => $field['id'] );
         }
-
         $field_default = ( isset( $field['default'] ) ) ? $field['default'] : '';
 
         if( in_array( $field['type'], array('image_select', 'checkbox') ) && isset( $field['options'] ) ) {

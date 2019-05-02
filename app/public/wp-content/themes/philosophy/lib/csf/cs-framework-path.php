@@ -7,9 +7,10 @@
  * @version 1.0.0
  *
  */
-defined( 'CS_VERSION' )    or  define( 'CS_VERSION',    '1.0.2' );
-defined( 'CS_OPTION' )     or  define( 'CS_OPTION',     '_cs_options' );
-defined( 'CS_CUSTOMIZE' )  or  define( 'CS_CUSTOMIZE',  '_cs_customize_options' );
+defined( 'CS_VERSION' )     or  define( 'CS_VERSION',     '1.0.0' );
+defined( 'CS_TEXTDOMAIN' )  or  define( 'CS_TEXTDOMAIN',  'cs-framework' );
+defined( 'CS_OPTION' )      or  define( 'CS_OPTION',      '_cs_options' );
+defined( 'CS_CUSTOMIZE' )   or  define( 'CS_CUSTOMIZE',   '_cs_customize_options' );
 
 /**
  *
@@ -22,14 +23,30 @@ defined( 'CS_CUSTOMIZE' )  or  define( 'CS_CUSTOMIZE',  '_cs_customize_options' 
 if( ! function_exists( 'cs_get_path_locate' ) ) {
   function cs_get_path_locate() {
 
-    $dirname        = wp_normalize_path( dirname( __FILE__ ) );
-    $plugin_dir     = wp_normalize_path( WP_PLUGIN_DIR );
-    $located_plugin = ( preg_match( '#'. preg_replace( '/[^A-Za-z]/', '', $plugin_dir ) .'#', preg_replace( '/[^A-Za-z]/', '', $dirname ) ) ) ? true : false;
-    $directory      = ( $located_plugin ) ? $plugin_dir : get_template_directory();
-    $directory_uri  = ( $located_plugin ) ? WP_PLUGIN_URL : get_template_directory_uri();
-    $basename       = str_replace( wp_normalize_path( $directory ), '', $dirname );
-    $dir            = $directory . $basename;
-    $uri            = $directory_uri . $basename;
+    if ( ! function_exists( 'get_plugins' ) || ! function_exists( 'is_plugin_active' ) ) {
+      include_once ABSPATH .'wp-admin/includes/plugin.php';
+    }
+
+    foreach ( get_plugins() as $key => $value ) {
+      if ( strpos( $key, 'cs-framework.php' ) !== false ) {
+        if( is_plugin_active( $key ) ) {
+          $basename = '/'. str_replace( '/cs-framework.php', '', $key );
+          $dir      = WP_PLUGIN_DIR . $basename;
+          $uri      = WP_PLUGIN_URL . $basename;
+        }
+      }
+    }
+
+    if ( ! isset( $basename ) ) {
+      $dirname        = wp_normalize_path( dirname( __FILE__ ) );
+      $plugin_dir     = wp_normalize_path( WP_PLUGIN_DIR );
+      $located_plugin = ( preg_match( '#'. $plugin_dir .'#', $dirname ) ) ? true : false;
+      $directory      = ( $located_plugin ) ? $plugin_dir : get_template_directory();
+      $directory_uri  = ( $located_plugin ) ? WP_PLUGIN_URL : get_template_directory_uri();
+      $basename       = str_replace( wp_normalize_path( $directory ), '', $dirname );
+      $dir            = $directory . $basename;
+      $uri            = $directory_uri . $basename;
+    }
 
     return apply_filters( 'cs_get_path_locate', array(
       'basename' => wp_normalize_path( $basename ),
@@ -68,7 +85,7 @@ if( ! function_exists( 'cs_locate_template' ) ) {
 
     $located      = '';
     $override     = apply_filters( 'cs_framework_override', 'cs-framework-override' );
-    $dir_plugin   = wp_normalize_path( WP_PLUGIN_DIR );
+    $dir_plugin   = WP_PLUGIN_DIR;
     $dir_theme    = get_template_directory();
     $dir_child    = get_stylesheet_directory();
     $dir_override = '/'. $override .'/'. $template_name;
@@ -181,7 +198,7 @@ if ( ! function_exists( 'cs_get_all_option' ) ) {
 
 /**
  *
- * Multi language option
+ * Multi language value
  *
  * @since 1.0.0
  * @version 1.0.0
@@ -191,32 +208,6 @@ if ( ! function_exists( 'cs_get_multilang_option' ) ) {
   function cs_get_multilang_option( $option_name = '', $default = '' ) {
 
     $value     = cs_get_option( $option_name, $default );
-    $languages = cs_language_defaults();
-    $default   = $languages['default'];
-    $current   = $languages['current'];
-
-    if ( is_array( $value ) && is_array( $languages ) && isset( $value[$current] ) ) {
-      return  $value[$current];
-    } else if ( $default != $current ) {
-      return  '';
-    }
-
-    return $value;
-
-  }
-}
-
-/**
- *
- * Multi language value
- *
- * @since 1.0.0
- * @version 1.0.0
- *
- */
-if ( ! function_exists( 'cs_get_multilang_value' ) ) {
-  function cs_get_multilang_value( $value = '', $default = '' ) {
-
     $languages = cs_language_defaults();
     $default   = $languages['default'];
     $current   = $languages['current'];
@@ -341,36 +332,103 @@ if ( ! function_exists( 'cs_is_polylang_activated' ) ) {
  */
 if ( ! function_exists( 'cs_language_defaults' ) ) {
   function cs_language_defaults() {
+
     $multilang = array();
+
     if( cs_is_wpml_activated() || cs_is_qtranslate_activated() || cs_is_polylang_activated() ) {
+
       if( cs_is_wpml_activated() ) {
+
         global $sitepress;
         $multilang['default']   = $sitepress->get_default_language();
         $multilang['current']   = $sitepress->get_current_language();
         $multilang['languages'] = $sitepress->get_active_languages();
+
       } else if( cs_is_polylang_activated() ) {
+
         global $polylang;
         $current    = pll_current_language();
         $default    = pll_default_language();
         $current    = ( empty( $current ) ) ? $default : $current;
         $poly_langs = $polylang->model->get_languages_list();
         $languages  = array();
+
         foreach ( $poly_langs as $p_lang ) {
           $languages[$p_lang->slug] = $p_lang->slug;
         }
+
         $multilang['default']   = $default;
         $multilang['current']   = $current;
         $multilang['languages'] = $languages;
+
       } else if( cs_is_qtranslate_activated() ) {
+
         global $q_config;
         $multilang['default']   = $q_config['default_language'];
         $multilang['current']   = $q_config['language'];
         $multilang['languages'] = array_flip( qtrans_getSortedLanguages() );
+
       }
+
     }
+
     $multilang = apply_filters( 'cs_language_defaults', $multilang );
+
     return ( ! empty( $multilang ) ) ? $multilang : false;
+
   }
+}
+
+/**
+ *
+ * Get locate for load textdomain
+ *
+ * @since 1.0.0
+ * @version 1.0.0
+ *
+ */
+function cs_get_locale() {
+
+  global $locale, $wp_local_package;
+
+  if ( isset( $locale ) ) {
+    return apply_filters( 'locale', $locale );
+  }
+
+  if ( isset( $wp_local_package ) ) {
+    $locale = $wp_local_package;
+  }
+
+  if ( defined( 'WPLANG' ) ) {
+    $locale = WPLANG;
+  }
+
+  if ( is_multisite() ) {
+
+    if ( defined( 'WP_INSTALLING' ) || ( false === $ms_locale = get_option( 'WPLANG' ) ) ) {
+      $ms_locale = get_site_option( 'WPLANG' );
+    }
+
+    if ( $ms_locale !== false ) {
+      $locale = $ms_locale;
+    }
+
+  } else {
+
+    $db_locale = get_option( 'WPLANG' );
+
+    if ( $db_locale !== false ) {
+      $locale = $db_locale;
+    }
+
+  }
+
+  if ( empty( $locale ) ) {
+    $locale = 'en_US';
+  }
+
+  return apply_filters( 'locale', $locale );
+
 }
 
 /**
@@ -381,4 +439,4 @@ if ( ! function_exists( 'cs_language_defaults' ) ) {
  * @version 1.0.0
  *
  */
-load_textdomain( 'cs-framework', CS_DIR .'/languages/'. get_locale() .'.mo' );
+load_textdomain( CS_TEXTDOMAIN, CS_DIR . '/languages/'. cs_get_locale() .'.mo' );

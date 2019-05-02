@@ -122,39 +122,25 @@ abstract class CSFramework_Options extends CSFramework_Abstract {
       $value = $this->element_value();
 
       $out .= "<pre>";
-      $out .= "<strong>". esc_html__( 'CONFIG', 'cs-framework' ) .":</strong>";
+      $out .= "<strong>". __( 'CONFIG', CS_TEXTDOMAIN ) .":</strong>";
       $out .= "\n";
       ob_start();
       var_export( $this->field );
       $out .= htmlspecialchars( ob_get_clean() );
       $out .= "\n\n";
-      $out .= "<strong>". esc_html__( 'USAGE', 'cs-framework' ) .":</strong>";
+      $out .= "<strong>". __( 'USAGE', CS_TEXTDOMAIN ) .":</strong>";
       $out .= "\n";
       $out .= ( isset( $this->field['id'] ) ) ? "cs_get_option( '". $this->field['id'] ."' );" : '';
 
       if( ! empty( $value ) ) {
         $out .= "\n\n";
-        $out .= "<strong>". esc_html__( 'VALUE', 'cs-framework' ) .":</strong>";
+        $out .= "<strong>". __( 'VALUE', CS_TEXTDOMAIN ) .":</strong>";
         $out .= "\n";
         ob_start();
         var_export( $value );
         $out .= htmlspecialchars( ob_get_clean() );
       }
 
-      $out .= "</pre>";
-
-    }
-
-    if( ( isset( $this->field['debug_light'] ) && $this->field['debug_light'] === true ) || ( defined( 'CS_OPTIONS_DEBUG_LIGHT' ) && CS_OPTIONS_DEBUG_LIGHT ) ) {
-
-      $out .= "<pre>";
-      $out .= "<strong>". esc_html__( 'USAGE', 'cs-framework' ) .":</strong>";
-      $out .= "\n";
-      $out .= ( isset( $this->field['id'] ) ) ? "cs_get_option( '". $this->field['id'] ."' );" : '';
-      $out .= "\n";
-      $out .= "<strong>". esc_html__( 'ID', 'cs-framework' ) .":</strong>";
-      $out .= "\n";
-      $out .= ( isset( $this->field['id'] ) ) ? $this->field['id'] : '';
       $out .= "</pre>";
 
     }
@@ -224,7 +210,7 @@ abstract class CSFramework_Options extends CSFramework_Abstract {
 
       $out .= '<input type="hidden" name="'. $this->element_name( '[multilang]', true ) .'" value="true" />';
       $out .= '</fieldset>';
-      $out .= '<p class="cs-text-desc">'. sprintf( esc_html__( 'You are editing language: ( %s )', 'cs-framework' ), '<strong>'. $this->multilang['current'] .'</strong>' ) .'</p>';
+      $out .= '<p class="cs-text-desc">'. sprintf( __( 'You are editing language: ( <strong>%s</strong> )', CS_TEXTDOMAIN ), $this->multilang['current'] ) .'</p>';
 
     }
 
@@ -291,30 +277,11 @@ abstract class CSFramework_Options extends CSFramework_Abstract {
 
       break;
 
-      case 'menus':
-      case 'menu':
+      case 'custom':
+      case 'callback':
 
-        $menus = wp_get_nav_menus( $query_args );
-
-        if ( ! is_wp_error( $menus ) && ! empty( $menus ) ) {
-          foreach ( $menus as $menu ) {
-            $options[$menu->term_id] = $menu->name;
-          }
-        }
-
-      break;
-
-      case 'post_types':
-      case 'post_type':
-
-        $post_types = get_post_types( array(
-          'show_in_nav_menus' => true
-        ) );
-
-        if ( ! is_wp_error( $post_types ) && ! empty( $post_types ) ) {
-          foreach ( $post_types as $post_type ) {
-            $options[$post_type] = ucfirst($post_type);
-          }
+        if( is_callable( $query_args['function'] ) ) {
+          $options = call_user_func( $query_args['function'], $query_args['args'] );
         }
 
       break;

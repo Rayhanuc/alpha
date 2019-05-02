@@ -22,18 +22,15 @@ class CSFramework_Option_background extends CSFramework_Options {
       'repeat'      => '',
       'position'    => '',
       'attachment'  => '',
-      'size'        => '',
       'color'       => '',
     );
 
-    $this->value  = wp_parse_args( $this->element_value(), $value_defaults );
+    $this->value    = wp_parse_args( $this->element_value(), $value_defaults );
 
-    if( isset( $this->field['settings'] ) ) { extract( $this->field['settings'] ); }
-
-    $upload_type  = ( isset( $upload_type  ) ) ? $upload_type  : 'image';
-    $button_title = ( isset( $button_title ) ) ? $button_title : esc_html__( 'Upload', 'cs-framework' );
-    $frame_title  = ( isset( $frame_title  ) ) ? $frame_title  : esc_html__( 'Upload', 'cs-framework' );
-    $insert_title = ( isset( $insert_title ) ) ? $insert_title : esc_html__( 'Use Image', 'cs-framework' );
+    $upload_type    = ( isset( $upload_type  ) ) ? $upload_type  : 'image';
+    $button_title   = ( isset( $button_title ) ) ? $button_title : __( 'Upload', CS_TEXTDOMAIN );
+    $frame_title    = ( isset( $frame_title  ) ) ? $frame_title  : __( 'Upload', CS_TEXTDOMAIN );
+    $insert_title   = ( isset( $insert_title ) ) ? $insert_title : __( 'Use Image', CS_TEXTDOMAIN );
 
     echo '<div class="cs-field-upload">';
     echo '<input type="text" name="'. $this->element_name( '[image]' ) .'" value="'. $this->value['image'] .'"'. $this->element_class() . $this->element_attributes() .'/>';
@@ -90,22 +87,6 @@ class CSFramework_Option_background extends CSFramework_Options {
           'data-atts'     => 'attachment',
         ),
         'value'           => $this->value['attachment']
-    ) );
-    echo cs_add_element( array(
-        'pseudo'          => true,
-        'type'            => 'select',
-        'name'            => $this->element_name( '[size]' ),
-        'options'         => array(
-          ''              => 'size',
-          'cover'         => 'cover',
-          'contain'       => 'contain',
-          'inherit'       => 'inherit',
-          'initial'       => 'initial',
-        ),
-        'attributes'      => array(
-          'data-atts'     => 'size',
-        ),
-        'value'           => $this->value['size']
     ) );
     echo cs_add_element( array(
         'pseudo'          => true,

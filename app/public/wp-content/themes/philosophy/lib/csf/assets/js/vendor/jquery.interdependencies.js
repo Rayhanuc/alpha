@@ -162,7 +162,7 @@
            * @version 1.0.0
            *
            */
-          if(condition == "==" || condition == "OR") {
+          if(condition == "==") {
             return this.checkBoolean(val1) == this.checkBoolean(val2);
           } else if(condition == "!=") {
             return this.checkBoolean(val1) != this.checkBoolean(val2);
@@ -278,26 +278,18 @@
          */
         getControlValue : function(context, control) {
 
-          /**
-           *
-           * Codestar Framework
-           * Added multiple checkbox value control
-           *
-           * @since 1.0.0
-           * @version 1.0.0
-           *
-           */
-          if( ( control.attr("type") == "radio" || control.attr("type") == "checkbox" ) && control.size() > 1 ) {
-            return control.filter(":checked").val();
-          }
+            // Handle radio button group
+            if(control.attr("type") == "radio" && control.size() > 1) {
+                var value = control.filter(":checked").val();
+                return value;
+            }
 
-          // Handle individual checkboxes & radio
-          if ( control.attr("type") == "checkbox" || control.attr("type") == "radio" ) {
-            return control.is(":checked");
-          }
+            // Handle individual checkboxes & radio
+            if (control.attr("type") == "checkbox" || control.attr("type") == "radio") {
+                return control.is(":checked");
+            }
 
-          return control.val();
-
+            return control.val();
         },
 
         /**
@@ -393,9 +385,7 @@
 
                 // Evaluate all child rules
                 $(this.rules).each(function() {
-                  if(this.condition !== "OR"){
                     this.applyRule(context, cfg);
-                  }
                 });
 
             } else {
@@ -413,11 +403,7 @@
 
                 // Supress all child rules
                 $(this.rules).each(function() {
-                  if(this.condition !== "OR"){
                     this.applyRule(context, cfg, false);
-                  } else {
-                    this.applyRule(context, cfg);
-                  }
                 });
             }
         }

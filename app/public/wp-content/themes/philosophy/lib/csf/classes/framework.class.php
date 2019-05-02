@@ -75,6 +75,7 @@ class CSFramework extends CSFramework_Abstract {
       $this->get_option = get_option( CS_OPTION );
       $this->addAction( 'admin_init', 'settings_api' );
       $this->addAction( 'admin_menu', 'admin_menu' );
+      $this->addAction( 'wp_ajax_cs-export-options', 'export' );
 
     }
 
@@ -124,13 +125,17 @@ class CSFramework extends CSFramework_Abstract {
 
     $defaults = array();
 
-    register_setting( $this->unique, $this->unique, array( &$this,'validate_save' ) );
-
     foreach( $this->sections as $section ) {
+
+      register_setting( $this->unique .'_group', $this->unique, array( &$this,'validate_save' ) );
 
       if( isset( $section['fields'] ) ) {
 
+        add_settings_section( $section['name'] .'_section', $section['title'], '', $section['name'] .'_section_group' );
+
         foreach( $section['fields'] as $field_key => $field ) {
+
+          add_settings_field( $field_key .'_field', '', array( &$this, 'field_callback' ), $section['name'] .'_section_group', $section['name'] .'_section', $field );
 
           // set default option if isset
           if( isset( $field['default'] ) ) {
@@ -157,7 +162,7 @@ class CSFramework extends CSFramework_Abstract {
   public function validate_save( $request ) {
 
     $add_errors = array();
-    $section_id = cs_get_var( 'cs_section_id' );
+    $section_id = ( isset( $_POST['cs_section_id'] ) ) ? $_POST['cs_section_id'] : '';
 
     // ignore nonce requests
     if( isset( $request['_nonce'] ) ) { unset( $request['_nonce'] ); }
@@ -168,12 +173,12 @@ class CSFramework extends CSFramework_Abstract {
       if( is_array( $decode_string ) ) {
         return $decode_string;
       }
-      $add_errors[] = $this->add_settings_error( esc_html__( 'Success. Imported backup options.', 'cs-framework' ), 'updated' );
+      $add_errors[] = $this->add_settings_error( __( 'Success. Imported backup options.', CS_TEXTDOMAIN ), 'updated' );
     }
 
     // reset all options
     if ( isset( $request['resetall'] ) ) {
-      $add_errors[] = $this->add_settings_error( esc_html__( 'Default options restored.', 'cs-framework' ), 'updated' );
+      $add_errors[] = $this->add_settings_error( __( 'Default options restored.', CS_TEXTDOMAIN ), 'updated' );
       return;
     }
 
@@ -192,7 +197,7 @@ class CSFramework extends CSFramework_Abstract {
           }
         }
       }
-      $add_errors[] = $this->add_settings_error( esc_html__( 'Default options restored for only this section.', 'cs-framework' ), 'updated' );
+      $add_errors[] = $this->add_settings_error( __( 'Default options restored for only this section.', CS_TEXTDOMAIN ), 'updated' );
     }
 
     // option sanitize and validate
@@ -239,8 +244,6 @@ class CSFramework extends CSFramework_Abstract {
 
     $request = apply_filters( 'cs_validate_save', $request );
 
-    do_action( 'cs_validate_save_after', $request );
-
     // set transient
     $transient_time = ( cs_language_defaults() !== false ) ? 30 : 10;
     set_transient( 'cs-framework-transient', array( 'errors' => $add_errors, 'section_id' => $section_id ), $transient_time );
@@ -254,6 +257,46 @@ class CSFramework extends CSFramework_Abstract {
     echo cs_add_element( $field, $value, $this->unique );
   }
 
+  // settings sections
+  public function do_settings_sections( $page ) {
+
+    global $wp_settings_sections, $wp_settings_fields;
+
+    if ( ! isset( $wp_settings_sections[$page] ) ){
+      return;
+    }
+
+    foreach ( $wp_settings_sections[$page] as $section ) {
+
+      if ( $section['callback'] ){
+        call_user_func( $section['callback'], $section );
+      }
+
+      if ( ! isset( $wp_settings_fields ) || !isset( $wp_settings_fields[$page] ) || !isset( $wp_settings_fields[$page][$section['id']] ) ){
+        continue;
+      }
+
+      $this->do_settings_fields( $page, $section['id'] );
+
+    }
+
+  }
+
+  // settings fields
+  public function do_settings_fields( $page, $section ) {
+
+    global $wp_settings_fields;
+
+    if ( ! isset( $wp_settings_fields[$page][$section] ) ) {
+      return;
+    }
+
+    foreach ( $wp_settings_fields[$page][$section] as $field ) {
+      call_user_func($field['callback'], $field['args']);
+    }
+
+  }
+
   public function add_settings_error( $message, $type = 'error', $id = 'global' ) {
     return array( 'setting' => 'cs-errors', 'code' => $id, 'message' => $message, 'type' => $type );
   }
@@ -261,34 +304,22 @@ class CSFramework extends CSFramework_Abstract {
   // adding option page
   public function admin_menu() {
 
-    $defaults = array(
-      'menu_type'       => '',
+    $defaults_menu_args = array(
       'menu_parent'     => '',
       'menu_title'      => '',
+      'menu_type'       => '',
       'menu_slug'       => '',
+      'menu_icon'       => '',
       'menu_capability' => 'manage_options',
-      'menu_icon'       => null,
       'menu_position'   => null,
     );
 
-    $args = wp_parse_args( $this->settings, $defaults );
+    $args = wp_parse_args( $this->settings, $defaults_menu_args );
 
-    extract( $args );
-
-    if( $menu_type === 'submenu' ) {
-      add_submenu_page( $menu_parent, $menu_title, $menu_title, $menu_capability, $menu_slug, array( &$this, 'admin_page' ) );
-    } else if( $menu_type === 'management' ) {
-      add_management_page( $menu_title, $menu_title, $menu_capability, $menu_slug, array( &$this, 'admin_page' ), $menu_icon, $menu_position );
-    } else if( $menu_type === 'dashboard' ) {
-      add_dashboard_page( $menu_title, $menu_title, $menu_capability, $menu_slug, array( &$this, 'admin_page' ), $menu_icon, $menu_position );
-    } else if( $menu_type === 'options' ) {
-      add_options_page( $menu_title, $menu_title, $menu_capability, $menu_slug, array( &$this, 'admin_page' ), $menu_icon, $menu_position );
-    } else if( $menu_type === 'plugins' ) {
-      add_plugins_page( $menu_title, $menu_title, $menu_capability, $menu_slug, array( &$this, 'admin_page' ), $menu_icon, $menu_position );
-    } else if( $menu_type === 'theme' ) {
-      add_theme_page( $menu_title, $menu_title, $menu_capability, $menu_slug, array( &$this, 'admin_page' ), $menu_icon, $menu_position );
+    if( $args['menu_type'] == 'add_submenu_page' ) {
+      call_user_func( $args['menu_type'], $args['menu_parent'], $args['menu_title'], $args['menu_title'], $args['menu_capability'], $args['menu_slug'], array( &$this, 'admin_page' ) );
     } else {
-      add_menu_page( $menu_title, $menu_title, $menu_capability, $menu_slug, array( &$this, 'admin_page' ), $menu_icon, $menu_position );
+      call_user_func( $args['menu_type'], $args['menu_title'], $args['menu_title'], $args['menu_capability'], $args['menu_slug'], array( &$this, 'admin_page' ), $args['menu_icon'], $args['menu_position'] );
     }
 
   }
@@ -299,7 +330,7 @@ class CSFramework extends CSFramework_Abstract {
     $transient  = get_transient( 'cs-framework-transient' );
     $has_nav    = ( count( $this->options ) <= 1 ) ? ' cs-show-all' : '';
     $section_id = ( ! empty( $transient['section_id'] ) ) ? $transient['section_id'] : $this->sections[0]['name'];
-    $section_id = cs_get_var( 'cs-section', $section_id );
+    $section_id = ( isset( $_GET['cs-section'] ) ) ? esc_attr( $_GET['cs-section'] ) : $section_id;
 
     echo '<div class="cs-framework cs-option-framework">';
 
@@ -324,23 +355,16 @@ class CSFramework extends CSFramework_Abstract {
 
       }
 
-      settings_fields( $this->unique );
+      settings_fields( $this->unique. '_group' );
 
       echo '<header class="cs-header">';
-      echo '<h1>'. $this->settings['framework_title'] .'</h1>';
+      echo '<h1>Codestar Framework <small>by Codestar</small></h1>';
       echo '<fieldset>';
-
-      echo ( $this->settings['ajax_save'] ) ? '<span id="cs-save-ajax">'. esc_html__( 'Settings saved.', 'cs-framework' ) .'</span>' : '';
-
-      submit_button( esc_html__( 'Save', 'cs-framework' ), 'primary cs-save', 'save', false, array( 'data-save' => esc_html__( 'Saving...', 'cs-framework' ) ) );
-      submit_button( esc_html__( 'Restore', 'cs-framework' ), 'secondary cs-restore cs-reset-confirm', $this->unique .'[reset]', false );
-
-      if( $this->settings['show_reset_all'] ) {
-        submit_button( esc_html__( 'Reset All Options', 'cs-framework' ), 'secondary cs-restore cs-warning-primary cs-reset-confirm', $this->unique .'[resetall]', false );
-      }
-
+      echo ( $this->settings['ajax_save'] === true ) ? '<span id="cs-save-ajax">'. __( 'Settings saved.', CS_TEXTDOMAIN ) .'</span>' : '';
+      submit_button( __( 'Save', CS_TEXTDOMAIN ), 'primary', 'save', false, array( 'data-ajax' => $this->settings['ajax_save'], 'data-save' => __( 'Saving...', CS_TEXTDOMAIN ) ) );
+      submit_button( __( 'Restore', CS_TEXTDOMAIN ), 'secondary cs-restore cs-reset-confirm', $this->unique .'[reset]', false );
       echo '</fieldset>';
-      echo ( empty( $has_nav ) ) ? '<a href="#" class="cs-expand-all"><i class="fa fa-eye-slash"></i> '. esc_html__( 'show all options', 'cs-framework' ) .'</a>' : '';
+      echo ( empty( $has_nav ) ) ? '<a href="#" class="cs-expand-all"><i class="fa fa-eye-slash"></i> '. __( 'show all options', CS_TEXTDOMAIN ) .'</a>' : '';
       echo '<div class="clear"></div>';
       echo '</header>'; // end .cs-header
 
@@ -408,11 +432,7 @@ class CSFramework extends CSFramework_Abstract {
               $active_content = ( $section_id == $section['name'] ) ? ' style="display: block;"' : '';
               echo '<div id="cs-tab-'. $section['name'] .'" class="cs-section"'. $active_content .'>';
               echo ( isset( $section['title'] ) && empty( $has_nav ) ) ? '<div class="cs-section-title"><h3>'. $section['title'] .'</h3></div>' : '';
-
-              foreach( $section['fields'] as $field ) {
-                $this->field_callback( $field );
-              }
-
+              $this->do_settings_sections( $section['name'] . '_section_group' );
               echo '</div>';
 
             }
@@ -430,9 +450,7 @@ class CSFramework extends CSFramework_Abstract {
       echo '</div>'; // end .cs-body
 
       echo '<footer class="cs-footer">';
-      echo '<div class="cs-block-left">Powered by Codestar Framework.</div>';
-      echo '<div class="cs-block-right">Version '. CS_VERSION .'</div>';
-      echo '<div class="clear"></div>';
+      echo 'Codestar Framework <strong>v'. CS_VERSION .' by Codestar</strong>';
       echo '</footer>'; // end .cs-footer
 
       echo '</form>'; // end form
@@ -440,6 +458,21 @@ class CSFramework extends CSFramework_Abstract {
       echo '<div class="clear"></div>';
 
     echo '</div>'; // end .cs-framework
+
+  }
+
+  // export options
+  public function export() {
+
+    header('Content-Type: plain/text');
+    header('Content-disposition: attachment; filename=backup-options-'. gmdate( 'd-m-Y' ) .'.txt');
+    header('Content-Transfer-Encoding: binary');
+    header('Pragma: no-cache');
+    header('Expires: 0');
+
+    echo cs_encode_string( get_option( CS_OPTION ) );
+
+    die();
 
   }
 

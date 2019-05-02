@@ -4,13 +4,11 @@
 // FRAMEWORK SETTINGS
 // -----------------------------------------------------------------------------------------------
 // ===============================================================================================
-$settings           = array(
-  'menu_title'      => 'Framework',
-  'menu_type'       => 'menu', // menu, submenu, options, theme, etc.
-  'menu_slug'       => 'cs-framework',
-  'ajax_save'       => false,
-  'show_reset_all'  => false,
-  'framework_title' => 'Codestar Framework <small>by Codestar</small>',
+$settings      = array(
+  'menu_title' => 'Framework',
+  'menu_type'  => 'add_menu_page',
+  'menu_slug'  => 'cs-framework',
+  'ajax_save'  => false,
 );
 
 // ===============================================================================================
@@ -774,14 +772,6 @@ $options[]   = array(
           'title'          => 'Select with Categories',
           'options'        => 'categories',
           'default_option' => 'Select a tag'
-        ),
-
-        array(
-          'id'             => 'unique_select_10_1',
-          'type'           => 'select',
-          'title'          => 'Select with Menus',
-          'options'        => 'menus',
-          'default_option' => 'Select a menu'
         ),
 
         array(
@@ -2055,7 +2045,7 @@ $options[]           = array(
     array(
       'id'           => 'dep_6',
       'type'         => 'image_select',
-      'title'        => 'If check <u>Blue box</u> (checkbox)',
+      'title'        => 'If check <u>Blue box</u>',
       'options'      => array(
         'green'      => 'http://codestarframework.com/assets/images/placeholder/100x80-2ecc71.gif',
         'red'        => 'http://codestarframework.com/assets/images/placeholder/100x80-e74c3c.gif',
@@ -2078,38 +2068,9 @@ $options[]           = array(
 
     // ------------------------------------
     array(
-      'id'           => 'dep_6_alt',
-      'type'         => 'image_select',
-      'title'        => 'If check <u>Green box or Blue box</u> (checkbox)',
-      'options'      => array(
-        'green'      => 'http://codestarframework.com/assets/images/placeholder/100x80-2ecc71.gif',
-        'red'        => 'http://codestarframework.com/assets/images/placeholder/100x80-e74c3c.gif',
-        'yellow'     => 'http://codestarframework.com/assets/images/placeholder/100x80-ffbc00.gif',
-        'blue'       => 'http://codestarframework.com/assets/images/placeholder/100x80-3498db.gif',
-        'gray'       => 'http://codestarframework.com/assets/images/placeholder/100x80-555555.gif',
-      ),
-      'info'         => 'Multipel Image select field input="checkbox" model. in checkbox model unselected available.',
-      'default'      => 'gray',
-      'attributes'   => array(
-        'data-depend-id' => 'dep_6_alt',
-      ),
-    ),
-
-    array(
-      'id'           => 'dummy_6_alt',
-      'type'         => 'notice',
-      'class'        => 'success',
-      'content'      => 'Green or Blue box selected!',
-      'dependency'   => array( 'dep_6_alt', 'any', 'green,blue' ),
-      //'dependency' => array( 'data-depend-id', 'any', 'value,value' ),
-    ),
-    // ------------------------------------
-
-    // ------------------------------------
-    array(
       'id'           => 'dep_7',
       'type'         => 'image_select',
-      'title'        => 'If check <u>Green box</u> (radio)',
+      'title'        => 'If check <u>Green box</u>',
       'options'      => array(
         'green'      => 'http://codestarframework.com/assets/images/placeholder/100x80-2ecc71.gif',
         'red'        => 'http://codestarframework.com/assets/images/placeholder/100x80-e74c3c.gif',
@@ -2136,7 +2097,7 @@ $options[]           = array(
     array(
       'id'           => 'dep_7_alt',
       'type'         => 'image_select',
-      'title'        => 'If check <u>Green box or Blue box</u> (radio)',
+      'title'        => 'If check <u>Green box or Blue box</u>',
       'options'      => array(
         'green'      => 'http://codestarframework.com/assets/images/placeholder/100x80-2ecc71.gif',
         'red'        => 'http://codestarframework.com/assets/images/placeholder/100x80-e74c3c.gif',
@@ -2376,6 +2337,33 @@ $options[] = array(
   'name'   => 'seperator_3',
   'title'  => 'Others',
   'icon'   => 'fa fa-gift'
+);
+
+// ------------------------------
+// donate                       -
+// ------------------------------
+$options[]   = array(
+  'name'     => 'donate_section',
+  'title'    => 'Donate',
+  'icon'     => 'fa fa-heart',
+  'fields'   => array(
+
+    array(
+      'type'    => 'heading',
+      'content' => 'You Guys!'
+    ),
+
+    array(
+      'type'    => 'content',
+      'content' => 'If you want to see more functions and features for this framework, you can buy me a coffee. I need a lot of it when I am creating new stuff for you. Thank you in advance.',
+    ),
+
+    array(
+      'type'    => 'content',
+      'content' => '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=32VSHY265GXY2" target="_blank"><img src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Donate" /></a>',
+    ),
+
+  )
 );
 
 // ------------------------------
