@@ -184,6 +184,28 @@ function philosophy_upload_metabox() {
 						'edit_title'  => __('Edit Gallery', 'philosophy'),
 						'clear_title' => __('Remove Gallery', 'philosophy'),
 					),
+
+
+					array(
+						'id'        => 'fieldset_1',
+						'type'      => 'fieldset',
+						'title'     => 'Fieldset Field',
+						'fields'    => array(
+
+							array(
+								'id'    => 'fieldset_1_text',
+								'type'  => 'text',
+								'title' => 'Text Field',
+							),
+
+							array(
+								'id'    => 'fieldset_1_textarea',
+								'type'  => 'textarea',
+								'title' => 'Textarea Field',
+							),
+
+						),
+					),
 				)
 			)
 		),

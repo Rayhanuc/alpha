@@ -37,6 +37,14 @@ get_header();
 
 
                 $philosophy_page_meta = get_post_meta(get_the_ID(),'page-upload-metabox',true);
+                echo "<pre>";
+                print_r($philosophy_page_meta);
+                echo "</pre>";
+
+
+
+
+
                 echo $philosophy_page_meta['page-upload'];
                 echo '<br/>';
                 // echo $philosophy_page_meta['page-image'];
