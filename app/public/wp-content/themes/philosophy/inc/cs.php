@@ -176,6 +176,14 @@ function philosophy_upload_metabox() {
 						'title' => __('Upload Image', 'philosophy'),
 						'add_title' => __('Add an Image', 'philosophy'),
 					),
+					array(
+						'id'          => 'page-gallery',
+						'type'        => 'gallery',
+						'title'       => __('Upload Image', 'philosophy'),
+						'add_title'   => __('Add Images', 'philosophy'),
+						'edit_title'  => __('Edit Gallery', 'philosophy'),
+						'clear_title' => __('Remove Gallery', 'philosophy'),
+					),
 				)
 			)
 		),

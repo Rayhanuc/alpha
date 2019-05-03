@@ -42,6 +42,16 @@ get_header();
                 // echo $philosophy_page_meta['page-image'];
                 echo wp_get_attachment_image($philosophy_page_meta['page-image'],'medium');
                 echo wp_get_attachment_image_src($philosophy_page_meta['page-image'],'large')[0];
+
+                // echo $philosophy_page_meta['page-gallery'];
+
+                if ($philosophy_page_meta['page-gallery']) {
+                    $philosophy_gallery_ids = explode(",",$philosophy_page_meta['page-gallery']);
+                    foreach ($philosophy_gallery_ids as $philosophy_gallery_id) {
+                        echo wp_get_attachment_image($philosophy_gallery_id,'medium');
+                        echo "<br/>";
+                    }
+                }
                 ?>
 
 
