@@ -14,7 +14,27 @@ function philosophy_csf_metabox(){
 }
 add_action('init', 'philosophy_csf_metabox');
 
+
+
+
 function philosophy_page_metabox($options) {
+
+
+	$page_id = 0;
+	if (isset($_REQUEST['post']) || isset($_REQUEST['post_ID'])) {
+		$page_id = empty($_REQUEST['post_ID']) ? $_REQUEST['post'] : $_REQUEST['post_ID'];
+	}
+
+	$current_page_template = get_post_meta($page_id,'_wp_page_template',true);
+	echo $current_page_template;
+	/*if ('about.php'!= $current_page_template) {
+		return $options;
+	}*/
+
+	if (!in_array($current_page_template,array('about.php','contact.php'))) {
+		return $options;
+	}
+
 	$options[] = array(
 		'id' => 'page-metabox',
 		'title' => __('Page Meta Info', 'philosophy'),
@@ -123,3 +143,44 @@ function philosophy_page_metabox($options) {
 	return $options;
 }
 add_filter( 'cs_metabox_options', 'philosophy_page_metabox' );
+
+
+function philosophy_upload_metabox() {
+
+	$options[] = array(
+		'id' => 'page-upload-metabox',
+		'title' => __('Upload Files', 'philosophy'),
+		'post_type' => 'page',
+		'context' => 'normal',
+		'priority' => 'default',
+		'sections' => array(
+			array(
+				'name' => 'page-section1',
+				// 'title' => __('Upload Files','philosophy'),
+				'icon' => 'fa fa-image',
+				'fields' => array(
+					array(
+						'id' => 'page-upload',
+						'type' => 'upload',
+						'title' => __('Upload PDF', 'philosophy'),
+						'settings'      => array(
+							'upload_type'  => 'application/pdf',
+							'button_title' => __('Upload File','philosophy'),
+							'frame_title'  => __('Select an PDF','philosophy'),
+							'insert_title' => __('Use this PDF','philosophy'),
+						),					
+					),
+					array(
+						'id' => 'page-image',
+						'type' => 'image',
+						'title' => __('Upload Image', 'philosophy'),
+						'add_title' => __('Add an Image', 'philosophy'),
+					),
+				)
+			)
+		),
+
+	);
+	return $options;
+}
+add_filter( 'cs_metabox_options', 'philosophy_upload_metabox' );
