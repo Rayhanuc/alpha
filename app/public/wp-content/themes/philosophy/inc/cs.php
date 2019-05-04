@@ -185,7 +185,7 @@ function philosophy_upload_metabox() {
 						'clear_title' => __('Remove Gallery', 'philosophy'),
 					),
 
-
+					// Fieldset
 					array(
 						'id'        => 'fieldset_1',
 						'type'      => 'fieldset',
@@ -204,6 +204,30 @@ function philosophy_upload_metabox() {
 								'title' => 'Textarea Field',
 							),
 
+						),
+					),
+
+
+					// Group field
+					array(
+						'id'              => 'unique_option_901',
+						'type'            => 'group',
+						'title'           => 'Group Field',
+						'button_title'    => 'Add New',
+						'accordion_title' => 'Add New Field',
+						'fields'          => array(
+							array(
+								'id'    	=> 'featured_posts',
+								'type'  	=> 'select',
+								'title' 	=> __('Select a book','philosophy'),
+								'options'   => 'posts',
+								'query_args' => array(
+									'post_type' => 'book',
+									'post_per_page' => -1,
+									'orderby' => 'post_date',
+									'order' => 'DESC'
+								)
+							),
 						),
 					),
 				)
