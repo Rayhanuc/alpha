@@ -591,3 +591,18 @@ Stack trace:
 [04-May-2019 13:31:29 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in /app/public/wp-content/themes/philosophy/inc/cs.php on line 226
 [04-May-2019 13:47:46 UTC] PHP Parse error:  syntax error, unexpected ''orderby'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /app/public/wp-content/themes/philosophy/inc/cs.php on line 227
 [04-May-2019 14:49:37 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 347
+[04-May-2019 17:39:31 UTC] PHP Warning:  Illegal string offset 'cpt_type' in /app/public/wp-content/themes/philosophy/inc/cs.php on line 286
+[04-May-2019 17:39:31 UTC] PHP Notice:  Uninitialized string offset: 0 in /app/public/wp-content/themes/philosophy/inc/cs.php on line 286
+[04-May-2019 17:39:31 UTC] PHP Warning:  Illegal string offset 'cpt_type' in /app/public/wp-content/themes/philosophy/inc/cs.php on line 313
+[04-May-2019 17:39:31 UTC] PHP Notice:  Uninitialized string offset: 0 in /app/public/wp-content/themes/philosophy/inc/cs.php on line 313
+[04-May-2019 17:39:49 UTC] PHP Warning:  Illegal string offset 'cpt_type' in /app/public/wp-content/themes/philosophy/inc/cs.php on line 286
+[04-May-2019 17:39:49 UTC] PHP Notice:  Uninitialized string offset: 0 in /app/public/wp-content/themes/philosophy/inc/cs.php on line 286
+[04-May-2019 17:39:49 UTC] PHP Warning:  Illegal string offset 'cpt_type' in /app/public/wp-content/themes/philosophy/inc/cs.php on line 313
+[04-May-2019 17:39:49 UTC] PHP Notice:  Uninitialized string offset: 0 in /app/public/wp-content/themes/philosophy/inc/cs.php on line 313
+[04-May-2019 17:44:53 UTC] PHP Warning:  Illegal string offset 'cpt_type' in /app/public/wp-content/themes/philosophy/inc/cs.php on line 286
+[04-May-2019 17:44:53 UTC] PHP Notice:  Uninitialized string offset: 0 in /app/public/wp-content/themes/philosophy/inc/cs.php on line 286
+[04-May-2019 17:44:53 UTC] PHP Warning:  Illegal string offset 'cpt_type' in /app/public/wp-content/themes/philosophy/inc/cs.php on line 313
+[04-May-2019 17:44:53 UTC] PHP Notice:  Uninitialized string offset: 0 in /app/public/wp-content/themes/philosophy/inc/cs.php on line 313
+[05-May-2019 05:36:42 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 155
+[05-May-2019 05:36:42 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 347
+[05-May-2019 05:36:43 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 529
