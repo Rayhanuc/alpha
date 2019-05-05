@@ -5,7 +5,7 @@ require_once get_theme_file_path( "/inc/cmb2-mb.php" );
 require_once get_theme_file_path( "/inc/cmb2-attached-posts.php" );
 require_once get_theme_file_path( "/lib/attachments.php" );
 require_once get_theme_file_path( "/lib/csf/cs-framework.php" );
-require_once get_theme_file_path( "/inc/cs.php" );
+require_once get_theme_file_path( "/inc/codestar/cs.php" );
 
 define( 'CS_ACTIVE_LIGHT_THEME',  true  ); // default false
 
