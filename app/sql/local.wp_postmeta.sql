@@ -954,7 +954,7 @@ INSERT INTO `wp_postmeta` VALUES
 (1505,5,"_thumbnail_id","300"),
 (1506,5,"_wp_page_template","default"),
 (1507,5,"page-metabox","a:6:{s:12:\"page-heading\";s:12:\"Page Heading\";s:11:\"page-teaser\";s:11:\"Teaser Text\";s:10:\"is-favorit\";b:1;s:13:\"page-heading2\";s:14:\"Page Heading 2\";s:12:\"page-teaser2\";s:13:\"Teaser Text 2\";s:11:\"is-favorit2\";b:1;}"),
-(1508,360,"_edit_lock","1556860146:1"),
+(1508,360,"_edit_lock","1557073816:1"),
 (1509,360,"_edit_last","1"),
 (1510,360,"_wp_page_template","about.php"),
 (1511,360,"page-metabox","a:9:{s:12:\"page-heading\";s:16:\"New Page Heading\";s:11:\"page-teaser\";s:274:\"Nullam blandit nisi at dolor placerat convallis. Donec mattis sapien risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus commodo, justo in vestibulum accumsan, enim magna condimentum nisi, sodales aliquam justo risus et arcu.\";s:10:\"is-favorit\";b:1;s:16:\"is-favorit-extra\";s:1:\"1\";s:19:\"extra-language-data\";s:0:\"\";s:13:\"page-heading2\";s:14:\"Page Heading 2\";s:12:\"page-teaser2\";s:13:\"Teaser Text 2\";s:11:\"is-favorit2\";b:1;s:16:\"support-language\";b:0;}"),
@@ -967,4 +967,12 @@ INSERT INTO `wp_postmeta` VALUES
 (1518,364,"_thumbnail_id","293"),
 (1519,364,"page-custom-post-type","a:1:{s:8:\"cpt_type\";s:4:\"book\";}"),
 (1520,364,"page-custom-post-type-book","a:1:{s:16:\"option_book_text\";s:9:\"Book info\";}"),
-(1521,364,"page-custom-post-type-chapter","a:1:{s:19:\"option_chapter_text\";s:0:\"\";}");
+(1521,364,"page-custom-post-type-chapter","a:1:{s:19:\"option_chapter_text\";s:0:\"\";}"),
+(1522,360,"page-upload-metabox","a:5:{s:11:\"page-upload\";s:0:\"\";s:10:\"page-image\";s:3:\"297\";s:12:\"page-gallery\";s:27:\"288,284,299,291,289,285,292\";s:10:\"fieldset_1\";a:2:{s:15:\"fieldset_1_text\";s:7:\"FS Text\";s:19:\"fieldset_1_textarea\";s:11:\"FS TextArea\";}s:17:\"unique_option_901\";a:4:{i:1;a:1:{s:14:\"featured_posts\";s:3:\"264\";}i:2;a:1:{s:14:\"featured_posts\";s:3:\"263\";}i:3;a:1:{s:14:\"featured_posts\";s:3:\"261\";}i:4;a:1:{s:14:\"featured_posts\";s:3:\"260\";}}}"),
+(1523,360,"page-custom-post-type","a:1:{s:8:\"cpt_type\";s:4:\"book\";}"),
+(1524,360,"page-upload-metabox","a:5:{s:11:\"page-upload\";s:0:\"\";s:10:\"page-image\";s:3:\"297\";s:12:\"page-gallery\";s:27:\"288,284,299,291,289,285,292\";s:10:\"fieldset_1\";a:2:{s:15:\"fieldset_1_text\";s:7:\"FS Text\";s:19:\"fieldset_1_textarea\";s:11:\"FS TextArea\";}s:17:\"unique_option_901\";a:4:{i:1;a:1:{s:14:\"featured_posts\";s:3:\"264\";}i:2;a:1:{s:14:\"featured_posts\";s:3:\"263\";}i:3;a:1:{s:14:\"featured_posts\";s:3:\"261\";}i:4;a:1:{s:14:\"featured_posts\";s:3:\"260\";}}}"),
+(1525,360,"page-custom-post-type","a:1:{s:8:\"cpt_type\";s:4:\"book\";}"),
+(1526,360,"page-custom-post-type-book","a:1:{s:16:\"option_book_text\";s:0:\"\";}"),
+(1527,360,"page-upload-metabox","a:5:{s:11:\"page-upload\";s:0:\"\";s:10:\"page-image\";s:3:\"297\";s:12:\"page-gallery\";s:27:\"288,284,299,291,289,285,292\";s:10:\"fieldset_1\";a:2:{s:15:\"fieldset_1_text\";s:7:\"FS Text\";s:19:\"fieldset_1_textarea\";s:11:\"FS TextArea\";}s:17:\"unique_option_901\";a:4:{i:1;a:1:{s:14:\"featured_posts\";s:3:\"264\";}i:2;a:1:{s:14:\"featured_posts\";s:3:\"263\";}i:3;a:1:{s:14:\"featured_posts\";s:3:\"261\";}i:4;a:1:{s:14:\"featured_posts\";s:3:\"260\";}}}"),
+(1528,360,"page-custom-post-type","a:1:{s:8:\"cpt_type\";s:4:\"book\";}"),
+(1529,360,"page-custom-post-type-book","a:1:{s:16:\"option_book_text\";s:0:\"\";}");

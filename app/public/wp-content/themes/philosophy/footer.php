@@ -66,7 +66,13 @@
 
         </div> <!-- end row -->
 
-        <div class="row bottom tags-wrap">
+
+        <?php
+        $philosophy_display_tags = cs_get_option('footer_tag');
+        if ($philosophy_display_tags) :
+        ?>
+
+        <div class="row bottom tags-wrap"><!-- tag section start -->
             <div class="col-full tags">
 
                 <?php
@@ -91,7 +97,10 @@
 
             </div> <!-- end tags -->
         </div> <!-- end tags-wrap -->
-
+        
+        <?php
+            endif;
+        ?>
     </section> <!-- end s-extra -->
 
 
@@ -156,6 +165,7 @@
                     if (is_active_sidebar( "footer-right" )) {
                         dynamic_sidebar( "footer-right" );
                     }
+
                     ?>
 
                     <div class="subscribe-form">
@@ -170,6 +180,21 @@
                         </form>
                     </div>
 
+                    <?php
+                        $philosophy_social_facebook =cs_get_option('social_facebook');
+                        if ($philosophy_social_facebook) {
+                            echo "<a target='_blank' href='".esc_url($philosophy_social_facebook)."'><i class='fa fa-facebook'></i> </a>";
+                        }
+                        $philosophy_social_pinterest =cs_get_option('social_pinterest');
+                        if ($philosophy_social_pinterest) {
+                            echo "<a target='_blank' href='".esc_url($philosophy_social_pinterest)."'><i class='fa fa-pinterest'></i> </a>";
+                        }
+                        $philosophy_social_linkedin =cs_get_option('social_linkedin');
+                        if ($philosophy_social_linkedin) {
+                            echo "<a target='_blank' href='".esc_url($philosophy_social_linkedin)."'><i class='fa fa-linkedin'></i> </a>";
+                        }
+                    ?>
+
                 </div> <!-- end s-footer__subscribe -->
 
             </div>
@@ -183,6 +208,7 @@
                         if (is_active_sidebar( "footer-bottom" )) {
                             dynamic_sidebar( "footer-bottom" );
                         }
+
                         ?>
                     </div>
 

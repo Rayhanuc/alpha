@@ -58,6 +58,7 @@ function philosophy_assets() {
     wp_enqueue_style("base-css", get_theme_file_uri( "/assets/css/base.css" ),null,"1.0");
     wp_enqueue_style("vendor-css", get_theme_file_uri( "/assets/css/vendor.css" ),null,"1.0");
     wp_enqueue_style("main-css", get_theme_file_uri( "/assets/css/main.css" ),null,"1.0");
+    wp_enqueue_style("fontawesome", "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
     wp_enqueue_style("philosophy-css", get_stylesheet_uri(),null,VERSION);
 
     //JS enqueue
