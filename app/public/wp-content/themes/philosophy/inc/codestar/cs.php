@@ -434,6 +434,47 @@ function philosophy_theme_options(){
 		)
 	);
 
+
+	$options[]    = array(
+		'name'      => 'group_section',
+		'title'     => __('Group Section','philosophy'),
+		'icon'      => 'fa fa-xing',
+		'fields'    => array(
+
+				// a field
+				array(
+				'id'    => 'group_field',
+				'type'  => 'group',
+				'title' => __('Group Field','philosophy'),
+				'button_title' => __('Add New','philosophy'),
+				'accordion_title' => __('Add New Data', 'philosophy'),
+				'fields' => array(
+					array(
+						'id'    => 'text_data',
+						'type'  => 'text',
+						'title' => __('Some Text','philosophy'),
+					),
+					array(
+						'id'    => 'select_data',
+						'type'  => 'select',
+						'title' => __('Select Book','philosophy'),
+						'options' => 'post',
+						'query_args' => array(
+							'post_per_page' => -1,
+							'post_type' => 'book',							
+						),
+					),
+					array(
+						'id'    => 'image_data',
+						'type'  => 'image',
+						'title' => __('Upload Image','philosophy'),
+					),
+				),
+			),			
+
+		),
+	);
+
 	return $options;
 }
 // add_filter('cs_framework_options','philosophy_theme_options');
@@ -443,17 +484,41 @@ function philosophy_theme_options(){
 function philosophy_group_field_demo($options) {
 	$options[]      = array(
 		'id'            => 'post_group_data',
-		'title'         => __('Group Data Demo','philosophy')
+		'title'         => __('Group Data Demo','philosophy'),
 		'post_type'     => 'post', // or post or CPT or array( 'page', 'post' )
 		'context'       => 'normal',
 		'priority'      => 'default',
 		'sections'      => array(
 
-		// begin section
+			
+
+			// begin section
 			array(
 			'name'      => 'group_section',
 			'icon'      => 'fa fa-image',
 			'fields'    => array(
+
+				array(
+					'id'    => 'section_icon',
+					'type'  => 'icon',
+					'title' => __('Icon Field','philosophy'),
+				),
+				array(
+					'id'    => 'unique_option_3001',
+					'type'  => 'color_picker',
+					'title' => 'Color Picker Field',
+					'default' => '#222',
+				),
+				array(
+				'id'        => 'unique_option_4002',
+				'type'      => 'typography',
+				'title'     => 'Typography Field',
+				'default'   => array(
+					'family'  => 'Open Sans',
+					'variant' => '800',
+					'font'    => 'google', // this is helper for output
+					),
+				),
 
 				// a field
 				array(
@@ -473,6 +538,31 @@ function philosophy_group_field_demo($options) {
 						'type'  => 'image',
 						'title' => __('Upload Image','philosophy'),
 					),
+					// Heading
+					array(
+						'type'    => 'heading',
+						'content' => __('Books Heading','philosophy'),
+					),
+					// Subheading
+					array(
+						'type'    => 'subheading',
+						'content' => __('Books subheading','philosophy'),
+					),
+					// Select field
+					array(
+						'id'    => 'select_data',
+						'type'  => 'select',
+						'title' => __('Select Book','philosophy'),
+						'options' => 'post',
+						'query_args' => array(
+							'post_per_page' => -1,
+							'post_type' => 'book',							
+						),
+					),
+					array(
+						'type'    => 'content',
+						'content' => __('Lorem ipsum dollar.','philosophy'),
+					),
 				),
 			),			
 
@@ -480,5 +570,8 @@ function philosophy_group_field_demo($options) {
 	),
 ),
 );
+
+return $options;
+
 }
 add_filter("cs_metabox_options","philosophy_group_field_demo");

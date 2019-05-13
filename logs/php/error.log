@@ -778,3 +778,47 @@ Stack trace:
 [09-May-2019 08:21:47 UTC] PHP Parse error:  syntax error, unexpected ''post_type'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /app/public/wp-content/themes/philosophy/inc/codestar/cs.php on line 447
 [09-May-2019 08:21:47 UTC] PHP Parse error:  syntax error, unexpected ''post_type'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /app/public/wp-content/themes/philosophy/inc/codestar/cs.php on line 447
 [09-May-2019 08:23:55 UTC] PHP Parse error:  syntax error, unexpected ''post_type'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /app/public/wp-content/themes/philosophy/inc/codestar/cs.php on line 447
+[10-May-2019 08:29:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /app/public/wp-includes/wp-db.php on line 1531
+[10-May-2019 08:32:48 UTC] PHP Parse error:  syntax error, unexpected ''post_type'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /app/public/wp-content/themes/philosophy/inc/codestar/cs.php on line 447
+[10-May-2019 08:36:30 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 529
+[10-May-2019 09:04:31 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /app/public/wp-content/themes/philosophy/single-post-group-field.php:38
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/philosophy/single-post-group-field.php on line 38
+[10-May-2019 09:05:31 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /app/public/wp-content/themes/philosophy/single-post-group-field.php:38
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/philosophy/single-post-group-field.php on line 38
+[10-May-2019 09:07:03 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /app/public/wp-content/themes/philosophy/single-post-group-field.php:38
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/philosophy/single-post-group-field.php on line 38
+[10-May-2019 18:23:05 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 155
+[10-May-2019 18:23:07 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 347
+[10-May-2019 18:23:07 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 529
+[10-May-2019 18:28:22 UTC] PHP Notice:  Undefined index: select_data in /app/public/wp-content/themes/philosophy/single-post-group-field.php on line 45
+[10-May-2019 18:28:22 UTC] PHP Notice:  Undefined index: select_data in /app/public/wp-content/themes/philosophy/single-post-group-field.php on line 45
+[10-May-2019 18:28:22 UTC] PHP Notice:  Undefined index: select_data in /app/public/wp-content/themes/philosophy/single-post-group-field.php on line 45
+[10-May-2019 18:29:30 UTC] PHP Notice:  Undefined index: select_data in /app/public/wp-content/themes/philosophy/single-post-group-field.php on line 45
+[10-May-2019 18:29:30 UTC] PHP Notice:  Undefined index: select_data in /app/public/wp-content/themes/philosophy/single-post-group-field.php on line 45
+[10-May-2019 18:29:30 UTC] PHP Notice:  Undefined index: select_data in /app/public/wp-content/themes/philosophy/single-post-group-field.php on line 45
+[10-May-2019 18:29:55 UTC] PHP Notice:  Undefined index: select_data in /app/public/wp-content/themes/philosophy/single-post-group-field.php on line 45
+[10-May-2019 18:29:55 UTC] PHP Notice:  Undefined index: select_data in /app/public/wp-content/themes/philosophy/single-post-group-field.php on line 45
+[10-May-2019 18:29:55 UTC] PHP Notice:  Undefined index: select_data in /app/public/wp-content/themes/philosophy/single-post-group-field.php on line 45
+[10-May-2019 18:31:30 UTC] PHP Notice:  Undefined index: select_data in /app/public/wp-content/themes/philosophy/single-post-group-field.php on line 45
+[10-May-2019 18:31:30 UTC] PHP Notice:  Undefined index: select_data in /app/public/wp-content/themes/philosophy/single-post-group-field.php on line 45
+[10-May-2019 18:31:30 UTC] PHP Notice:  Undefined index: select_data in /app/public/wp-content/themes/philosophy/single-post-group-field.php on line 45
+[10-May-2019 22:12:10 UTC] PHP Notice:  Undefined index: select_data in /app/public/wp-content/themes/philosophy/single-post-group-field.php on line 77
+[11-May-2019 07:42:58 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 155
+[11-May-2019 07:43:01 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 347
+[11-May-2019 07:43:02 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 529
+[11-May-2019 21:57:33 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 155
