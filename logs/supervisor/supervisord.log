@@ -4696,3 +4696,49 @@
 2019-06-24 13:57:34,326 INFO success: MailHog entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2019-06-24 13:57:34,329 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2019-06-24 13:57:34,339 INFO success: varnish-themes-watcher entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-06-24 19:45:36,127 WARN received SIGTERM indicating exit request
+2019-06-24 19:45:36,145 INFO waiting for varnishd, php-fpm, varnish-plugins-watcher, nginx, MailHog, mysql, varnish-themes-watcher to die
+2019-06-24 19:45:37,160 INFO stopped: varnish-themes-watcher (terminated by SIGTERM)
+2019-06-24 19:45:37,335 INFO stopped: mysql (exit status 0)
+2019-06-24 19:45:37,340 INFO stopped: MailHog (terminated by SIGTERM)
+2019-06-24 19:45:37,406 INFO stopped: nginx (exit status 0)
+2019-06-24 19:45:38,415 INFO stopped: varnish-plugins-watcher (terminated by SIGTERM)
+2019-06-24 19:45:38,461 INFO stopped: php-fpm (exit status 0)
+2019-06-24 19:45:38,834 INFO reaped unknown pid 102
+2019-06-24 19:45:39,347 INFO reaped unknown pid 13574
+2019-06-24 19:45:39,350 INFO waiting for varnishd to die
+2019-06-24 19:45:39,404 INFO reaped unknown pid 13576
+2019-06-24 19:45:40,081 INFO stopped: varnishd (exit status 0)
+2019-06-25 08:02:56,597 CRIT Supervisor running as root (no user in config file)
+2019-06-25 08:02:56,618 INFO Included extra file "/etc/supervisor/conf.d/supervisord.conf" during parsing
+2019-06-25 08:02:57,071 INFO RPC interface 'supervisor' initialized
+2019-06-25 08:02:57,089 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2019-06-25 08:02:57,099 INFO supervisord started with pid 1
+2019-06-25 08:02:58,116 INFO spawned: 'varnishd' with pid 141
+2019-06-25 08:02:58,155 INFO spawned: 'php-fpm' with pid 142
+2019-06-25 08:02:58,219 INFO spawned: 'varnish-plugins-watcher' with pid 143
+2019-06-25 08:02:58,300 INFO spawned: 'nginx' with pid 144
+2019-06-25 08:02:58,369 INFO spawned: 'MailHog' with pid 145
+2019-06-25 08:02:58,505 INFO spawned: 'mysql' with pid 146
+2019-06-25 08:02:58,772 INFO spawned: 'varnish-themes-watcher' with pid 150
+2019-06-25 08:02:59,107 INFO success: varnishd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-06-25 08:02:59,131 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-06-25 08:02:59,404 INFO success: varnish-plugins-watcher entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-06-25 08:02:59,406 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-06-25 08:02:59,418 INFO success: MailHog entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-06-25 08:02:59,427 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-06-25 08:02:59,696 INFO success: varnish-themes-watcher entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-06-25 09:04:57,937 WARN received SIGTERM indicating exit request
+2019-06-25 09:04:57,942 INFO waiting for varnishd, php-fpm, varnish-plugins-watcher, nginx, MailHog, mysql, varnish-themes-watcher to die
+2019-06-25 09:04:59,116 INFO stopped: varnish-themes-watcher (terminated by SIGTERM)
+2019-06-25 09:04:59,878 INFO stopped: mysql (exit status 0)
+2019-06-25 09:04:59,884 INFO stopped: MailHog (terminated by SIGTERM)
+2019-06-25 09:05:00,034 INFO stopped: nginx (exit status 0)
+2019-06-25 09:05:00,997 INFO stopped: varnish-plugins-watcher (terminated by SIGTERM)
+2019-06-25 09:05:00,998 INFO reaped unknown pid 2023
+2019-06-25 09:05:01,000 INFO waiting for varnishd, php-fpm to die
+2019-06-25 09:05:01,232 INFO stopped: php-fpm (exit status 0)
+2019-06-25 09:05:01,722 INFO reaped unknown pid 183
+2019-06-25 09:05:02,011 INFO reaped unknown pid 2025
+2019-06-25 09:05:04,874 INFO waiting for varnishd to die
+2019-06-25 09:05:05,817 INFO stopped: varnishd (exit status 0)

@@ -824,3 +824,44 @@ Stack trace:
 [11-May-2019 21:57:33 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 155
 [24-Jun-2019 13:57:37 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /app/public/wp-includes/wp-db.php on line 1531
 [24-Jun-2019 18:26:48 UTC] PHP Notice:  check_ajax_referer was called <strong>incorrectly</strong>. You should specify a nonce action to be verified by using the first parameter. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.7.) in /app/public/wp-includes/functions.php on line 4231
+[24-Jun-2019 19:41:19 UTC] PHP Notice:  Undefined index: page-favorit-text in /app/public/wp-content/themes/philosophy/page.php on line 44
+[25-Jun-2019 08:02:52 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /app/public/wp-includes/wp-db.php on line 1531
+[25-Jun-2019 08:02:53 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /app/public/wp-includes/wp-db.php on line 1531
+[25-Jun-2019 08:02:56 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /app/public/wp-includes/wp-db.php on line 1531
+[25-Jun-2019 08:02:57 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /app/public/wp-includes/wp-db.php on line 1531
+[25-Jun-2019 08:05:26 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 347
+[25-Jun-2019 08:50:20 UTC] PHP Notice:  Constant CS_ACTIVE_FRAMEWORK already defined in /app/public/wp-content/themes/philosophy/functions.php on line 13
+[25-Jun-2019 08:50:20 UTC] PHP Notice:  Constant CS_ACTIVE_METABOX already defined in /app/public/wp-content/themes/philosophy/functions.php on line 14
+[25-Jun-2019 08:50:20 UTC] PHP Notice:  Constant CS_ACTIVE_TAXONOMY already defined in /app/public/wp-content/themes/philosophy/functions.php on line 15
+[25-Jun-2019 08:50:20 UTC] PHP Notice:  Constant CS_ACTIVE_SHORTCODE already defined in /app/public/wp-content/themes/philosophy/functions.php on line 16
+[25-Jun-2019 08:50:20 UTC] PHP Notice:  Constant CS_ACTIVE_CUSTOMIZE already defined in /app/public/wp-content/themes/philosophy/functions.php on line 17
+[25-Jun-2019 08:50:21 UTC] PHP Notice:  Constant CS_ACTIVE_FRAMEWORK already defined in /app/public/wp-content/themes/philosophy/functions.php on line 13
+[25-Jun-2019 08:50:21 UTC] PHP Notice:  Constant CS_ACTIVE_METABOX already defined in /app/public/wp-content/themes/philosophy/functions.php on line 14
+[25-Jun-2019 08:50:21 UTC] PHP Notice:  Constant CS_ACTIVE_TAXONOMY already defined in /app/public/wp-content/themes/philosophy/functions.php on line 15
+[25-Jun-2019 08:50:21 UTC] PHP Notice:  Constant CS_ACTIVE_SHORTCODE already defined in /app/public/wp-content/themes/philosophy/functions.php on line 16
+[25-Jun-2019 08:50:21 UTC] PHP Notice:  Constant CS_ACTIVE_CUSTOMIZE already defined in /app/public/wp-content/themes/philosophy/functions.php on line 17
+[25-Jun-2019 08:51:05 UTC] PHP Notice:  Constant CS_ACTIVE_FRAMEWORK already defined in /app/public/wp-content/themes/philosophy/functions.php on line 13
+[25-Jun-2019 08:51:05 UTC] PHP Notice:  Constant CS_ACTIVE_METABOX already defined in /app/public/wp-content/themes/philosophy/functions.php on line 14
+[25-Jun-2019 08:51:05 UTC] PHP Notice:  Constant CS_ACTIVE_TAXONOMY already defined in /app/public/wp-content/themes/philosophy/functions.php on line 15
+[25-Jun-2019 08:51:05 UTC] PHP Notice:  Constant CS_ACTIVE_SHORTCODE already defined in /app/public/wp-content/themes/philosophy/functions.php on line 16
+[25-Jun-2019 08:51:05 UTC] PHP Notice:  Constant CS_ACTIVE_CUSTOMIZE already defined in /app/public/wp-content/themes/philosophy/functions.php on line 17
+[25-Jun-2019 08:52:14 UTC] PHP Notice:  Constant CS_ACTIVE_FRAMEWORK already defined in /app/public/wp-content/themes/philosophy/functions.php on line 13
+[25-Jun-2019 08:52:14 UTC] PHP Notice:  Constant CS_ACTIVE_METABOX already defined in /app/public/wp-content/themes/philosophy/functions.php on line 14
+[25-Jun-2019 08:52:14 UTC] PHP Notice:  Constant CS_ACTIVE_TAXONOMY already defined in /app/public/wp-content/themes/philosophy/functions.php on line 15
+[25-Jun-2019 08:52:14 UTC] PHP Notice:  Constant CS_ACTIVE_SHORTCODE already defined in /app/public/wp-content/themes/philosophy/functions.php on line 16
+[25-Jun-2019 08:52:14 UTC] PHP Notice:  Constant CS_ACTIVE_CUSTOMIZE already defined in /app/public/wp-content/themes/philosophy/functions.php on line 17
+[25-Jun-2019 08:53:13 UTC] PHP Notice:  Constant CS_ACTIVE_FRAMEWORK already defined in /app/public/wp-content/themes/philosophy/functions.php on line 13
+[25-Jun-2019 08:53:13 UTC] PHP Notice:  Constant CS_ACTIVE_FRAMEWORK already defined in /app/public/wp-content/themes/philosophy/functions.php on line 13
+[25-Jun-2019 08:53:13 UTC] PHP Notice:  Constant CS_ACTIVE_METABOX already defined in /app/public/wp-content/themes/philosophy/functions.php on line 14
+[25-Jun-2019 08:53:13 UTC] PHP Notice:  Constant CS_ACTIVE_METABOX already defined in /app/public/wp-content/themes/philosophy/functions.php on line 14
+[25-Jun-2019 08:53:13 UTC] PHP Notice:  Constant CS_ACTIVE_TAXONOMY already defined in /app/public/wp-content/themes/philosophy/functions.php on line 15
+[25-Jun-2019 08:53:13 UTC] PHP Notice:  Constant CS_ACTIVE_TAXONOMY already defined in /app/public/wp-content/themes/philosophy/functions.php on line 15
+[25-Jun-2019 08:53:13 UTC] PHP Notice:  Constant CS_ACTIVE_SHORTCODE already defined in /app/public/wp-content/themes/philosophy/functions.php on line 16
+[25-Jun-2019 08:53:13 UTC] PHP Notice:  Constant CS_ACTIVE_SHORTCODE already defined in /app/public/wp-content/themes/philosophy/functions.php on line 16
+[25-Jun-2019 08:53:13 UTC] PHP Notice:  Constant CS_ACTIVE_CUSTOMIZE already defined in /app/public/wp-content/themes/philosophy/functions.php on line 17
+[25-Jun-2019 08:53:13 UTC] PHP Notice:  Constant CS_ACTIVE_CUSTOMIZE already defined in /app/public/wp-content/themes/philosophy/functions.php on line 17
+[25-Jun-2019 08:54:28 UTC] PHP Notice:  Constant CS_ACTIVE_FRAMEWORK already defined in /app/public/wp-content/themes/philosophy/functions.php on line 13
+[25-Jun-2019 08:54:28 UTC] PHP Notice:  Constant CS_ACTIVE_METABOX already defined in /app/public/wp-content/themes/philosophy/functions.php on line 14
+[25-Jun-2019 08:54:28 UTC] PHP Notice:  Constant CS_ACTIVE_TAXONOMY already defined in /app/public/wp-content/themes/philosophy/functions.php on line 15
+[25-Jun-2019 08:54:28 UTC] PHP Notice:  Constant CS_ACTIVE_SHORTCODE already defined in /app/public/wp-content/themes/philosophy/functions.php on line 16
+[25-Jun-2019 08:54:28 UTC] PHP Notice:  Constant CS_ACTIVE_CUSTOMIZE already defined in /app/public/wp-content/themes/philosophy/functions.php on line 17
