@@ -14,7 +14,7 @@
                 <!-- apply filters example -->
                 <?php // echo apply_filters("philisophy_text","hello","wornderful","world");?>
                 
-                <!-- before action hoke -->
+                <!-- before action hook -->
                 <?php do_action('philosophy_before_category_title');?>
 
                 <h3><?php _e( "New Translatable Text", "philosophy" ); ?></h3>

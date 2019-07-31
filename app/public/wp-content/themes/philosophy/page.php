@@ -37,12 +37,20 @@ get_header();
 
 
                 $philosophy_page_meta = get_post_meta(get_the_ID(),'page-metabox',true);
-                echo esc_html($philosophy_page_meta['page-heading']).'<br/>';
-                echo esc_html($philosophy_page_meta['page-teaser']).'<br/>';
-
-                if ($philosophy_page_meta['is-favorit']) {
-                    echo esc_html($philosophy_page_meta['page-favorit-text']);
+                if (function_exists('page-heading')) {
+                    echo esc_html($philosophy_page_meta['page-heading']).'<br/>';
                 }
+                if (function_exists('page-teaser')) {
+                    echo esc_html($philosophy_page_meta['page-teaser']).'<br/>';
+                }
+                    
+                
+                if (function_exists('is-favorit')) {
+                    if ($philosophy_page_meta['is-favorit']) {
+                        echo esc_html($philosophy_page_meta['page-favorit-text']);
+                    }
+                }
+                
                 ?>
 
 

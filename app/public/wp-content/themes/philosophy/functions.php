@@ -284,8 +284,8 @@ add_filter("philisophy_text", "uppercase_text",10,3 );
 
 
 
-
-function philosophy_cpt_slug_fix($post_link,$id) {
+// permalink change/replace
+ function philosophy_cpt_slug_fix($post_link,$id) {
     $p = get_post($id);
 
     if (is_object($p) && 'chapter' == get_post_type($id)) {
@@ -308,7 +308,7 @@ function philosophy_cpt_slug_fix($post_link,$id) {
     }
     return $post_link;
 }
-add_filter('post_type_link','philosophy_cpt_slug_fix',1,2);
+add_filter('post_type_link','philosophy_cpt_slug_fix',1,2); 
 
 
 
@@ -357,8 +357,24 @@ function philisophy_ajaxtest_nopriv(){
 add_action('wp_ajax_nopriv_ajaxtest','philisophy_ajaxtest_nopriv');
 
 
-
-function philosophy_nonce_life(){
+// Suspicious code. for preventing creating page and post any other change. Block.
+/*function philosophy_nonce_life(){
     return 20;
 }
-add_filter('nonce_life','philosophy_nonce_life');
+add_filter('nonce_life','philosophy_nonce_life');*/
+
+
+// New plug-in created by me
+/*function philosophy_wordcount_heading($heading){
+    // same as default plugin label
+    $heading = strtoupper($heading);
+    // $heading = strtoupper('Total Words');
+    // $heading = __('Total Words','philosophy');
+    return $heading;
+}
+add_filter('wordcount_heading','philosophy_wordcount_heading');
+
+function philosophy_wordcount_tag($tag){
+    return "h4";
+}
+add_filter('wordcount_tag','philosophy_wordcount_tag');*/

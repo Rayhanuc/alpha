@@ -1,0 +1,10 @@
+[30-Jul-2019 19:27:32] NOTICE: fpm is running, pid 1116
+[30-Jul-2019 19:27:32] NOTICE: ready to handle connections
+[31-Jul-2019 06:38:11] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jul-2019 13:02:49] NOTICE: fpm is running, pid 642
+[31-Jul-2019 13:02:49] NOTICE: ready to handle connections
+[31-Jul-2019 14:09:23] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jul-2019 14:10:13] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jul-2019 14:10:43] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jul-2019 18:31:24] NOTICE: fpm is running, pid 599
+[31-Jul-2019 18:31:24] NOTICE: ready to handle connections
