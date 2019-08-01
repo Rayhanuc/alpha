@@ -25,7 +25,7 @@ INSERT INTO `wp_usermeta` VALUES
 (22,1,"nav_menu_recently_edited","15"),
 (23,1,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}"),
 (24,1,"enable_custom_fields","1"),
-(25,1,"closedpostboxes_post","a:4:{i:0;s:11:\"postexcerpt\";i:1;s:13:\"trackbacksdiv\";i:2;s:16:\"commentstatusdiv\";i:3;s:18:\"_philosophy_image_\";}"),
+(25,1,"closedpostboxes_post","a:3:{i:0;s:11:\"postexcerpt\";i:1;s:13:\"trackbacksdiv\";i:2;s:16:\"commentstatusdiv\";}"),
 (26,1,"metaboxhidden_post","a:0:{}"),
 (27,1,"closedpostboxes_acf-field-group","a:0:{}"),
 (28,1,"metaboxhidden_acf-field-group","a:1:{i:0;s:7:\"slugdiv\";}"),

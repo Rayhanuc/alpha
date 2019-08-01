@@ -1231,4 +1231,12 @@ INSERT INTO `wp_postmeta` VALUES
 (1908,560,"_menu_item_classes","a:1:{i:0;s:0:\"\";}"),
 (1909,560,"_menu_item_xfn",""),
 (1910,560,"_menu_item_url",""),
-(1912,11,"page-custom-post-type-book","a:1:{s:16:\"option_book_text\";s:0:\"\";}");
+(1912,11,"page-custom-post-type-book","a:1:{s:16:\"option_book_text\";s:0:\"\";}"),
+(1913,561,"_edit_lock","1564679133:1"),
+(1914,561,"_edit_last","1"),
+(1917,561,"post_group_data","a:4:{s:12:\"section_icon\";s:0:\"\";s:18:\"unique_option_3001\";s:4:\"#222\";s:18:\"unique_option_4002\";a:3:{s:6:\"family\";s:9:\"Open Sans\";s:7:\"variant\";s:7:\"regular\";s:4:\"font\";s:6:\"google\";}s:11:\"group_field\";s:0:\"\";}"),
+(1918,561,"featured","0"),
+(1919,561,"_featured","field_5ca8fb6ba95f5"),
+(1920,562,"featured","0"),
+(1921,562,"_featured","field_5ca8fb6ba95f5"),
+(1922,561,"_philosophy_camera_model","canon");

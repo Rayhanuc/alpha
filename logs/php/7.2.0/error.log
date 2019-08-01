@@ -5158,3 +5158,84 @@ Stack trace:
 [31-Jul-2019 19:36:10 UTC] PHP   2. require() /app/public/index.php:17
 [31-Jul-2019 19:36:10 UTC] PHP   3. require_once() /app/public/wp-blog-header.php:19
 [31-Jul-2019 19:36:10 UTC] PHP   4. include() /app/public/wp-includes/template-loader.php:78
+[01-Aug-2019 12:18:19 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[01-Aug-2019 12:18:19 UTC] PHP Stack trace:
+[01-Aug-2019 12:18:19 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[01-Aug-2019 12:18:19 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[01-Aug-2019 12:18:19 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[01-Aug-2019 12:18:19 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[01-Aug-2019 12:18:19 UTC] PHP   5. wp_update_plugins() /app/public/wp-includes/class-wp-hook.php:286
+[01-Aug-2019 12:18:19 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:384
+[01-Aug-2019 16:48:32 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[01-Aug-2019 16:48:32 UTC] PHP Stack trace:
+[01-Aug-2019 16:48:32 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[01-Aug-2019 16:48:32 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[01-Aug-2019 16:48:32 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[01-Aug-2019 16:48:32 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[01-Aug-2019 16:48:32 UTC] PHP   5. wp_version_check() /app/public/wp-includes/class-wp-hook.php:286
+[01-Aug-2019 16:48:32 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:160
+[01-Aug-2019 16:48:38 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[01-Aug-2019 16:48:38 UTC] PHP Stack trace:
+[01-Aug-2019 16:48:38 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[01-Aug-2019 16:48:38 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[01-Aug-2019 16:48:38 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[01-Aug-2019 16:48:38 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[01-Aug-2019 16:48:38 UTC] PHP   5. wp_update_plugins() /app/public/wp-includes/class-wp-hook.php:286
+[01-Aug-2019 16:48:38 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:384
+[01-Aug-2019 16:48:38 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[01-Aug-2019 16:48:38 UTC] PHP Stack trace:
+[01-Aug-2019 16:48:38 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[01-Aug-2019 16:48:38 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[01-Aug-2019 16:48:38 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[01-Aug-2019 16:48:38 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[01-Aug-2019 16:48:38 UTC] PHP   5. wp_update_themes() /app/public/wp-includes/class-wp-hook.php:286
+[01-Aug-2019 16:48:38 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:569
+[01-Aug-2019 16:48:56 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[01-Aug-2019 16:48:56 UTC] PHP Stack trace:
+[01-Aug-2019 16:48:56 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[01-Aug-2019 16:48:56 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[01-Aug-2019 16:48:56 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[01-Aug-2019 16:48:56 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[01-Aug-2019 16:52:18 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[01-Aug-2019 16:52:18 UTC] PHP Stack trace:
+[01-Aug-2019 16:52:18 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[01-Aug-2019 16:52:18 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[01-Aug-2019 16:52:18 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[01-Aug-2019 16:52:18 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[01-Aug-2019 17:01:16 UTC] PHP Parse error:  syntax error, unexpected ',' in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 56
+[01-Aug-2019 17:02:01 UTC] PHP Parse error:  syntax error, unexpected ',' in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 56
+[01-Aug-2019 17:02:15 UTC] PHP Parse error:  syntax error, unexpected ',' in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 56
+[01-Aug-2019 17:02:19 UTC] PHP Parse error:  syntax error, unexpected ',' in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 56
+[01-Aug-2019 17:02:19 UTC] PHP Parse error:  syntax error, unexpected ',' in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 56
+[01-Aug-2019 17:02:25 UTC] PHP Parse error:  syntax error, unexpected ',' in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 56
+[01-Aug-2019 17:02:36 UTC] PHP Parse error:  syntax error, unexpected ',' in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 56
+[01-Aug-2019 17:03:07 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[01-Aug-2019 17:03:07 UTC] PHP Stack trace:
+[01-Aug-2019 17:03:07 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[01-Aug-2019 17:03:07 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[01-Aug-2019 17:03:07 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[01-Aug-2019 17:03:07 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[01-Aug-2019 18:28:00 UTC] PHP Parse error:  syntax error, unexpected 'add_settings_field' (T_STRING) in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 60
+[01-Aug-2019 18:31:43 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, function 'pqrc_section_callback' not found or invalid function name in /app/public/wp-admin/includes/template.php on line 1602
+[01-Aug-2019 18:31:43 UTC] PHP Stack trace:
+[01-Aug-2019 18:31:43 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[01-Aug-2019 18:31:43 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[01-Aug-2019 18:32:07 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, function 'pqrc_section_callback' not found or invalid function name in /app/public/wp-admin/includes/template.php on line 1602
+[01-Aug-2019 18:32:07 UTC] PHP Stack trace:
+[01-Aug-2019 18:32:07 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[01-Aug-2019 18:32:07 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[01-Aug-2019 18:39:13 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, function 'pqrc_section_callback' not found or invalid function name in /app/public/wp-admin/includes/template.php on line 1602
+[01-Aug-2019 18:39:13 UTC] PHP Stack trace:
+[01-Aug-2019 18:39:13 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[01-Aug-2019 18:39:13 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[01-Aug-2019 18:40:08 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, function 'pqrc_section_callback' not found or invalid function name in /app/public/wp-admin/includes/template.php on line 1602
+[01-Aug-2019 18:40:08 UTC] PHP Stack trace:
+[01-Aug-2019 18:40:08 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[01-Aug-2019 18:40:08 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[01-Aug-2019 18:41:13 UTC] PHP Parse error:  syntax error, unexpected '!=' (T_IS_NOT_EQUAL) in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 70
+[01-Aug-2019 18:41:13 UTC] PHP Parse error:  syntax error, unexpected '!=' (T_IS_NOT_EQUAL) in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 70
+[01-Aug-2019 18:41:34 UTC] PHP Parse error:  syntax error, unexpected '!=' (T_IS_NOT_EQUAL) in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 70
+[01-Aug-2019 18:41:39 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, function 'pqrc_section_callback' not found or invalid function name in /app/public/wp-admin/includes/template.php on line 1602
+[01-Aug-2019 18:41:39 UTC] PHP Stack trace:
+[01-Aug-2019 18:41:39 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[01-Aug-2019 18:41:39 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404

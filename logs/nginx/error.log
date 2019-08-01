@@ -1,2 +1,31 @@
 2019/07/31 13:02:31 [error] 58#0: *1 connect() to unix:/var/run/php-fpm.sock failed (111: Connection refused) while connecting to upstream, client: 172.17.0.1, server: , request: "POST /wp-cron.php?doing_wp_cron=1564578151.1334149837493896484375 HTTP/1.0", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "alpha.local", referrer: "http://alpha.local/wp-cron.php?doing_wp_cron=1564578151.1334149837493896484375"
 2019/07/31 18:30:45 [error] 119#0: *1 connect() to unix:/var/run/php-fpm.sock failed (111: Connection refused) while connecting to upstream, client: 172.17.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "alpha.local"
+2019/08/01 17:07:32 [crit] 134#0: *1375 connect() to unix:/var/run/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 172.17.0.1, server: , request: "POST /wp-admin/admin-ajax.php HTTP/1.0", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "alpha.local", referrer: "http://alpha.local/wp-admin/post.php?post=561&action=edit"
+2019/08/01 17:07:32 [crit] 134#0: *1377 connect() to unix:/var/run/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 172.17.0.1, server: , request: "POST /wp-admin/admin-ajax.php HTTP/1.0", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "alpha.local", referrer: "http://alpha.local/wp-admin/plugins.php?plugin_status=all&paged=1&s"
+2019/08/01 17:08:29 [emerg] 1004#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2019/08/01 17:08:29 [emerg] 1004#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2019/08/01 17:08:29 [emerg] 1004#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2019/08/01 17:08:29 [emerg] 1004#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2019/08/01 17:08:29 [emerg] 1004#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2019/08/01 17:08:29 [emerg] 1004#0: still could not bind()
+2019/08/01 17:08:32 [crit] 134#0: *1379 connect() to unix:/var/run/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 172.17.0.1, server: , request: "POST /wp-admin/admin-ajax.php HTTP/1.0", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "alpha.local", referrer: "http://alpha.local/wp-admin/options-general.php"
+2019/08/01 17:08:51 [crit] 134#0: *1381 connect() to unix:/var/run/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 172.17.0.1, server: , request: "GET /wp-admin/ HTTP/1.0", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "alpha.local"
+2019/08/01 17:08:59 [crit] 134#0: *1383 connect() to unix:/var/run/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 172.17.0.1, server: , request: "POST /wp-admin/admin-ajax.php HTTP/1.0", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "alpha.local", referrer: "http://alpha.local/wp-admin/plugins.php?plugin_status=all&paged=1&s"
+2019/08/01 17:09:02 [crit] 134#0: *1385 connect() to unix:/var/run/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 172.17.0.1, server: , request: "POST /wp-admin/admin-ajax.php HTTP/1.0", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "alpha.local", referrer: "http://alpha.local/wp-admin/post.php?post=561&action=edit"
+2019/08/01 17:09:06 [crit] 134#0: *1387 connect() to unix:/var/run/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 172.17.0.1, server: , request: "POST /wp-admin/admin-ajax.php HTTP/1.0", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "alpha.local", referrer: "http://alpha.local/wp-admin/post.php?post=561&action=edit"
+2019/08/01 17:09:19 [crit] 134#0: *1389 connect() to unix:/var/run/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 172.17.0.1, server: , request: "GET /wp-admin/ HTTP/1.0", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "alpha.local"
+2019/08/01 17:09:24 [crit] 134#0: *1391 connect() to unix:/var/run/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 172.17.0.1, server: , request: "GET /wp-admin/ HTTP/1.0", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "alpha.local"
+2019/08/01 17:10:28 [error] 31#0: *1 connect() to unix:/var/run/php-fpm.sock failed (111: Connection refused) while connecting to upstream, client: 172.17.0.1, server: , request: "GET /wp-admin/ HTTP/1.0", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "alpha.local"
+2019/08/01 17:18:18 [emerg] 731#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2019/08/01 17:18:18 [emerg] 731#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2019/08/01 17:18:18 [emerg] 731#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2019/08/01 17:18:18 [emerg] 731#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2019/08/01 17:18:18 [emerg] 731#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2019/08/01 17:18:18 [emerg] 731#0: still could not bind()
+2019/08/01 17:18:30 [crit] 31#0: *3 connect() to unix:/var/run/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 172.17.0.1, server: , request: "GET /wp-admin/ HTTP/1.0", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "alpha.local"
+2019/08/01 17:20:09 [emerg] 894#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2019/08/01 17:20:09 [emerg] 894#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2019/08/01 17:20:09 [emerg] 894#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2019/08/01 17:20:09 [emerg] 894#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2019/08/01 17:20:09 [emerg] 894#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2019/08/01 17:20:09 [emerg] 894#0: still could not bind()
