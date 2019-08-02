@@ -5257,3 +5257,534 @@ Stack trace:
 [02-Aug-2019 09:53:49 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
 [02-Aug-2019 09:53:49 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
 [02-Aug-2019 09:53:49 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 10:27:23 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 10:27:23 UTC] PHP Stack trace:
+[02-Aug-2019 10:27:23 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:27:23 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 10:27:23 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 10:27:23 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 10:27:23 UTC] PHP Warning:  in_array() expects parameter 2 to be array, boolean given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 95
+[02-Aug-2019 10:27:23 UTC] PHP Stack trace:
+[02-Aug-2019 10:27:23 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:27:23 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:27:23 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:27:23 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:27:23 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:95
+[02-Aug-2019 10:27:23 UTC] PHP Warning:  in_array() expects parameter 2 to be array, boolean given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 95
+[02-Aug-2019 10:27:23 UTC] PHP Stack trace:
+[02-Aug-2019 10:27:23 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:27:23 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:27:23 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:27:23 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:27:23 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:95
+[02-Aug-2019 10:27:23 UTC] PHP Warning:  in_array() expects parameter 2 to be array, boolean given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 95
+[02-Aug-2019 10:27:23 UTC] PHP Stack trace:
+[02-Aug-2019 10:27:23 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:27:23 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:27:23 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:27:23 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:27:23 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:95
+[02-Aug-2019 10:27:23 UTC] PHP Warning:  in_array() expects parameter 2 to be array, boolean given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 95
+[02-Aug-2019 10:27:23 UTC] PHP Stack trace:
+[02-Aug-2019 10:27:23 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:27:23 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:27:23 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:27:23 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:27:23 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:95
+[02-Aug-2019 10:27:23 UTC] PHP Warning:  in_array() expects parameter 2 to be array, boolean given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 95
+[02-Aug-2019 10:27:23 UTC] PHP Stack trace:
+[02-Aug-2019 10:27:23 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:27:23 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:27:23 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:27:23 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:27:23 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:95
+[02-Aug-2019 10:27:23 UTC] PHP Warning:  in_array() expects parameter 2 to be array, boolean given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 95
+[02-Aug-2019 10:27:23 UTC] PHP Stack trace:
+[02-Aug-2019 10:27:23 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:27:23 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:27:23 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:27:23 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:27:23 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:95
+[02-Aug-2019 10:27:23 UTC] PHP Warning:  in_array() expects parameter 2 to be array, boolean given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 95
+[02-Aug-2019 10:27:23 UTC] PHP Stack trace:
+[02-Aug-2019 10:27:23 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:27:23 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:27:23 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:27:23 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:27:23 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:95
+[02-Aug-2019 10:27:23 UTC] PHP Warning:  in_array() expects parameter 2 to be array, boolean given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 95
+[02-Aug-2019 10:27:23 UTC] PHP Stack trace:
+[02-Aug-2019 10:27:23 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:27:23 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:27:23 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:27:23 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:27:23 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:95
+[02-Aug-2019 10:27:23 UTC] PHP Warning:  in_array() expects parameter 2 to be array, boolean given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 95
+[02-Aug-2019 10:27:23 UTC] PHP Stack trace:
+[02-Aug-2019 10:27:23 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:27:23 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:27:23 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:27:23 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:27:23 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:95
+[02-Aug-2019 10:33:27 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 10:33:27 UTC] PHP Stack trace:
+[02-Aug-2019 10:33:27 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:33:27 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 10:33:27 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 10:33:27 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 10:33:28 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 96
+[02-Aug-2019 10:33:28 UTC] PHP Stack trace:
+[02-Aug-2019 10:33:28 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:33:28 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:33:28 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:33:28 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:33:28 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:96
+[02-Aug-2019 10:33:28 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 96
+[02-Aug-2019 10:33:28 UTC] PHP Stack trace:
+[02-Aug-2019 10:33:28 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:33:28 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:33:28 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:33:28 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:33:28 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:96
+[02-Aug-2019 10:33:28 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 96
+[02-Aug-2019 10:33:28 UTC] PHP Stack trace:
+[02-Aug-2019 10:33:28 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:33:28 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:33:28 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:33:28 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:33:28 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:96
+[02-Aug-2019 10:33:28 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 96
+[02-Aug-2019 10:33:28 UTC] PHP Stack trace:
+[02-Aug-2019 10:33:28 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:33:28 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:33:28 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:33:28 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:33:28 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:96
+[02-Aug-2019 10:33:28 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 96
+[02-Aug-2019 10:33:28 UTC] PHP Stack trace:
+[02-Aug-2019 10:33:28 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:33:28 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:33:28 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:33:28 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:33:28 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:96
+[02-Aug-2019 10:33:28 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 96
+[02-Aug-2019 10:33:28 UTC] PHP Stack trace:
+[02-Aug-2019 10:33:28 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:33:28 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:33:28 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:33:28 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:33:28 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:96
+[02-Aug-2019 10:33:28 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 96
+[02-Aug-2019 10:33:28 UTC] PHP Stack trace:
+[02-Aug-2019 10:33:28 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:33:28 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:33:28 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:33:28 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:33:28 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:96
+[02-Aug-2019 10:33:28 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 96
+[02-Aug-2019 10:33:28 UTC] PHP Stack trace:
+[02-Aug-2019 10:33:28 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:33:28 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:33:28 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:33:28 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:33:28 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:96
+[02-Aug-2019 10:33:28 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 96
+[02-Aug-2019 10:33:28 UTC] PHP Stack trace:
+[02-Aug-2019 10:33:28 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:33:28 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:33:28 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:33:28 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:33:28 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:96
+[02-Aug-2019 10:35:54 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 10:35:54 UTC] PHP Stack trace:
+[02-Aug-2019 10:35:54 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:35:54 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 10:35:54 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 10:35:54 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 10:35:54 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 92
+[02-Aug-2019 10:35:54 UTC] PHP Stack trace:
+[02-Aug-2019 10:35:54 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:35:54 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:35:54 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:35:54 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:35:54 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:92
+[02-Aug-2019 10:35:54 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 92
+[02-Aug-2019 10:35:54 UTC] PHP Stack trace:
+[02-Aug-2019 10:35:54 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:35:54 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:35:54 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:35:54 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:35:54 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:92
+[02-Aug-2019 10:35:54 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 92
+[02-Aug-2019 10:35:54 UTC] PHP Stack trace:
+[02-Aug-2019 10:35:54 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:35:54 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:35:54 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:35:54 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:35:54 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:92
+[02-Aug-2019 10:35:54 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 92
+[02-Aug-2019 10:35:55 UTC] PHP Stack trace:
+[02-Aug-2019 10:35:55 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:35:55 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:35:55 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:35:55 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:35:55 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:92
+[02-Aug-2019 10:35:55 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 92
+[02-Aug-2019 10:35:55 UTC] PHP Stack trace:
+[02-Aug-2019 10:35:55 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:35:55 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:35:55 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:35:55 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:35:55 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:92
+[02-Aug-2019 10:35:55 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 92
+[02-Aug-2019 10:35:55 UTC] PHP Stack trace:
+[02-Aug-2019 10:35:55 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:35:55 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:35:55 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:35:55 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:35:55 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:92
+[02-Aug-2019 10:35:55 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 92
+[02-Aug-2019 10:35:55 UTC] PHP Stack trace:
+[02-Aug-2019 10:35:55 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:35:55 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:35:55 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:35:55 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:35:55 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:92
+[02-Aug-2019 10:35:55 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 92
+[02-Aug-2019 10:35:55 UTC] PHP Stack trace:
+[02-Aug-2019 10:35:55 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:35:55 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:35:55 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:35:55 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:35:55 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:92
+[02-Aug-2019 10:35:55 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 92
+[02-Aug-2019 10:35:55 UTC] PHP Stack trace:
+[02-Aug-2019 10:35:55 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:35:55 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:35:55 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:35:55 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:35:55 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:92
+[02-Aug-2019 10:36:48 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 10:36:48 UTC] PHP Stack trace:
+[02-Aug-2019 10:36:48 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:36:48 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 10:36:48 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 10:36:48 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 10:36:48 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 92
+[02-Aug-2019 10:36:48 UTC] PHP Stack trace:
+[02-Aug-2019 10:36:48 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:36:48 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:36:48 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:36:48 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:36:48 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:92
+[02-Aug-2019 10:36:48 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 92
+[02-Aug-2019 10:36:48 UTC] PHP Stack trace:
+[02-Aug-2019 10:36:48 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:36:48 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:36:48 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:36:48 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:36:48 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:92
+[02-Aug-2019 10:36:48 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 92
+[02-Aug-2019 10:36:48 UTC] PHP Stack trace:
+[02-Aug-2019 10:36:48 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:36:48 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:36:48 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:36:48 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:36:48 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:92
+[02-Aug-2019 10:36:48 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 92
+[02-Aug-2019 10:36:48 UTC] PHP Stack trace:
+[02-Aug-2019 10:36:48 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:36:48 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:36:48 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:36:48 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:36:48 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:92
+[02-Aug-2019 10:36:48 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 92
+[02-Aug-2019 10:36:48 UTC] PHP Stack trace:
+[02-Aug-2019 10:36:48 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:36:48 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:36:48 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:36:48 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:36:48 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:92
+[02-Aug-2019 10:36:48 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 92
+[02-Aug-2019 10:36:48 UTC] PHP Stack trace:
+[02-Aug-2019 10:36:48 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:36:48 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:36:48 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:36:48 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:36:48 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:92
+[02-Aug-2019 10:36:48 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 92
+[02-Aug-2019 10:36:48 UTC] PHP Stack trace:
+[02-Aug-2019 10:36:48 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:36:48 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:36:48 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:36:48 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:36:48 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:92
+[02-Aug-2019 10:36:48 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 92
+[02-Aug-2019 10:36:48 UTC] PHP Stack trace:
+[02-Aug-2019 10:36:48 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:36:48 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:36:48 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:36:48 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:36:48 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:92
+[02-Aug-2019 10:36:48 UTC] PHP Warning:  in_array() expects at least 2 parameters, 1 given in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 92
+[02-Aug-2019 10:36:48 UTC] PHP Stack trace:
+[02-Aug-2019 10:36:48 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:36:48 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 10:36:48 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 10:36:48 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 10:36:48 UTC] PHP   5. in_array() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:92
+[02-Aug-2019 10:38:30 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 10:38:30 UTC] PHP Stack trace:
+[02-Aug-2019 10:38:30 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:38:30 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 10:38:30 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 10:38:30 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 10:45:28 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 10:45:28 UTC] PHP Stack trace:
+[02-Aug-2019 10:45:28 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:45:28 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 10:45:28 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 10:45:28 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 10:46:12 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 10:46:12 UTC] PHP Stack trace:
+[02-Aug-2019 10:46:12 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:46:12 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 10:46:12 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 10:46:12 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 10:46:52 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 10:46:52 UTC] PHP Stack trace:
+[02-Aug-2019 10:46:52 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:46:52 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 10:46:52 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 10:46:52 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 10:47:16 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 10:47:16 UTC] PHP Stack trace:
+[02-Aug-2019 10:47:16 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:47:16 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 10:47:16 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 10:47:16 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 10:48:48 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 10:48:48 UTC] PHP Stack trace:
+[02-Aug-2019 10:48:48 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:48:48 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 10:48:48 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 10:48:48 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 10:49:20 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 10:49:20 UTC] PHP Stack trace:
+[02-Aug-2019 10:49:20 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:49:20 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 10:49:20 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 10:49:20 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 10:49:49 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 10:49:49 UTC] PHP Stack trace:
+[02-Aug-2019 10:49:49 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:49:49 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 10:49:49 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 10:49:49 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 10:50:59 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 10:50:59 UTC] PHP Stack trace:
+[02-Aug-2019 10:50:59 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 10:50:59 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 10:50:59 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 10:50:59 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 14:20:45 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 23
+[02-Aug-2019 14:22:08 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 14:22:08 UTC] PHP Stack trace:
+[02-Aug-2019 14:22:08 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 14:22:08 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 14:22:08 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 14:22:08 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 14:22:08 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[02-Aug-2019 14:22:08 UTC] PHP Stack trace:
+[02-Aug-2019 14:22:08 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 14:22:08 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 14:22:08 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 14:22:08 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 14:22:08 UTC] PHP   5. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:103
+[02-Aug-2019 14:22:08 UTC] PHP   6. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[02-Aug-2019 14:22:08 UTC] PHP   7. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[02-Aug-2019 14:22:08 UTC] PHP   8. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[02-Aug-2019 14:22:08 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 106
+[02-Aug-2019 14:22:08 UTC] PHP Stack trace:
+[02-Aug-2019 14:22:08 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 14:22:08 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 14:22:08 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 14:22:08 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 14:22:08 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[02-Aug-2019 14:22:08 UTC] PHP Stack trace:
+[02-Aug-2019 14:22:08 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 14:22:08 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 14:22:08 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 14:22:08 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 14:22:08 UTC] PHP   5. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:89
+[02-Aug-2019 14:22:08 UTC] PHP   6. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[02-Aug-2019 14:22:08 UTC] PHP   7. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[02-Aug-2019 14:22:08 UTC] PHP   8. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[02-Aug-2019 14:22:08 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 91
+[02-Aug-2019 14:22:08 UTC] PHP Stack trace:
+[02-Aug-2019 14:22:08 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 14:22:08 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 14:22:08 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 14:22:08 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 14:23:31 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 14:23:31 UTC] PHP Stack trace:
+[02-Aug-2019 14:23:31 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 14:23:31 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 14:23:31 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 14:23:31 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 14:23:31 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[02-Aug-2019 14:23:31 UTC] PHP Stack trace:
+[02-Aug-2019 14:23:32 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 14:23:32 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 14:23:32 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 14:23:32 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 14:23:32 UTC] PHP   5. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:103
+[02-Aug-2019 14:23:32 UTC] PHP   6. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[02-Aug-2019 14:23:32 UTC] PHP   7. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[02-Aug-2019 14:23:32 UTC] PHP   8. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[02-Aug-2019 14:23:32 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 106
+[02-Aug-2019 14:23:32 UTC] PHP Stack trace:
+[02-Aug-2019 14:23:32 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 14:23:32 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 14:23:32 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 14:23:32 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 14:23:32 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[02-Aug-2019 14:23:32 UTC] PHP Stack trace:
+[02-Aug-2019 14:23:32 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 14:23:32 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 14:23:32 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 14:23:32 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 14:23:32 UTC] PHP   5. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:89
+[02-Aug-2019 14:23:32 UTC] PHP   6. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[02-Aug-2019 14:23:32 UTC] PHP   7. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[02-Aug-2019 14:23:32 UTC] PHP   8. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[02-Aug-2019 14:23:32 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 91
+[02-Aug-2019 14:23:32 UTC] PHP Stack trace:
+[02-Aug-2019 14:23:32 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 14:23:32 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 14:23:32 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 14:23:32 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 14:24:16 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 14:24:16 UTC] PHP Stack trace:
+[02-Aug-2019 14:24:16 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 14:24:16 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 14:24:16 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 14:24:16 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 14:24:16 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[02-Aug-2019 14:24:16 UTC] PHP Stack trace:
+[02-Aug-2019 14:24:16 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 14:24:16 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 14:24:16 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 14:24:16 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 14:24:16 UTC] PHP   5. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:103
+[02-Aug-2019 14:24:16 UTC] PHP   6. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[02-Aug-2019 14:24:16 UTC] PHP   7. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[02-Aug-2019 14:24:16 UTC] PHP   8. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[02-Aug-2019 14:24:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 106
+[02-Aug-2019 14:24:16 UTC] PHP Stack trace:
+[02-Aug-2019 14:24:16 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 14:24:16 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 14:24:16 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 14:24:16 UTC] PHP   4. qprc_diplay_select_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 14:24:16 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[02-Aug-2019 14:24:16 UTC] PHP Stack trace:
+[02-Aug-2019 14:24:16 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 14:24:16 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 14:24:16 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 14:24:16 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 14:24:16 UTC] PHP   5. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:89
+[02-Aug-2019 14:24:16 UTC] PHP   6. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[02-Aug-2019 14:24:16 UTC] PHP   7. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[02-Aug-2019 14:24:16 UTC] PHP   8. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[02-Aug-2019 14:24:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php on line 91
+[02-Aug-2019 14:24:16 UTC] PHP Stack trace:
+[02-Aug-2019 14:24:16 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 14:24:17 UTC] PHP   2. do_settings_sections() /app/public/wp-admin/options-general.php:404
+[02-Aug-2019 14:24:17 UTC] PHP   3. do_settings_fields() /app/public/wp-admin/includes/template.php:1609
+[02-Aug-2019 14:24:17 UTC] PHP   4. qprc_diplay_checkboxgroup_field() /app/public/wp-admin/includes/template.php:1651
+[02-Aug-2019 14:25:59 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 14:25:59 UTC] PHP Stack trace:
+[02-Aug-2019 14:25:59 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 14:25:59 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 14:25:59 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 14:25:59 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 14:29:09 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[02-Aug-2019 14:29:09 UTC] PHP Stack trace:
+[02-Aug-2019 14:29:09 UTC] PHP   1. {main}() /app/public/wp-admin/admin-ajax.php:0
+[02-Aug-2019 14:29:09 UTC] PHP   2. require_once() /app/public/wp-admin/admin-ajax.php:22
+[02-Aug-2019 14:29:09 UTC] PHP   3. require_once() /app/public/wp-load.php:37
+[02-Aug-2019 14:29:09 UTC] PHP   4. require_once() /app/public/wp-config.php:92
+[02-Aug-2019 14:29:09 UTC] PHP   5. do_action() /app/public/wp-settings.php:525
+[02-Aug-2019 14:29:09 UTC] PHP   6. WP_Hook->do_action() /app/public/wp-includes/plugin.php:465
+[02-Aug-2019 14:29:09 UTC] PHP   7. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[02-Aug-2019 14:29:09 UTC] PHP   8. pqrc_init() /app/public/wp-includes/class-wp-hook.php:286
+[02-Aug-2019 14:29:09 UTC] PHP   9. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:34
+[02-Aug-2019 14:29:09 UTC] PHP  10. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[02-Aug-2019 14:29:09 UTC] PHP  11. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[02-Aug-2019 14:29:09 UTC] PHP  12. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[02-Aug-2019 14:30:20 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 14:30:20 UTC] PHP Stack trace:
+[02-Aug-2019 14:30:20 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 14:30:20 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 14:30:20 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 14:30:20 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 15:09:13 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[02-Aug-2019 15:09:13 UTC] PHP Stack trace:
+[02-Aug-2019 15:09:13 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[02-Aug-2019 15:09:13 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[02-Aug-2019 15:09:13 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[02-Aug-2019 15:09:13 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[02-Aug-2019 15:09:13 UTC] PHP   5. wp_version_check() /app/public/wp-includes/class-wp-hook.php:286
+[02-Aug-2019 15:09:13 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:160
+[02-Aug-2019 15:09:14 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[02-Aug-2019 15:09:14 UTC] PHP Stack trace:
+[02-Aug-2019 15:09:14 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[02-Aug-2019 15:09:14 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[02-Aug-2019 15:09:14 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[02-Aug-2019 15:09:14 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[02-Aug-2019 15:09:14 UTC] PHP   5. wp_update_plugins() /app/public/wp-includes/class-wp-hook.php:286
+[02-Aug-2019 15:09:14 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:384
+[02-Aug-2019 15:09:14 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[02-Aug-2019 15:09:14 UTC] PHP Stack trace:
+[02-Aug-2019 15:09:14 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[02-Aug-2019 15:09:14 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[02-Aug-2019 15:09:14 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[02-Aug-2019 15:09:14 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[02-Aug-2019 15:09:14 UTC] PHP   5. wp_update_themes() /app/public/wp-includes/class-wp-hook.php:286
+[02-Aug-2019 15:09:14 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:569
+[02-Aug-2019 15:17:41 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 15:17:41 UTC] PHP Stack trace:
+[02-Aug-2019 15:17:41 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 15:17:41 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 15:17:41 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 15:17:41 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 15:19:15 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 15:19:15 UTC] PHP Stack trace:
+[02-Aug-2019 15:19:15 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 15:19:15 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 15:19:15 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 15:19:15 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 15:19:44 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 15:19:44 UTC] PHP Stack trace:
+[02-Aug-2019 15:19:44 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 15:19:44 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 15:19:44 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 15:19:44 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 15:22:13 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 15:22:13 UTC] PHP Stack trace:
+[02-Aug-2019 15:22:13 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 15:22:13 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 15:22:13 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 15:22:13 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 15:24:31 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 15:24:31 UTC] PHP Stack trace:
+[02-Aug-2019 15:24:31 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 15:24:31 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 15:24:31 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 15:24:31 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 15:54:24 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 15:54:24 UTC] PHP Stack trace:
+[02-Aug-2019 15:54:24 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 15:54:24 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 15:54:24 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 15:54:24 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65

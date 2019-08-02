@@ -360,3 +360,11 @@ add_filter('wordcount_tag', 'philosophy_wordcount_tag');
 return '100x100';
 }
 add_filter('pqrc_qrcode_dimension', 'philosophy_qrcode_dimension');*/
+
+// Clint dose not neet to translateable
+function philosophy_settings_country_list($countries) {
+	array_push($countries, __('Spain', 'philosophy'));
+	// $countries = array_diff($countries, array('Pakistan', 'India'));
+	return $countries;
+}
+add_filter('pqrc_countries', 'philosophy_settings_country_list');
