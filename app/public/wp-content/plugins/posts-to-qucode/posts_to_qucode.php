@@ -61,12 +61,39 @@ function pqrc_settings_init() {
 	// add_settings_field( $id, $title, $callback, $page, $section = 'default', $args = array )
 	add_settings_field('pqrc_height', __('QR Code Height', 'posts-to-qrcode'), 'qprc_diplay_field', 'general', 'pqrc_section', array('pqrc_height'));
 	add_settings_field('pqrc_width', __('QR Code Width', 'posts-to-qrcode'), 'qprc_diplay_field', 'general', 'pqrc_section', array('pqrc_width'));
-	add_settings_field('pqrc_extra', __('QR Code Extra Field', 'posts-to-qrcode'), 'qprc_diplay_field', 'general', 'pqrc_section', array('pqrc_extra'));
+	// add_settings_field('pqrc_extra', __('QR Code Extra Field', 'posts-to-qrcode'), 'qprc_diplay_field', 'general', 'pqrc_section', array('pqrc_extra'));
+	add_settings_field('pqrc_select', __('Dropdown', 'posts-to-qrcode'), /*Callback Function*/'qprc_diplay_select_field', 'general', 'pqrc_section');
 
 	// register_setting( $option_group, $option_name, $args = array );
 	register_setting('general', 'pqrc_height', array('sanitize_callback' => 'esc_attr'));
 	register_setting('general', 'pqrc_width', array('sanitize_callback' => 'esc_attr'));
-	register_setting('general', 'pqrc_extra', array('sanitize_callback' => 'esc_attr'));
+	// register_setting('general', 'pqrc_extra', array('sanitize_callback' => 'esc_attr'));
+	register_setting('general', 'pqrc_select', array('sanitize_callback' => 'esc_attr'));
+}
+
+function qprc_diplay_select_field() {
+	$option = get_option('pqrc_select');
+	$countries = array(
+		'None',
+		'Bangladesh',
+		'India',
+		'Afganistan',
+		'Maldives',
+		'Bhutan',
+		'Napal',
+		'Pakistan',
+		'Sri Lanka',
+	);
+	printf('<select id="%s" name="%s">', 'pqrc_select', 'pqrc_select');
+	foreach ($countries as $country) {
+		$selected = '';
+		if ($option == $country) {
+			$selected = 'selected';
+		}
+
+		printf('<option value="%s" %s>%s</option>', $country, $selected, $country);
+	}
+	echo "</select>";
 }
 
 function pqrc_section_callback() {
