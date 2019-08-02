@@ -5788,3 +5788,9 @@ Stack trace:
 [02-Aug-2019 15:54:24 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
 [02-Aug-2019 15:54:24 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
 [02-Aug-2019 15:54:24 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[02-Aug-2019 18:55:16 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[02-Aug-2019 18:55:16 UTC] PHP Stack trace:
+[02-Aug-2019 18:55:16 UTC] PHP   1. {main}() /app/public/wp-admin/options-general.php:0
+[02-Aug-2019 18:55:16 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
+[02-Aug-2019 18:55:16 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
+[02-Aug-2019 18:55:16 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65

@@ -81,6 +81,7 @@ function pqrc_settings_init() {
 	// add_settings_field('pqrc_extra', __('QR Code Extra Field', 'posts-to-qrcode'), 'qprc_diplay_field', 'general', 'pqrc_section', array('pqrc_extra'));
 	add_settings_field('pqrc_select', __('Dropdown', 'posts-to-qrcode'), /*Callback Function*/'qprc_diplay_select_field', 'general', 'pqrc_section');
 	add_settings_field('pqrc_checkbox', __('Select Countries', 'posts-to-qrcode'), /*Callback Function*/'qprc_diplay_checkboxgroup_field', 'general', 'pqrc_section');
+	add_settings_field('pqrc_toggle', __('Toggle Field', 'posts-to-qrcode'), /*Callback Function*/'qprc_diplay_toggle_field', 'general', 'pqrc_section');
 
 	// register_setting( $option_group, $option_name, $args = array );
 	register_setting('general', 'pqrc_height', array('sanitize_callback' => 'esc_attr'));
@@ -88,6 +89,13 @@ function pqrc_settings_init() {
 	// register_setting('general', 'pqrc_extra', array('sanitize_callback' => 'esc_attr'));
 	register_setting('general', 'pqrc_select', array('sanitize_callback' => 'esc_attr'));
 	register_setting('general', 'pqrc_checkbox');
+	register_setting('general', 'pqrc_toggle');
+}
+
+function qprc_diplay_toggle_field() {
+	$current_option = get_option('pqrc_toggle');
+	echo '<div id="toggle1"></div>';
+	echo '<input type="hidden" name="pqrc_toggle" id="pqrc_toggle" value="' . $current_option . '">';
 }
 
 function qprc_diplay_checkboxgroup_field() {
@@ -141,3 +149,20 @@ printf("<input type='text' id='%s' name='%s' value='%s'/>", 'pqrc_width', 'pqrc_
 }*/
 
 add_action("admin_init", "pqrc_settings_init");
+
+/*
+ * Plugin Assets files Enqueue by this method
+ */
+function pqrc_assets($screen) {
+	if ('options-general.php' == $screen) {
+
+		// CSS file enqueue
+		wp_enqueue_style('pqrc-minitoggle-css', plugin_dir_url(__FILE__) . "assets/css/minitoggle.css");
+
+		// jquery file enqueue
+		wp_enqueue_script('pqrc-minitoggle-js', plugin_dir_url(__FILE__) . "assets/js/minitoggle.js", array('jquery'), "1.0", true);
+		wp_enqueue_script('pqrc-main-js', plugin_dir_url(__FILE__) . "assets/js/pqrc-main.js", array('jquery'), time(), true);
+	}
+
+}
+add_action('admin_enqueue_scripts', 'pqrc_assets');

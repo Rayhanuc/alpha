@@ -29,3 +29,7 @@
 2019/08/01 17:20:09 [emerg] 894#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
 2019/08/01 17:20:09 [emerg] 894#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
 2019/08/01 17:20:09 [emerg] 894#0: still could not bind()
+2019/08/02 17:36:05 [error] 89#0: *1729 directory index of "/app/public/wp-content/plugins/posts-to-qucode/" is forbidden, client: 172.17.0.1, server: , request: "GET /wp-content/plugins/posts-to-qucode/?ver=1564767358 HTTP/1.0", host: "alpha.local", referrer: "http://alpha.local/wp-admin/options-general.php"
+2019/08/02 17:36:07 [error] 89#0: *1739 directory index of "/app/public/wp-content/plugins/posts-to-qucode/" is forbidden, client: 172.17.0.1, server: , request: "GET /wp-content/plugins/posts-to-qucode/?ver=1564767358 HTTP/1.0", host: "alpha.local", referrer: "http://alpha.local/wp-admin/options-general.php"
+2019/08/02 17:36:56 [error] 89#0: *1782 directory index of "/app/public/wp-content/plugins/posts-to-qucode/" is forbidden, client: 172.17.0.1, server: , request: "GET /wp-content/plugins/posts-to-qucode/?ver=1564767411 HTTP/1.0", host: "alpha.local", referrer: "http://alpha.local/wp-admin/options-general.php"
+2019/08/02 17:39:48 [error] 89#0: *1835 directory index of "/app/public/wp-content/plugins/posts-to-qucode/" is forbidden, client: 172.17.0.1, server: , request: "GET /wp-content/plugins/posts-to-qucode/?ver=1564767584 HTTP/1.0", host: "alpha.local", referrer: "http://alpha.local/wp-admin/options-general.php"
