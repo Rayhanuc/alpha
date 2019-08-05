@@ -5794,3 +5794,166 @@ Stack trace:
 [02-Aug-2019 18:55:16 UTC] PHP   2. wp_get_available_translations() /app/public/wp-admin/options-general.php:158
 [02-Aug-2019 18:55:16 UTC] PHP   3. translations_api() /app/public/wp-admin/includes/translation-install.php:126
 [02-Aug-2019 18:55:16 UTC] PHP   4. trigger_error() /app/public/wp-admin/includes/translation-install.php:65
+[03-Aug-2019 16:58:48 UTC] PHP Fatal error:  Cannot redeclare philosophy_button() (previously declared in /app/public/wp-content/plugins/philosophy_companion/philosophy-companion.php:78) in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 16:58:48 UTC] PHP Stack trace:
+[03-Aug-2019 16:58:48 UTC] PHP   1. {main}() /app/public/wp-admin/admin-ajax.php:0
+[03-Aug-2019 16:58:48 UTC] PHP   2. require_once() /app/public/wp-admin/admin-ajax.php:22
+[03-Aug-2019 16:58:48 UTC] PHP   3. require_once() /app/public/wp-load.php:37
+[03-Aug-2019 16:58:48 UTC] PHP   4. require_once() /app/public/wp-config.php:92
+[03-Aug-2019 17:00:48 UTC] PHP Fatal error:  Cannot redeclare philosophy_button() (previously declared in /app/public/wp-content/plugins/philosophy_companion/philosophy-companion.php:78) in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 17:00:48 UTC] PHP Stack trace:
+[03-Aug-2019 17:00:48 UTC] PHP   1. {main}() /app/public/wp-admin/admin-ajax.php:0
+[03-Aug-2019 17:00:48 UTC] PHP   2. require_once() /app/public/wp-admin/admin-ajax.php:22
+[03-Aug-2019 17:00:48 UTC] PHP   3. require_once() /app/public/wp-load.php:37
+[03-Aug-2019 17:00:48 UTC] PHP   4. require_once() /app/public/wp-config.php:92
+[03-Aug-2019 17:01:15 UTC] PHP Fatal error:  Cannot redeclare philosophy_button() (previously declared in /app/public/wp-content/plugins/philosophy_companion/philosophy-companion.php:78) in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 17:01:15 UTC] PHP Stack trace:
+[03-Aug-2019 17:01:15 UTC] PHP   1. {main}() /app/public/wp-admin/admin-ajax.php:0
+[03-Aug-2019 17:01:15 UTC] PHP   2. require_once() /app/public/wp-admin/admin-ajax.php:22
+[03-Aug-2019 17:01:15 UTC] PHP   3. require_once() /app/public/wp-load.php:37
+[03-Aug-2019 17:01:15 UTC] PHP   4. require_once() /app/public/wp-config.php:92
+[03-Aug-2019 17:01:30 UTC] PHP Fatal error:  Cannot redeclare philosophy_button() (previously declared in /app/public/wp-content/plugins/philosophy_companion/philosophy-companion.php:78) in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 17:01:30 UTC] PHP Stack trace:
+[03-Aug-2019 17:01:30 UTC] PHP   1. {main}() /app/public/wp-admin/admin-ajax.php:0
+[03-Aug-2019 17:01:30 UTC] PHP   2. require_once() /app/public/wp-admin/admin-ajax.php:22
+[03-Aug-2019 17:01:30 UTC] PHP   3. require_once() /app/public/wp-load.php:37
+[03-Aug-2019 17:01:30 UTC] PHP   4. require_once() /app/public/wp-config.php:92
+[03-Aug-2019 17:01:44 UTC] PHP Fatal error:  Cannot redeclare philosophy_button() (previously declared in /app/public/wp-content/plugins/philosophy_companion/philosophy-companion.php:78) in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 17:01:44 UTC] PHP Stack trace:
+[03-Aug-2019 17:01:44 UTC] PHP   1. {main}() /app/public/wp-admin/admin-ajax.php:0
+[03-Aug-2019 17:01:44 UTC] PHP   2. require_once() /app/public/wp-admin/admin-ajax.php:22
+[03-Aug-2019 17:01:44 UTC] PHP   3. require_once() /app/public/wp-load.php:37
+[03-Aug-2019 17:01:44 UTC] PHP   4. require_once() /app/public/wp-config.php:92
+[03-Aug-2019 17:03:46 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 17:04:01 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 17:06:11 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 17:08:11 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 17:10:11 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 17:12:10 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 17:14:10 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 18:08:39 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 18:08:49 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 18:09:04 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 18:09:19 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 18:09:34 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 18:10:04 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 18:10:17 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 18:10:33 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 18:10:33 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 18:10:35 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/philosophy/functions.php on line 375
+[03-Aug-2019 18:11:48 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/themes/philosophy/functions.php on line 378
+[03-Aug-2019 18:11:53 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/themes/philosophy/functions.php on line 378
+[03-Aug-2019 18:12:31 UTC] PHP Fatal error:  Cannot redeclare philosophy_button() (previously declared in /app/public/wp-content/plugins/philosophy_companion/philosophy-companion.php:78) in /app/public/wp-content/themes/philosophy/functions.php on line 379
+[03-Aug-2019 18:12:31 UTC] PHP Stack trace:
+[03-Aug-2019 18:12:31 UTC] PHP   1. {main}() /app/public/wp-admin/post.php:0
+[03-Aug-2019 18:12:31 UTC] PHP   2. require_once() /app/public/wp-admin/post.php:12
+[03-Aug-2019 18:12:31 UTC] PHP   3. require_once() /app/public/wp-admin/admin.php:34
+[03-Aug-2019 18:12:31 UTC] PHP   4. require_once() /app/public/wp-load.php:37
+[03-Aug-2019 18:12:31 UTC] PHP   5. require_once() /app/public/wp-config.php:92
+[03-Aug-2019 18:12:42 UTC] PHP Fatal error:  Cannot redeclare philosophy_button() (previously declared in /app/public/wp-content/plugins/philosophy_companion/philosophy-companion.php:78) in /app/public/wp-content/themes/philosophy/functions.php on line 379
+[03-Aug-2019 18:12:42 UTC] PHP Stack trace:
+[03-Aug-2019 18:12:42 UTC] PHP   1. {main}() /app/public/wp-admin/post.php:0
+[03-Aug-2019 18:12:42 UTC] PHP   2. require_once() /app/public/wp-admin/post.php:12
+[03-Aug-2019 18:12:42 UTC] PHP   3. require_once() /app/public/wp-admin/admin.php:34
+[03-Aug-2019 18:12:42 UTC] PHP   4. require_once() /app/public/wp-load.php:37
+[03-Aug-2019 18:12:42 UTC] PHP   5. require_once() /app/public/wp-config.php:92
+[03-Aug-2019 19:06:39 UTC] PHP Fatal error:  Cannot redeclare philosophy_button() (previously declared in /app/public/wp-content/plugins/philosophy_companion/philosophy-companion.php:78) in /app/public/wp-content/themes/philosophy/functions.php on line 373
+[03-Aug-2019 19:06:40 UTC] PHP Stack trace:
+[03-Aug-2019 19:06:40 UTC] PHP   1. {main}() /app/public/wp-admin/post.php:0
+[03-Aug-2019 19:06:40 UTC] PHP   2. require_once() /app/public/wp-admin/post.php:12
+[03-Aug-2019 19:06:40 UTC] PHP   3. require_once() /app/public/wp-admin/admin.php:34
+[03-Aug-2019 19:06:40 UTC] PHP   4. require_once() /app/public/wp-load.php:37
+[03-Aug-2019 19:06:40 UTC] PHP   5. require_once() /app/public/wp-config.php:92
+[03-Aug-2019 19:08:00 UTC] PHP Fatal error:  Cannot redeclare philosophy_button() (previously declared in /app/public/wp-content/plugins/philosophy_companion/philosophy-companion.php:78) in /app/public/wp-content/themes/philosophy/functions.php on line 373
+[03-Aug-2019 19:08:00 UTC] PHP Stack trace:
+[03-Aug-2019 19:08:00 UTC] PHP   1. {main}() /app/public/wp-admin/post.php:0
+[03-Aug-2019 19:08:00 UTC] PHP   2. require_once() /app/public/wp-admin/post.php:12
+[03-Aug-2019 19:08:00 UTC] PHP   3. require_once() /app/public/wp-admin/admin.php:34
+[03-Aug-2019 19:08:00 UTC] PHP   4. require_once() /app/public/wp-load.php:37
+[03-Aug-2019 19:08:00 UTC] PHP   5. require_once() /app/public/wp-config.php:92
+[03-Aug-2019 19:08:14 UTC] PHP Fatal error:  Cannot redeclare philosophy_button() (previously declared in /app/public/wp-content/plugins/philosophy_companion/philosophy-companion.php:78) in /app/public/wp-content/themes/philosophy/functions.php on line 373
+[03-Aug-2019 19:08:14 UTC] PHP Stack trace:
+[03-Aug-2019 19:08:14 UTC] PHP   1. {main}() /app/public/index.php:0
+[03-Aug-2019 19:08:14 UTC] PHP   2. require() /app/public/index.php:17
+[03-Aug-2019 19:08:14 UTC] PHP   3. require_once() /app/public/wp-blog-header.php:13
+[03-Aug-2019 19:08:14 UTC] PHP   4. require_once() /app/public/wp-load.php:37
+[03-Aug-2019 19:08:14 UTC] PHP   5. require_once() /app/public/wp-config.php:92
+[03-Aug-2019 19:11:37 UTC] PHP Fatal error:  Cannot redeclare philosophy_button() (previously declared in /app/public/wp-content/plugins/philosophy_companion/philosophy-companion.php:78) in /app/public/wp-content/themes/philosophy/functions.php on line 373
+[03-Aug-2019 19:11:37 UTC] PHP Stack trace:
+[03-Aug-2019 19:11:37 UTC] PHP   1. {main}() /app/public/wp-admin/post.php:0
+[03-Aug-2019 19:11:37 UTC] PHP   2. require_once() /app/public/wp-admin/post.php:12
+[03-Aug-2019 19:11:37 UTC] PHP   3. require_once() /app/public/wp-admin/admin.php:34
+[03-Aug-2019 19:11:37 UTC] PHP   4. require_once() /app/public/wp-load.php:37
+[03-Aug-2019 19:11:37 UTC] PHP   5. require_once() /app/public/wp-config.php:92
+[04-Aug-2019 05:40:53 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[04-Aug-2019 05:40:53 UTC] PHP Stack trace:
+[04-Aug-2019 05:40:53 UTC] PHP   1. {main}() /usr/local/bin/wp:0
+[04-Aug-2019 05:40:53 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[04-Aug-2019 05:40:53 UTC] PHP Stack trace:
+[04-Aug-2019 05:40:53 UTC] PHP   2. include() /usr/local/bin/wp:4
+[04-Aug-2019 05:40:53 UTC] PHP   1. {main}() /usr/local/bin/wp:0
+[04-Aug-2019 05:40:53 UTC] PHP   2. include() /usr/local/bin/wp:4
+[04-Aug-2019 05:40:53 UTC] PHP   3. include() phar:///usr/local/bin/wp/php/boot-phar.php:8
+[04-Aug-2019 05:40:53 UTC] PHP   3. include() phar:///usr/local/bin/wp/php/boot-phar.php:8
+[04-Aug-2019 05:40:53 UTC] PHP   4. WP_CLI\bootstrap() phar:///usr/local/bin/wp/php/wp-cli.php:23
+[04-Aug-2019 05:40:53 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar:///usr/local/bin/wp/php/bootstrap.php:75
+[04-Aug-2019 05:40:53 UTC] PHP   4. WP_CLI\bootstrap() phar:///usr/local/bin/wp/php/wp-cli.php:23
+[04-Aug-2019 05:40:53 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar:///usr/local/bin/wp/php/bootstrap.php:75
+[04-Aug-2019 05:40:53 UTC] PHP   6. WP_CLI\Runner->start() phar:///usr/local/bin/wp/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[04-Aug-2019 05:40:53 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1032
+[04-Aug-2019 05:40:54 UTC] PHP   6. WP_CLI\Runner->start() phar:///usr/local/bin/wp/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[04-Aug-2019 05:40:54 UTC] PHP   8. require() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1105
+[04-Aug-2019 05:40:54 UTC] PHP   9. do_action() /app/public/wp-settings.php:525
+[04-Aug-2019 05:40:54 UTC] PHP  10. WP_Hook->do_action() /app/public/wp-includes/plugin.php:465
+[04-Aug-2019 05:40:54 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1032
+[04-Aug-2019 05:40:54 UTC] PHP   8. require() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1105
+[04-Aug-2019 05:40:54 UTC] PHP   9. do_action() /app/public/wp-settings.php:525
+[04-Aug-2019 05:40:54 UTC] PHP  11. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[04-Aug-2019 05:40:54 UTC] PHP  10. WP_Hook->do_action() /app/public/wp-includes/plugin.php:465
+[04-Aug-2019 05:40:54 UTC] PHP  11. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[04-Aug-2019 05:40:54 UTC] PHP  12. pqrc_init() /app/public/wp-includes/class-wp-hook.php:286
+[04-Aug-2019 05:40:54 UTC] PHP  12. pqrc_init() /app/public/wp-includes/class-wp-hook.php:286
+[04-Aug-2019 05:40:54 UTC] PHP  13. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:35
+[04-Aug-2019 05:40:54 UTC] PHP  13. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:35
+[04-Aug-2019 05:40:54 UTC] PHP  14. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[04-Aug-2019 05:40:54 UTC] PHP  15. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[04-Aug-2019 05:40:54 UTC] PHP  14. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[04-Aug-2019 05:40:54 UTC] PHP  15. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[04-Aug-2019 05:40:54 UTC] PHP  16. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[04-Aug-2019 05:40:54 UTC] PHP  16. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[04-Aug-2019 05:40:54 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[04-Aug-2019 05:40:54 UTC] PHP Stack trace:
+[04-Aug-2019 05:40:54 UTC] PHP   1. {main}() /usr/local/bin/wp:0
+[04-Aug-2019 05:40:54 UTC] PHP   2. include() /usr/local/bin/wp:4
+[04-Aug-2019 05:40:54 UTC] PHP   3. include() phar:///usr/local/bin/wp/php/boot-phar.php:8
+[04-Aug-2019 05:40:55 UTC] PHP   4. WP_CLI\bootstrap() phar:///usr/local/bin/wp/php/wp-cli.php:23
+[04-Aug-2019 05:40:55 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar:///usr/local/bin/wp/php/bootstrap.php:75
+[04-Aug-2019 05:40:55 UTC] PHP   6. WP_CLI\Runner->start() phar:///usr/local/bin/wp/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[04-Aug-2019 05:40:55 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1032
+[04-Aug-2019 05:40:55 UTC] PHP   8. require() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1105
+[04-Aug-2019 05:40:55 UTC] PHP   9. do_action() /app/public/wp-settings.php:525
+[04-Aug-2019 05:40:55 UTC] PHP  10. WP_Hook->do_action() /app/public/wp-includes/plugin.php:465
+[04-Aug-2019 05:40:55 UTC] PHP  11. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[04-Aug-2019 05:40:55 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[04-Aug-2019 05:40:55 UTC] PHP Stack trace:
+[04-Aug-2019 05:40:55 UTC] PHP   1. {main}() /usr/local/bin/wp:0
+[04-Aug-2019 05:40:55 UTC] PHP  12. pqrc_init() /app/public/wp-includes/class-wp-hook.php:286
+[04-Aug-2019 05:40:55 UTC] PHP  13. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:35
+[04-Aug-2019 05:40:55 UTC] PHP   2. include() /usr/local/bin/wp:4
+[04-Aug-2019 05:40:55 UTC] PHP   3. include() phar:///usr/local/bin/wp/php/boot-phar.php:8
+[04-Aug-2019 05:40:55 UTC] PHP   4. WP_CLI\bootstrap() phar:///usr/local/bin/wp/php/wp-cli.php:23
+[04-Aug-2019 05:40:55 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar:///usr/local/bin/wp/php/bootstrap.php:75
+[04-Aug-2019 05:40:55 UTC] PHP   6. WP_CLI\Runner->start() phar:///usr/local/bin/wp/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[04-Aug-2019 05:40:55 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1032
+[04-Aug-2019 05:40:55 UTC] PHP  14. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[04-Aug-2019 05:40:55 UTC] PHP  15. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[04-Aug-2019 05:40:55 UTC] PHP  16. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[04-Aug-2019 05:40:55 UTC] PHP   8. require() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1105
+[04-Aug-2019 05:40:55 UTC] PHP   9. do_action() /app/public/wp-settings.php:525
+[04-Aug-2019 05:40:55 UTC] PHP  10. WP_Hook->do_action() /app/public/wp-includes/plugin.php:465
+[04-Aug-2019 05:40:56 UTC] PHP  11. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[04-Aug-2019 05:40:56 UTC] PHP  12. pqrc_init() /app/public/wp-includes/class-wp-hook.php:286
+[04-Aug-2019 05:40:56 UTC] PHP  13. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:35
+[04-Aug-2019 05:40:56 UTC] PHP  14. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[04-Aug-2019 05:40:56 UTC] PHP  15. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[04-Aug-2019 05:40:56 UTC] PHP  16. array_push() /app/public/wp-content/themes/philosophy/functions.php:366

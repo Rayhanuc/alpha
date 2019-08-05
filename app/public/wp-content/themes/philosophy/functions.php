@@ -368,3 +368,19 @@ function philosophy_settings_country_list($countries) {
 	return $countries;
 }
 add_filter('pqrc_countries', 'philosophy_settings_country_list');
+
+// shortcode all parameters pass wordpress
+/*function philosophy_button($attributes) {
+return sprintf('<a class="btn btn--%s full-width" href="%s">%s</a>',
+$attributes['type'],
+$attributes['url'],
+$attributes['title']
+);
+}
+add_shortcode('button', 'philosophy_button');*/
+
+// Create a Custom Stylesheet for the Login Page
+function custom_login_stylesheet() {
+	wp_enqueue_style('custom-login', get_stylesheet_directory_uri() . '/login/login-styles.css');
+}
+add_action('login_enqueue_scripts', 'custom_login_stylesheet');

@@ -20,8 +20,8 @@ INSERT INTO `wp_usermeta` VALUES
 (17,1,"wp_dashboard_quick_press_last_post_id","379"),
 (18,1,"managenav-menuscolumnshidden","a:4:{i:0;s:11:\"link-target\";i:1;s:15:\"title-attribute\";i:2;s:3:\"xfn\";i:3;s:11:\"description\";}"),
 (19,1,"metaboxhidden_nav-menus","a:2:{i:0;s:12:\"add-post_tag\";i:1;s:15:\"add-post_format\";}"),
-(20,1,"wp_user-settings","libraryContent=browse&editor=tinymce"),
-(21,1,"wp_user-settings-time","1556686909"),
+(20,1,"wp_user-settings","libraryContent=browse&editor=html"),
+(21,1,"wp_user-settings-time","1564850248"),
 (22,1,"nav_menu_recently_edited","15"),
 (23,1,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}"),
 (24,1,"enable_custom_fields","1"),
@@ -59,4 +59,4 @@ INSERT INTO `wp_usermeta` VALUES
 (56,1,"metaboxhidden_book","a:1:{i:0;s:7:\"slugdiv\";}"),
 (57,1,"meta-box-order_page","a:4:{s:15:\"acf_after_title\";s:0:\"\";s:4:\"side\";s:36:\"submitdiv,pageparentdiv,postimagediv\";s:6:\"normal\";s:182:\"commentstatusdiv,commentsdiv,slugdiv,authordiv,_philosophy_pt_pricing_table,cmb-group-_philosophy_pt_pricing_table-0,page-metabox,_philosophy_services,cmb-group-_philosophy_service-0\";s:8:\"advanced\";s:19:\"post-meta-inspector\";}"),
 (58,1,"screen_layout_page","2"),
-(59,1,"session_tokens","a:2:{s:64:\"5a010a39de1f3aa2968e4586cff8db730228138150cbc06406ea2f35a0b18d6b\";a:4:{s:10:\"expiration\";i:1564514136;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3851.0 Safari/537.36 Edg/77.0.223.0\";s:5:\"login\";i:1564341336;}s:64:\"14db6741372f561f164b850365ad506b452c4155c87ad2485680f0a91160c604\";a:4:{s:10:\"expiration\";i:1565716598;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3851.0 Safari/537.36 Edg/77.0.223.0\";s:5:\"login\";i:1564506998;}}");
+(59,1,"session_tokens","a:3:{s:64:\"14db6741372f561f164b850365ad506b452c4155c87ad2485680f0a91160c604\";a:4:{s:10:\"expiration\";i:1565716598;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3851.0 Safari/537.36 Edg/77.0.223.0\";s:5:\"login\";i:1564506998;}s:64:\"e3bd5419b262f34d12e5914b09a20e3057635e7a0e68ed592a84a2d20b5544f2\";a:4:{s:10:\"expiration\";i:1565019876;s:2:\"ip\";s:10:\"172.17.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3861.0 Safari/537.36 Edg/77.0.230.2\";s:5:\"login\";i:1564847076;}s:64:\"5f250366508ced5756f78f60df6afe46f4386f53ac4ca8ff857a2fbf93fdf5bd\";a:4:{s:10:\"expiration\";i:1565083095;s:2:\"ip\";s:10:\"172.17.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3861.0 Safari/537.36 Edg/77.0.230.2\";s:5:\"login\";i:1564910295;}}");

@@ -1,0 +1,61 @@
+/* body.login {}
+body.login div#login {}
+body.login div#login h1 {}
+body.login div#login h1 a {}
+body.login div#login form#loginform {}
+body.login div#login form#loginform p {}
+body.login div#login form#loginform p label {}
+body.login div#login form#loginform input {}
+body.login div#login form#loginform input#user_login {}
+body.login div#login form#loginform input#user_pass {}
+body.login div#login form#loginform p.forgetmenot {}
+body.login div#login form#loginform p.forgetmenot input#rememberme {}
+body.login div#login form#loginform p.submit {}
+body.login div#login form#loginform p.submit input#wp-submit {}
+body.login div#login p#nav {}
+body.login div#login p#nav a {}
+body.login div#login p#backtoblog {}
+body.login div#login p#backtoblog a {} */
+
+
+body.login {
+	background:#200822;
+}
+body.login div#login {}
+body.login div#login h1 {}
+body.login div#login h1 a {}
+body.login div#login form#loginform {
+	border-radius: 13px;
+}
+body.login div#login form#loginform p {}
+body.login div#login form#loginform p label {}
+body.login div#login form#loginform input {}
+body.login div#login form#loginform input#user_login {
+	border-radius: 50px;
+	border: 1px solid #0c7fd3;
+}
+body.login div#login form#loginform input#user_pass {
+	border-radius: 50px;
+	border: 1px solid #0c7fd3;
+}
+body.login div#login form#loginform p.forgetmenot {}
+body.login div#login form#loginform p.forgetmenot input#rememberme {}
+body.login div#login form#loginform p.submit {}
+body.login div#login form#loginform p.submit input#wp-submit {}
+body.login div#login p#nav {}
+body.login div#login p#nav a, body.login div#login p#backtoblog a {
+	color: #fff;
+}
+body.login div#login p#nav a:hover, body.login div#login p#backtoblog a {
+	color: #00a0d2;
+}
+body.login div#login p#backtoblog {}
+
+/* input[type=checkbox],input[type=color],input[type=date],input[type=datetime-local],input[type=datetime],input[type=email],input[type=month],input[type=number],input[type=password],input[type=radio],input[type=search],input[type=tel],input[type=text],input[type=time],input[type=url],input[type=week],select,textarea {
+    border: 1px solid #0c7fd3;
+} */
+
+.login form .input, .login form input[type=checkbox], .login input[type=text] {
+    padding-left: 18px;
+    padding-right: 18px;
+}
