@@ -145,3 +145,7 @@ a img.aligncenter {
 .bypostauthor {
 	visibility: inherit;
 }
+
+.s-content__main .slider img {
+    margin: 0; 
+}

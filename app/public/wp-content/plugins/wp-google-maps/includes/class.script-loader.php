@@ -2,6 +2,9 @@
 
 namespace WPGMZA;
 
+if(!defined('ABSPATH'))
+	return;
+
 // TODO: Remove, an autoloader is now used
 require_once(plugin_dir_path(__FILE__) . 'google-maps/class.google-maps-loader.php');
 require_once(plugin_dir_path(__FILE__) . 'open-layers/class.ol-loader.php');
@@ -49,6 +52,9 @@ class ScriptLoader
 	 */
 	protected function log($str)
 	{
+		// Disabled in production. Left here for developers wishing to debug build issues.
+		return;
+		
 		$dest = __DIR__ . '/build.log';
 		
 		if(!$this->logStarted)
@@ -109,10 +115,14 @@ class ScriptLoader
 		$minified = ($wpgmza->isUsingMinifiedScripts() ? '.min' : '');
 		
 		$libraryDependencies = array(
-			'datatables'		=> $plugin_dir_url . "js/jquery.dataTables{$minified}.js",
-			'javascript-cookie'	=> $plugin_dir_url . 'lib/jquery-cookie.js',
-			'remodal'			=> $plugin_dir_url . "lib/remodal{$minified}.js",
-			'spectrum'			=> $plugin_dir_url . 'lib/spectrum.js'
+			'datatables'			=> $plugin_dir_url . "js/jquery.dataTables{$minified}.js",
+			'javascript-cookie'		=> $plugin_dir_url . 'lib/jquery-cookie.js',
+			'remodal'				=> $plugin_dir_url . "lib/remodal{$minified}.js",
+			'spectrum'				=> $plugin_dir_url . 'lib/spectrum.js',
+			
+			// TODO: These are only needed if the server supports inflate
+			'fast-text-encoding'	=> $plugin_dir_url . 'lib/text.min.js',
+			'pako'					=> $plugin_dir_url . 'lib/pako_deflate.min.js'
 		);
 		
 		/*if($wpgmza->isProVersion())

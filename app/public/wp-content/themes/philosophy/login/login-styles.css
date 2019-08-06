@@ -25,18 +25,25 @@ body.login div#login {}
 body.login div#login h1 {}
 body.login div#login h1 a {}
 body.login div#login form#loginform {
-	border-radius: 13px;
+    border-radius: 13px;
+    background: #200822;
+    color: #fff;
 }
 body.login div#login form#loginform p {}
 body.login div#login form#loginform p label {}
 body.login div#login form#loginform input {}
 body.login div#login form#loginform input#user_login {
 	border-radius: 50px;
-	border: 1px solid #0c7fd3;
+	border: 3px solid transparent;
 }
+
+body.login div#login form#loginform input#user_login:hover, body.login div#login form#loginform input#user_pass:hover {
+    border: 3px solid #0c7fd3;
+}
+
 body.login div#login form#loginform input#user_pass {
 	border-radius: 50px;
-	border: 1px solid #0c7fd3;
+	border: 3px solid transparent;
 }
 body.login div#login form#loginform p.forgetmenot {}
 body.login div#login form#loginform p.forgetmenot input#rememberme {}
