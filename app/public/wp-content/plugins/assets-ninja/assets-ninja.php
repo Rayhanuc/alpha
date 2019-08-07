@@ -48,6 +48,24 @@ Class AssetsNinja{
 		wp_enqueue_script('asn-another-js',ASN_ASSETS_PUBLIC_DIR."/js/another.js",array('jquery','asn-more-js'),$this->version,true);
 		wp_enqueue_script('asn-more-js',ASN_ASSETS_PUBLIC_DIR."/js/more.js",array('jquery'),$this->version,true);
 
+		$data = array(
+			'name'=>'rayhanuddinchy',
+			'url' => 'http://rayhanuddin.ml/'
+		);
+
+		$moredata = array(
+			'name'=>'learnwithrayhan',
+			'url' => 'http://bangladesh.ml/'
+		);
+
+		$translated_string = array(
+			'greetings' => __('অবাক পৃথিবীর মানুষ গুলি','assetsninja')
+		);
+
+		wp_localize_script( 'asn-more-js', 'sitedata', $data );
+		wp_localize_script( 'asn-more-js', 'moredata', $moredata );
+		wp_localize_script( 'asn-more-js', 'translations', $translated_string );
+
 	}
 }
 
