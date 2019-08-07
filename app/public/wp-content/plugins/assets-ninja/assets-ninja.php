@@ -28,6 +28,19 @@ Class AssetsNinja{
 
 		add_action( 'plugins_loaded', array($this,'load_textdomain') );
 		add_action('wp_enqueue_scripts',array($this,'load_front_assets'));
+		add_action('admin_enqueue_scripts', array($this,'load_admin_assets'));
+	}
+
+	// Load admin assets
+	function load_admin_assets($screen){
+		$_screen = get_current_screen();
+		/*if ('edit.php' == $screen && ('page' == $_screen->post_type || 'book' == $_screen->post_type)) {
+			wp_enqueue_script('ans-admin-js',ASN_ASSETS_ADMIN_DIR."/js/admin.js",array('jquery'),$this->version,true);
+		}*/
+
+		if ('edit-tags.php' == $screen && 'category' == $_screen->taxonomy) {
+			wp_enqueue_script('ans-admin-js',ASN_ASSETS_ADMIN_DIR."/js/admin.js",array('jquery'),$this->version,true);
+		}
 	}
 
 	// Front page asset will load here / For visitor assets

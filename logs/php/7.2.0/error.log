@@ -6094,3 +6094,22 @@ Stack trace:
 [07-Aug-2019 15:05:57 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /app/public/wp-content/plugins/assets-ninja/assets-ninja.php on line 62
 [07-Aug-2019 15:05:57 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /app/public/wp-content/plugins/assets-ninja/assets-ninja.php on line 62
 [07-Aug-2019 15:08:00 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /app/public/wp-content/plugins/assets-ninja/assets-ninja.php on line 62
+[07-Aug-2019 17:33:28 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/plugins/assets-ninja/assets-ninja.php on line 36
+[07-Aug-2019 18:00:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function printr() in /app/public/wp-content/plugins/assets-ninja/assets-ninja.php:38
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): AssetsNinja->load_admin_assets('edit.php')
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /app/public/wp-admin/admin-header.php(104): do_action('admin_enqueue_s...', 'edit.php')
+#4 /app/public/wp-admin/edit.php(353): require_once('/app/public/wp-...')
+#5 {main}
+  thrown in /app/public/wp-content/plugins/assets-ninja/assets-ninja.php on line 38
+[07-Aug-2019 18:00:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function printr() in /app/public/wp-content/plugins/assets-ninja/assets-ninja.php:38
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): AssetsNinja->load_admin_assets('edit.php')
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /app/public/wp-admin/admin-header.php(104): do_action('admin_enqueue_s...', 'edit.php')
+#4 /app/public/wp-admin/edit.php(353): require_once('/app/public/wp-...')
+#5 {main}
+  thrown in /app/public/wp-content/plugins/assets-ninja/assets-ninja.php on line 38
