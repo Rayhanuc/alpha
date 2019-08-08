@@ -28,6 +28,7 @@ body.login div#login form#loginform {
     border-radius: 13px;
     background: #200822;
     color: #fff;
+    padding-bottom: 0;
 }
 body.login div#login form#loginform p {}
 body.login div#login form#loginform p label {}

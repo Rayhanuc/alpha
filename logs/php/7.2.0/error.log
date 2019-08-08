@@ -6113,3 +6113,85 @@ Stack trace:
 #4 /app/public/wp-admin/edit.php(353): require_once('/app/public/wp-...')
 #5 {main}
   thrown in /app/public/wp-content/plugins/assets-ninja/assets-ninja.php on line 38
+[08-Aug-2019 10:14:12 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[08-Aug-2019 10:14:12 UTC] PHP Stack trace:
+[08-Aug-2019 10:14:12 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[08-Aug-2019 10:14:12 UTC] PHP   1. {main}() /usr/local/bin/wp:0
+[08-Aug-2019 10:14:12 UTC] PHP Stack trace:
+[08-Aug-2019 10:14:12 UTC] PHP   2. include() /usr/local/bin/wp:4
+[08-Aug-2019 10:14:12 UTC] PHP   3. include() phar:///usr/local/bin/wp/php/boot-phar.php:8
+[08-Aug-2019 10:14:12 UTC] PHP   1. {main}() /usr/local/bin/wp:0
+[08-Aug-2019 10:14:12 UTC] PHP   2. include() /usr/local/bin/wp:4
+[08-Aug-2019 10:14:12 UTC] PHP   4. WP_CLI\bootstrap() phar:///usr/local/bin/wp/php/wp-cli.php:23
+[08-Aug-2019 10:14:12 UTC] PHP   3. include() phar:///usr/local/bin/wp/php/boot-phar.php:8
+[08-Aug-2019 10:14:12 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar:///usr/local/bin/wp/php/bootstrap.php:75
+[08-Aug-2019 10:14:12 UTC] PHP   6. WP_CLI\Runner->start() phar:///usr/local/bin/wp/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[08-Aug-2019 10:14:12 UTC] PHP   4. WP_CLI\bootstrap() phar:///usr/local/bin/wp/php/wp-cli.php:23
+[08-Aug-2019 10:14:12 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1032
+[08-Aug-2019 10:14:12 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar:///usr/local/bin/wp/php/bootstrap.php:75
+[08-Aug-2019 10:14:12 UTC] PHP   8. require() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1105
+[08-Aug-2019 10:14:12 UTC] PHP   6. WP_CLI\Runner->start() phar:///usr/local/bin/wp/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[08-Aug-2019 10:14:12 UTC] PHP   9. do_action() /app/public/wp-settings.php:525
+[08-Aug-2019 10:14:12 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1032
+[08-Aug-2019 10:14:12 UTC] PHP  10. WP_Hook->do_action() /app/public/wp-includes/plugin.php:465
+[08-Aug-2019 10:14:12 UTC] PHP   8. require() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1105
+[08-Aug-2019 10:14:12 UTC] PHP   9. do_action() /app/public/wp-settings.php:525
+[08-Aug-2019 10:14:12 UTC] PHP  11. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[08-Aug-2019 10:14:12 UTC] PHP  10. WP_Hook->do_action() /app/public/wp-includes/plugin.php:465
+[08-Aug-2019 10:14:12 UTC] PHP  12. pqrc_init() /app/public/wp-includes/class-wp-hook.php:286
+[08-Aug-2019 10:14:12 UTC] PHP  11. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[08-Aug-2019 10:14:12 UTC] PHP  13. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:35
+[08-Aug-2019 10:14:12 UTC] PHP  12. pqrc_init() /app/public/wp-includes/class-wp-hook.php:286
+[08-Aug-2019 10:14:12 UTC] PHP  14. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[08-Aug-2019 10:14:12 UTC] PHP  13. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:35
+[08-Aug-2019 10:14:12 UTC] PHP  15. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[08-Aug-2019 10:14:12 UTC] PHP  14. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[08-Aug-2019 10:14:13 UTC] PHP  16. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[08-Aug-2019 10:14:13 UTC] PHP  15. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[08-Aug-2019 10:14:13 UTC] PHP  16. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[08-Aug-2019 10:14:13 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[08-Aug-2019 10:14:13 UTC] PHP Stack trace:
+[08-Aug-2019 10:14:13 UTC] PHP   1. {main}() /usr/local/bin/wp:0
+[08-Aug-2019 10:14:13 UTC] PHP   2. include() /usr/local/bin/wp:4
+[08-Aug-2019 10:14:13 UTC] PHP   3. include() phar:///usr/local/bin/wp/php/boot-phar.php:8
+[08-Aug-2019 10:14:13 UTC] PHP   4. WP_CLI\bootstrap() phar:///usr/local/bin/wp/php/wp-cli.php:23
+[08-Aug-2019 10:14:13 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar:///usr/local/bin/wp/php/bootstrap.php:75
+[08-Aug-2019 10:14:13 UTC] PHP   6. WP_CLI\Runner->start() phar:///usr/local/bin/wp/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[08-Aug-2019 10:14:13 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1032
+[08-Aug-2019 10:14:13 UTC] PHP   8. require() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1105
+[08-Aug-2019 10:14:13 UTC] PHP   9. do_action() /app/public/wp-settings.php:525
+[08-Aug-2019 10:14:13 UTC] PHP  10. WP_Hook->do_action() /app/public/wp-includes/plugin.php:465
+[08-Aug-2019 10:14:13 UTC] PHP  11. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[08-Aug-2019 10:14:13 UTC] PHP  12. pqrc_init() /app/public/wp-includes/class-wp-hook.php:286
+[08-Aug-2019 10:14:13 UTC] PHP  13. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:35
+[08-Aug-2019 10:14:13 UTC] PHP  14. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[08-Aug-2019 10:14:13 UTC] PHP  15. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[08-Aug-2019 10:14:13 UTC] PHP  16. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[08-Aug-2019 10:14:13 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[08-Aug-2019 10:14:13 UTC] PHP Stack trace:
+[08-Aug-2019 10:14:13 UTC] PHP   1. {main}() /usr/local/bin/wp:0
+[08-Aug-2019 10:14:13 UTC] PHP   2. include() /usr/local/bin/wp:4
+[08-Aug-2019 10:14:13 UTC] PHP   3. include() phar:///usr/local/bin/wp/php/boot-phar.php:8
+[08-Aug-2019 10:14:13 UTC] PHP   4. WP_CLI\bootstrap() phar:///usr/local/bin/wp/php/wp-cli.php:23
+[08-Aug-2019 10:14:13 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar:///usr/local/bin/wp/php/bootstrap.php:75
+[08-Aug-2019 10:14:13 UTC] PHP   6. WP_CLI\Runner->start() phar:///usr/local/bin/wp/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[08-Aug-2019 10:14:13 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1032
+[08-Aug-2019 10:14:13 UTC] PHP   8. require() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1105
+[08-Aug-2019 10:14:13 UTC] PHP   9. do_action() /app/public/wp-settings.php:525
+[08-Aug-2019 10:14:13 UTC] PHP  10. WP_Hook->do_action() /app/public/wp-includes/plugin.php:465
+[08-Aug-2019 10:14:13 UTC] PHP  11. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[08-Aug-2019 10:14:13 UTC] PHP  12. pqrc_init() /app/public/wp-includes/class-wp-hook.php:286
+[08-Aug-2019 10:14:13 UTC] PHP  13. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:35
+[08-Aug-2019 10:14:13 UTC] PHP  14. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[08-Aug-2019 10:14:13 UTC] PHP  15. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[08-Aug-2019 10:14:13 UTC] PHP  16. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[08-Aug-2019 10:48:55 UTC] PHP Fatal error:  Uncaught Error: Maximum function nesting level of '256' reached, aborting! in /app/public/wp-includes/class.wp-dependencies.php:343
+Stack trace:
+#0 /app/public/wp-includes/class.wp-dependencies.php(343): in_array('jquery-ui-datep...', Array)
+#1 /app/public/wp-includes/class.wp-dependencies.php(345): WP_Dependencies->recurse_deps(Array, 'jquery-ui-datep...')
+#2 /app/public/wp-includes/class.wp-dependencies.php(345): WP_Dependencies->recurse_deps(Array, 'jquery-ui-datep...')
+#3 /app/public/wp-includes/class.wp-dependencies.php(345): WP_Dependencies->recurse_deps(Array, 'jquery-ui-datep...')
+#4 /app/public/wp-includes/class.wp-dependencies.php(345): WP_Dependencies->recurse_deps(Array, 'jquery-ui-datep...')
+#5 /app/public/wp-includes/class.wp-dependencies.php(345): WP_Dependencies->recurse_deps(Array, 'jquery-ui-datep...')
+#6 /app/public/wp-includes/class.wp-dependencies.php(345): WP_Dependencies->recurse_deps(Array, 'jquery-ui-datep...')
+#7 /app/public/wp-includes/class.wp-dependencies.php(345): WP_Dependencies in /app/public/wp-includes/class.wp-dependencies.php on line 343

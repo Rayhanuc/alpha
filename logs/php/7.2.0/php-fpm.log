@@ -31,3 +31,5 @@
 [06-Aug-2019 13:48:10] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
 [07-Aug-2019 14:23:35] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
 [07-Aug-2019 14:24:05] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[08-Aug-2019 10:14:10] NOTICE: fpm is running, pid 831
+[08-Aug-2019 10:14:10] NOTICE: ready to handle connections

@@ -53,13 +53,34 @@ Class AssetsNinja{
 
 
 
+		/* OLD STYLE ENQUEUE JS
 		wp_enqueue_script('asn-main-js',ASN_ASSETS_PUBLIC_DIR."/js/main.js",array(
 			'jquery',
 			'asn-another-js'
 		),$this->version,true);
 
 		wp_enqueue_script('asn-another-js',ASN_ASSETS_PUBLIC_DIR."/js/another.js",array('jquery','asn-more-js'),$this->version,true);
-		wp_enqueue_script('asn-more-js',ASN_ASSETS_PUBLIC_DIR."/js/more.js",array('jquery'),$this->version,true);
+		wp_enqueue_script('asn-more-js',ASN_ASSETS_PUBLIC_DIR."/js/more.js",array('jquery'),$this->version,true);*/
+
+		// NEW STYLE ENQUEUE
+		$js_files = array(
+			// STYLE ONE
+			'asn-main-js' => array('path' => ASN_ASSETS_PUBLIC_DIR."/js/main.js",'dep'  => array('jquery','asn-another-js')),
+			// STYLE TWO
+			'asn-another-js' => array(
+					'path' => ASN_ASSETS_PUBLIC_DIR."/js/another.js",
+					'dep'  => array(
+						'jquery',
+						'asn-more-js'
+					)
+				),
+			'asn-more-js' => array('path' => ASN_ASSETS_PUBLIC_DIR."/js/more.js",'dep'  => array('jquery')),
+		);
+
+		foreach ($js_files as $handle => $file_info) {
+			wp_enqueue_script($handle,$file_info['path'],$file_info['dep'],$this->version,true);
+		}
+
 
 		$data = array(
 			'name'=>'rayhanuddinchy',
