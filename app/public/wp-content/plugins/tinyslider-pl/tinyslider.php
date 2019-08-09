@@ -24,8 +24,8 @@ add_action('init', 'tinys_init');
 // Assets enqueue in plugin
 function tinys_assets() {
 	wp_enqueue_style('tinyslider-css', '//cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css', null, '1.0');
-	wp_enqueue_script('tinyslider-js', '//cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js', 'jquery', '1.0', true);
-	wp_enqueue_script('tinyslider-main-js', plugin_dir_url(__FILE__) . '/assets/js/main.js', array('jquery'), '1.0', true);
+	wp_enqueue_script('tinyslider-js', '//cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js', null,'1.0', true);
+	wp_enqueue_script('tinyslider-main-js', plugin_dir_url(__FILE__) . 'assets/js/main.js', array('jquery'), '1.0', true);
 
 }
 add_action('wp_enqueue_scripts', 'tinys_assets');

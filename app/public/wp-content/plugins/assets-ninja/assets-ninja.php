@@ -26,9 +26,21 @@ Class AssetsNinja{
 
 		$this->version = time();
 
+		// Enqueue file deregister way / function created
+		add_action('init',array($this,'ans_init'));
+
 		add_action( 'plugins_loaded', array($this,'load_textdomain') );
-		add_action('wp_enqueue_scripts',array($this,'load_front_assets'));
+		add_action('wp_enqueue_scripts',array($this,'load_front_assets'),12);
 		add_action('admin_enqueue_scripts', array($this,'load_admin_assets'));
+	}
+
+	// Enqueue file deregister way
+	function ans_init(){
+		wp_deregister_style( 'fontawesome' );
+		wp_register_style( 'fontawesome','//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' );
+
+		/*wp_deregister_script('tinyslider-js');
+		wp_register_script('tinyslider-js','//cdn.jsdelivr.net/npm/tiny-slider@2.9.2/dist/tiny-slider.min.js',null,'1.0',true); */
 	}
 
 	// Load admin assets
@@ -49,7 +61,8 @@ Class AssetsNinja{
 	}
 
 	function load_front_assets(){
-		wp_enqueue_style( 'asn-main-css',ASN_ASSETS_PUBLIC_DIR."/css/main.css",null,$this->version );
+		// wp_enqueue_style( 'asn-main-css',ASN_ASSETS_PUBLIC_DIR."/css/main.css",array('fontawesome'),$this->version );
+		wp_enqueue_style( 'asn-main-css',ASN_ASSETS_PUBLIC_DIR."/css/main.css",$this->version );
 
 
 

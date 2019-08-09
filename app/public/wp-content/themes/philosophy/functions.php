@@ -52,7 +52,7 @@ add_action('after_setup_theme', 'wpse_add_title_support');
 
 function philosophy_assets() {
 	//CSS enqueue
-	wp_enqueue_style("fontawesome-css", get_theme_file_uri("/assets/css/font-awesome/font-awesome.min.css"), null, "1.0");
+	// wp_enqueue_style("fontawesome-css", get_theme_file_uri("/assets/css/font-awesome/css/font-awesome.min.css"), null, "1.0");
 	wp_enqueue_style("fonts-css", get_theme_file_uri("/assets/css/fonts.css"), null, "1.0");
 	wp_enqueue_style("base-css", get_theme_file_uri("/assets/css/base.css"), null, "1.0");
 	wp_enqueue_style("vendor-css", get_theme_file_uri("/assets/css/vendor.css"), null, "1.0");
