@@ -6255,3 +6255,30 @@ Stack trace:
 [09-Aug-2019 17:12:39 UTC] PHP Parse error:  syntax error, unexpected 'array' (T_ARRAY), expecting ',' or ')' in /app/public/wp-content/plugins/assets-ninja/assets-ninja.php on line 65
 [09-Aug-2019 17:12:53 UTC] PHP Parse error:  syntax error, unexpected 'array' (T_ARRAY), expecting ',' or ')' in /app/public/wp-content/plugins/assets-ninja/assets-ninja.php on line 65
 [09-Aug-2019 17:14:08 UTC] PHP Parse error:  syntax error, unexpected 'array' (T_ARRAY), expecting ',' or ')' in /app/public/wp-content/plugins/assets-ninja/assets-ninja.php on line 65
+[10-Aug-2019 12:41:00 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/plugins/assets-ninja/assets-ninja.php on line 85
+[10-Aug-2019 12:41:33 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/plugins/assets-ninja/assets-ninja.php on line 85
+[10-Aug-2019 14:13:40 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/plugins/assets-ninja/assets-ninja.php on line 85
+[10-Aug-2019 14:55:53 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[10-Aug-2019 14:55:53 UTC] PHP Stack trace:
+[10-Aug-2019 14:55:53 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[10-Aug-2019 14:55:53 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[10-Aug-2019 14:55:53 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[10-Aug-2019 14:55:53 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[10-Aug-2019 14:55:53 UTC] PHP   5. wp_version_check() /app/public/wp-includes/class-wp-hook.php:286
+[10-Aug-2019 14:55:53 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:160
+[10-Aug-2019 14:55:54 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[10-Aug-2019 14:55:54 UTC] PHP Stack trace:
+[10-Aug-2019 14:55:54 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[10-Aug-2019 14:55:54 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[10-Aug-2019 14:55:54 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[10-Aug-2019 14:55:54 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[10-Aug-2019 14:55:54 UTC] PHP   5. wp_update_plugins() /app/public/wp-includes/class-wp-hook.php:286
+[10-Aug-2019 14:55:54 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:384
+[10-Aug-2019 14:55:54 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[10-Aug-2019 14:55:54 UTC] PHP Stack trace:
+[10-Aug-2019 14:55:54 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[10-Aug-2019 14:55:54 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[10-Aug-2019 14:55:54 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[10-Aug-2019 14:55:54 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[10-Aug-2019 14:55:54 UTC] PHP   5. wp_update_themes() /app/public/wp-includes/class-wp-hook.php:286
+[10-Aug-2019 14:55:54 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:569

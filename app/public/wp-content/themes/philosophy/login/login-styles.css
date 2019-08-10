@@ -1,4 +1,12 @@
-/* body.login {}
+/* 
+
+
+For more information about custom style:
+https://torquemag.io/2016/08/customize-wordpress-login-page/
+============================================================
+Default css clsse's and Id's
+============================
+body.login {}
 body.login div#login {}
 body.login div#login h1 {}
 body.login div#login h1 a {}
@@ -15,13 +23,17 @@ body.login div#login form#loginform p.submit input#wp-submit {}
 body.login div#login p#nav {}
 body.login div#login p#nav a {}
 body.login div#login p#backtoblog {}
-body.login div#login p#backtoblog a {} */
+body.login div#login p#backtoblog a {} 
+====================================
+*/
 
 
 body.login {
 	background:#200822;
 }
-body.login div#login {}
+body.login div#login {
+    padding: 4% 0 0;
+}
 body.login div#login h1 {}
 body.login div#login h1 a {}
 body.login div#login form#loginform {

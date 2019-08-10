@@ -38,3 +38,14 @@
 [08-Aug-2019 15:25:28] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
 [09-Aug-2019 14:16:17] NOTICE: fpm is running, pid 806
 [09-Aug-2019 14:16:17] NOTICE: ready to handle connections
+[10-Aug-2019 07:06:48] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[10-Aug-2019 07:09:14] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[10-Aug-2019 07:13:34] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[10-Aug-2019 10:42:17] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[10-Aug-2019 10:43:55] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[10-Aug-2019 10:44:59] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[10-Aug-2019 10:48:15] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[10-Aug-2019 12:15:49] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[10-Aug-2019 14:23:37] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[10-Aug-2019 14:24:23] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[10-Aug-2019 14:58:12] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
