@@ -49,3 +49,5 @@
 [10-Aug-2019 14:23:37] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
 [10-Aug-2019 14:24:23] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
 [10-Aug-2019 14:58:12] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[12-Aug-2019 13:57:49] NOTICE: fpm is running, pid 786
+[12-Aug-2019 13:57:50] NOTICE: ready to handle connections
