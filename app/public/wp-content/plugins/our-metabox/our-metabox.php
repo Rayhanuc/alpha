@@ -55,8 +55,9 @@ class OurMetabox{
 			return $post_id;
 		}
 
-		$location = isset($_POST['omb_location'])?$_POST['omb_location']:'';
-		$country = isset($_POST['omb_country'])?$_POST['omb_country']:'';
+		$location = isset($_POST['omb_location'])?$_POST['omb_location'] : '';
+		$country = isset($_POST['omb_country'])?$_POST['omb_country'] : '';
+		$is_favorite = isset($_POST['omb_is_favorite'])?$_POST['omb_is_favorite'] : 0;
 
 		if ($location == '' || $country == '') {
 			return $post_id;
@@ -68,6 +69,7 @@ class OurMetabox{
 
 		update_post_meta($post_id,'omb_location',$location);
 		update_post_meta($post_id,'omb_country',$country);
+		update_post_meta($post_id,'omb_is_favorite',$is_favorite);
 	}
 
 	function omb_add_metabox() {
@@ -84,17 +86,33 @@ class OurMetabox{
 	function omb_display_metabox($post) {
 		$location = get_post_meta($post->ID,'omb_location',true);
 		$country = get_post_meta($post->ID,'omb_country',true);
+		$is_favorite = get_post_meta($post->ID,'omb_is_favorite',true);
+		echo "Is Fav:".$is_favorite."<br/>";
+
+
+		$checked = $is_favorite==1?'checked':'';
+
 		$label1 = __('Location','our-metabox');
 		$label2 = __('Country','our-metabox');
+		$label3 = __('Is Favorite','our-metabox');
+
+		$colors = array('red','green','blue','yellow','magenta','pink','black');
+
 		wp_nonce_field( 'omb_location','omb_location_field' );
 		$metabox_html = <<<EOD
-<p></p>
+<p>
 <label for="omb_location">{$label1}: </label>
 <input type="text" name="omb_location" id="omb_location" value="{$location}"/>
 <br/>
 
 <label for="omb_country">{$label2}: </label>
 <input type="text" name="omb_country" id="omb_country" value="{$country}"/>
+</p>
+
+<p>
+<label for="omb_is_favorite">{$label3}: </label>
+<input type="checkbox" name="omb_is_favorite" id="omb_is_favorite" value="1" {$checked}/>
+</p>
 EOD;
 
 		echo $metabox_html;
