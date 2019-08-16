@@ -27,7 +27,8 @@ class OurMetabox{
 
 	function omb_admin_assets() {
 		wp_enqueue_style('omb-admin-style',plugin_dir_url(__FILE__)."assets/admin/css/style.css",null,time());
-		
+		wp_enqueue_style('jquery-ui-css',plugin_dir_url(__FILE__)."assets/admin/css/jquery-ui.css",null,time());
+		wp_enqueue_script('omb-admin-js',plugin_dir_url(__FILE__)."assets/admin/js/main.js",array('jquery','jquery-ui-datepicker'),time(),true);
 	}
 
 
@@ -129,7 +130,7 @@ class OurMetabox{
 			<label for="book_year">Publish Year</label>
 		</div>
 		<div class="input_c">
-			<input type="text" id="book_year">
+			<input type="text" class="omb_dp" id="book_year">
 		</div>
 		<div class="folat_c"></div>
 	</div>
