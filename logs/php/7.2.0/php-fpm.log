@@ -53,3 +53,6 @@
 [12-Aug-2019 13:57:50] NOTICE: ready to handle connections
 [15-Aug-2019 03:20:10] NOTICE: fpm is running, pid 828
 [15-Aug-2019 03:20:10] NOTICE: ready to handle connections
+[16-Aug-2019 05:16:06] NOTICE: fpm is running, pid 729
+[16-Aug-2019 05:16:06] NOTICE: ready to handle connections
+[16-Aug-2019 13:29:00] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it

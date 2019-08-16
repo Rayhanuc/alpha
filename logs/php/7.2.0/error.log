@@ -6736,3 +6736,99 @@ Stack trace:
 [15-Aug-2019 14:48:22 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
 [15-Aug-2019 14:48:22 UTC] PHP   5. wp_update_themes() /app/public/wp-includes/class-wp-hook.php:286
 [15-Aug-2019 14:48:22 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:569
+[16-Aug-2019 05:16:07 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[16-Aug-2019 05:16:07 UTC] PHP Stack trace:
+[16-Aug-2019 05:16:07 UTC] PHP   1. {main}() /usr/local/bin/wp:0
+[16-Aug-2019 05:16:07 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[16-Aug-2019 05:16:07 UTC] PHP   2. include() /usr/local/bin/wp:4
+[16-Aug-2019 05:16:07 UTC] PHP Stack trace:
+[16-Aug-2019 05:16:07 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[16-Aug-2019 05:16:07 UTC] PHP   1. {main}() /usr/local/bin/wp:0
+[16-Aug-2019 05:16:07 UTC] PHP   3. include() phar:///usr/local/bin/wp/php/boot-phar.php:8
+[16-Aug-2019 05:16:07 UTC] PHP Stack trace:
+[16-Aug-2019 05:16:07 UTC] PHP   4. WP_CLI\bootstrap() phar:///usr/local/bin/wp/php/wp-cli.php:23
+[16-Aug-2019 05:16:07 UTC] PHP   2. include() /usr/local/bin/wp:4
+[16-Aug-2019 05:16:07 UTC] PHP   1. {main}() /usr/local/bin/wp:0
+[16-Aug-2019 05:16:07 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar:///usr/local/bin/wp/php/bootstrap.php:75
+[16-Aug-2019 05:16:07 UTC] PHP   2. include() /usr/local/bin/wp:4
+[16-Aug-2019 05:16:07 UTC] PHP   3. include() phar:///usr/local/bin/wp/php/boot-phar.php:8
+[16-Aug-2019 05:16:07 UTC] PHP   3. include() phar:///usr/local/bin/wp/php/boot-phar.php:8
+[16-Aug-2019 05:16:07 UTC] PHP   4. WP_CLI\bootstrap() phar:///usr/local/bin/wp/php/wp-cli.php:23
+[16-Aug-2019 05:16:07 UTC] PHP   6. WP_CLI\Runner->start() phar:///usr/local/bin/wp/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[16-Aug-2019 05:16:07 UTC] PHP   4. WP_CLI\bootstrap() phar:///usr/local/bin/wp/php/wp-cli.php:23
+[16-Aug-2019 05:16:07 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar:///usr/local/bin/wp/php/bootstrap.php:75
+[16-Aug-2019 05:16:07 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar:///usr/local/bin/wp/php/bootstrap.php:75
+[16-Aug-2019 05:16:07 UTC] PHP   6. WP_CLI\Runner->start() phar:///usr/local/bin/wp/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[16-Aug-2019 05:16:07 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1032
+[16-Aug-2019 05:16:07 UTC] PHP   6. WP_CLI\Runner->start() phar:///usr/local/bin/wp/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[16-Aug-2019 05:16:07 UTC] PHP   8. require() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1105
+[16-Aug-2019 05:16:07 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1032
+[16-Aug-2019 05:16:07 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1032
+[16-Aug-2019 05:16:07 UTC] PHP   9. do_action() /app/public/wp-settings.php:525
+[16-Aug-2019 05:16:07 UTC] PHP   8. require() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1105
+[16-Aug-2019 05:16:07 UTC] PHP   8. require() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1105
+[16-Aug-2019 05:16:07 UTC] PHP  10. WP_Hook->do_action() /app/public/wp-includes/plugin.php:465
+[16-Aug-2019 05:16:07 UTC] PHP   9. do_action() /app/public/wp-settings.php:525
+[16-Aug-2019 05:16:07 UTC] PHP   9. do_action() /app/public/wp-settings.php:525
+[16-Aug-2019 05:16:07 UTC] PHP  11. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[16-Aug-2019 05:16:07 UTC] PHP  10. WP_Hook->do_action() /app/public/wp-includes/plugin.php:465
+[16-Aug-2019 05:16:07 UTC] PHP  12. pqrc_init() /app/public/wp-includes/class-wp-hook.php:286
+[16-Aug-2019 05:16:07 UTC] PHP  10. WP_Hook->do_action() /app/public/wp-includes/plugin.php:465
+[16-Aug-2019 05:16:07 UTC] PHP  11. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[16-Aug-2019 05:16:07 UTC] PHP  11. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[16-Aug-2019 05:16:07 UTC] PHP  12. pqrc_init() /app/public/wp-includes/class-wp-hook.php:286
+[16-Aug-2019 05:16:07 UTC] PHP  13. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:35
+[16-Aug-2019 05:16:07 UTC] PHP  12. pqrc_init() /app/public/wp-includes/class-wp-hook.php:286
+[16-Aug-2019 05:16:07 UTC] PHP  13. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:35
+[16-Aug-2019 05:16:07 UTC] PHP  14. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[16-Aug-2019 05:16:07 UTC] PHP  13. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:35
+[16-Aug-2019 05:16:07 UTC] PHP  14. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[16-Aug-2019 05:16:07 UTC] PHP  15. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[16-Aug-2019 05:16:07 UTC] PHP  14. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[16-Aug-2019 05:16:07 UTC] PHP  15. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[16-Aug-2019 05:16:07 UTC] PHP  15. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[16-Aug-2019 05:16:07 UTC] PHP  16. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[16-Aug-2019 05:16:07 UTC] PHP  16. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[16-Aug-2019 05:16:07 UTC] PHP  16. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[16-Aug-2019 05:16:07 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[16-Aug-2019 05:16:07 UTC] PHP Stack trace:
+[16-Aug-2019 05:16:07 UTC] PHP   1. {main}() /usr/local/bin/wp:0
+[16-Aug-2019 05:16:07 UTC] PHP   2. include() /usr/local/bin/wp:4
+[16-Aug-2019 05:16:07 UTC] PHP   3. include() phar:///usr/local/bin/wp/php/boot-phar.php:8
+[16-Aug-2019 05:16:07 UTC] PHP   4. WP_CLI\bootstrap() phar:///usr/local/bin/wp/php/wp-cli.php:23
+[16-Aug-2019 05:16:07 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar:///usr/local/bin/wp/php/bootstrap.php:75
+[16-Aug-2019 05:16:07 UTC] PHP   6. WP_CLI\Runner->start() phar:///usr/local/bin/wp/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[16-Aug-2019 05:16:07 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1032
+[16-Aug-2019 05:16:07 UTC] PHP   8. require() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1105
+[16-Aug-2019 05:16:07 UTC] PHP   9. do_action() /app/public/wp-settings.php:525
+[16-Aug-2019 05:16:07 UTC] PHP  10. WP_Hook->do_action() /app/public/wp-includes/plugin.php:465
+[16-Aug-2019 05:16:07 UTC] PHP  11. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[16-Aug-2019 05:16:07 UTC] PHP  12. pqrc_init() /app/public/wp-includes/class-wp-hook.php:286
+[16-Aug-2019 05:16:07 UTC] PHP  13. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:35
+[16-Aug-2019 05:16:07 UTC] PHP  14. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[16-Aug-2019 05:16:07 UTC] PHP  15. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[16-Aug-2019 05:16:07 UTC] PHP  16. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[16-Aug-2019 10:39:55 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[16-Aug-2019 10:39:55 UTC] PHP Stack trace:
+[16-Aug-2019 10:39:55 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[16-Aug-2019 10:39:55 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[16-Aug-2019 10:39:55 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[16-Aug-2019 10:39:55 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[16-Aug-2019 10:39:55 UTC] PHP   5. wp_version_check() /app/public/wp-includes/class-wp-hook.php:286
+[16-Aug-2019 10:39:55 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:160
+[16-Aug-2019 10:39:56 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[16-Aug-2019 10:39:56 UTC] PHP Stack trace:
+[16-Aug-2019 10:39:56 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[16-Aug-2019 10:39:56 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[16-Aug-2019 10:39:56 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[16-Aug-2019 10:39:56 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[16-Aug-2019 10:39:56 UTC] PHP   5. wp_update_plugins() /app/public/wp-includes/class-wp-hook.php:286
+[16-Aug-2019 10:39:56 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:384
+[16-Aug-2019 10:39:57 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[16-Aug-2019 10:39:57 UTC] PHP Stack trace:
+[16-Aug-2019 10:39:57 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[16-Aug-2019 10:39:57 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[16-Aug-2019 10:39:57 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[16-Aug-2019 10:39:57 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[16-Aug-2019 10:39:57 UTC] PHP   5. wp_update_themes() /app/public/wp-includes/class-wp-hook.php:286
+[16-Aug-2019 10:39:57 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:569
