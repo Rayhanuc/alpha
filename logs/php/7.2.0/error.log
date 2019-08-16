@@ -6856,3 +6856,101 @@ Stack trace:
 [16-Aug-2019 15:04:21 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
 [16-Aug-2019 15:04:21 UTC] PHP   5. wp_update_themes() /app/public/wp-includes/class-wp-hook.php:286
 [16-Aug-2019 15:04:21 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:569
+[16-Aug-2019 16:58:10 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /app/public/wp-content/plugins/our-metabox/our-metabox.php on line 185
+[16-Aug-2019 16:58:10 UTC] PHP Stack trace:
+[16-Aug-2019 16:58:10 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[16-Aug-2019 16:58:10 UTC] PHP   2. include() /app/public/wp-admin/post-new.php:75
+[16-Aug-2019 16:58:10 UTC] PHP   3. do_meta_boxes() /app/public/wp-admin/edit-form-advanced.php:665
+[16-Aug-2019 16:58:11 UTC] PHP   4. OurMetabox->omb_display_metabox() /app/public/wp-admin/includes/template.php:1304
+[16-Aug-2019 16:58:11 UTC] PHP   5. in_array() /app/public/wp-content/plugins/our-metabox/our-metabox.php:185
+[16-Aug-2019 16:58:11 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /app/public/wp-content/plugins/our-metabox/our-metabox.php on line 185
+[16-Aug-2019 16:58:11 UTC] PHP Stack trace:
+[16-Aug-2019 16:58:11 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[16-Aug-2019 16:58:11 UTC] PHP   2. include() /app/public/wp-admin/post-new.php:75
+[16-Aug-2019 16:58:11 UTC] PHP   3. do_meta_boxes() /app/public/wp-admin/edit-form-advanced.php:665
+[16-Aug-2019 16:58:11 UTC] PHP   4. OurMetabox->omb_display_metabox() /app/public/wp-admin/includes/template.php:1304
+[16-Aug-2019 16:58:11 UTC] PHP   5. in_array() /app/public/wp-content/plugins/our-metabox/our-metabox.php:185
+[16-Aug-2019 16:58:11 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /app/public/wp-content/plugins/our-metabox/our-metabox.php on line 185
+[16-Aug-2019 16:58:11 UTC] PHP Stack trace:
+[16-Aug-2019 16:58:11 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[16-Aug-2019 16:58:11 UTC] PHP   2. include() /app/public/wp-admin/post-new.php:75
+[16-Aug-2019 16:58:11 UTC] PHP   3. do_meta_boxes() /app/public/wp-admin/edit-form-advanced.php:665
+[16-Aug-2019 16:58:11 UTC] PHP   4. OurMetabox->omb_display_metabox() /app/public/wp-admin/includes/template.php:1304
+[16-Aug-2019 16:58:11 UTC] PHP   5. in_array() /app/public/wp-content/plugins/our-metabox/our-metabox.php:185
+[16-Aug-2019 16:58:11 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /app/public/wp-content/plugins/our-metabox/our-metabox.php on line 185
+[16-Aug-2019 16:58:11 UTC] PHP Stack trace:
+[16-Aug-2019 16:58:11 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[16-Aug-2019 16:58:11 UTC] PHP   2. include() /app/public/wp-admin/post-new.php:75
+[16-Aug-2019 16:58:11 UTC] PHP   3. do_meta_boxes() /app/public/wp-admin/edit-form-advanced.php:665
+[16-Aug-2019 16:58:11 UTC] PHP   4. OurMetabox->omb_display_metabox() /app/public/wp-admin/includes/template.php:1304
+[16-Aug-2019 16:58:11 UTC] PHP   5. in_array() /app/public/wp-content/plugins/our-metabox/our-metabox.php:185
+[16-Aug-2019 16:58:11 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /app/public/wp-content/plugins/our-metabox/our-metabox.php on line 185
+[16-Aug-2019 16:58:11 UTC] PHP Stack trace:
+[16-Aug-2019 16:58:11 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[16-Aug-2019 16:58:11 UTC] PHP   2. include() /app/public/wp-admin/post-new.php:75
+[16-Aug-2019 16:58:11 UTC] PHP   3. do_meta_boxes() /app/public/wp-admin/edit-form-advanced.php:665
+[16-Aug-2019 16:58:11 UTC] PHP   4. OurMetabox->omb_display_metabox() /app/public/wp-admin/includes/template.php:1304
+[16-Aug-2019 16:58:11 UTC] PHP   5. in_array() /app/public/wp-content/plugins/our-metabox/our-metabox.php:185
+[16-Aug-2019 16:58:11 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /app/public/wp-content/plugins/our-metabox/our-metabox.php on line 185
+[16-Aug-2019 16:58:11 UTC] PHP Stack trace:
+[16-Aug-2019 16:58:11 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[16-Aug-2019 16:58:11 UTC] PHP   2. include() /app/public/wp-admin/post-new.php:75
+[16-Aug-2019 16:58:11 UTC] PHP   3. do_meta_boxes() /app/public/wp-admin/edit-form-advanced.php:665
+[16-Aug-2019 16:58:11 UTC] PHP   4. OurMetabox->omb_display_metabox() /app/public/wp-admin/includes/template.php:1304
+[16-Aug-2019 16:58:11 UTC] PHP   5. in_array() /app/public/wp-content/plugins/our-metabox/our-metabox.php:185
+[16-Aug-2019 16:58:11 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /app/public/wp-content/plugins/our-metabox/our-metabox.php on line 185
+[16-Aug-2019 16:58:11 UTC] PHP Stack trace:
+[16-Aug-2019 16:58:11 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[16-Aug-2019 16:58:11 UTC] PHP   2. include() /app/public/wp-admin/post-new.php:75
+[16-Aug-2019 16:58:11 UTC] PHP   3. do_meta_boxes() /app/public/wp-admin/edit-form-advanced.php:665
+[16-Aug-2019 16:58:11 UTC] PHP   4. OurMetabox->omb_display_metabox() /app/public/wp-admin/includes/template.php:1304
+[16-Aug-2019 16:58:11 UTC] PHP   5. in_array() /app/public/wp-content/plugins/our-metabox/our-metabox.php:185
+[16-Aug-2019 17:14:53 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /app/public/wp-content/plugins/our-metabox/our-metabox.php on line 186
+[16-Aug-2019 17:14:53 UTC] PHP Stack trace:
+[16-Aug-2019 17:14:53 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[16-Aug-2019 17:14:53 UTC] PHP   2. include() /app/public/wp-admin/post-new.php:75
+[16-Aug-2019 17:14:53 UTC] PHP   3. do_meta_boxes() /app/public/wp-admin/edit-form-advanced.php:665
+[16-Aug-2019 17:14:53 UTC] PHP   4. OurMetabox->omb_display_metabox() /app/public/wp-admin/includes/template.php:1304
+[16-Aug-2019 17:14:53 UTC] PHP   5. in_array() /app/public/wp-content/plugins/our-metabox/our-metabox.php:186
+[16-Aug-2019 17:14:53 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /app/public/wp-content/plugins/our-metabox/our-metabox.php on line 186
+[16-Aug-2019 17:14:53 UTC] PHP Stack trace:
+[16-Aug-2019 17:14:53 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[16-Aug-2019 17:14:53 UTC] PHP   2. include() /app/public/wp-admin/post-new.php:75
+[16-Aug-2019 17:14:53 UTC] PHP   3. do_meta_boxes() /app/public/wp-admin/edit-form-advanced.php:665
+[16-Aug-2019 17:14:53 UTC] PHP   4. OurMetabox->omb_display_metabox() /app/public/wp-admin/includes/template.php:1304
+[16-Aug-2019 17:14:53 UTC] PHP   5. in_array() /app/public/wp-content/plugins/our-metabox/our-metabox.php:186
+[16-Aug-2019 17:14:53 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /app/public/wp-content/plugins/our-metabox/our-metabox.php on line 186
+[16-Aug-2019 17:14:53 UTC] PHP Stack trace:
+[16-Aug-2019 17:14:53 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[16-Aug-2019 17:14:53 UTC] PHP   2. include() /app/public/wp-admin/post-new.php:75
+[16-Aug-2019 17:14:53 UTC] PHP   3. do_meta_boxes() /app/public/wp-admin/edit-form-advanced.php:665
+[16-Aug-2019 17:14:53 UTC] PHP   4. OurMetabox->omb_display_metabox() /app/public/wp-admin/includes/template.php:1304
+[16-Aug-2019 17:14:53 UTC] PHP   5. in_array() /app/public/wp-content/plugins/our-metabox/our-metabox.php:186
+[16-Aug-2019 17:14:53 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /app/public/wp-content/plugins/our-metabox/our-metabox.php on line 186
+[16-Aug-2019 17:14:53 UTC] PHP Stack trace:
+[16-Aug-2019 17:14:53 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[16-Aug-2019 17:14:53 UTC] PHP   2. include() /app/public/wp-admin/post-new.php:75
+[16-Aug-2019 17:14:53 UTC] PHP   3. do_meta_boxes() /app/public/wp-admin/edit-form-advanced.php:665
+[16-Aug-2019 17:14:53 UTC] PHP   4. OurMetabox->omb_display_metabox() /app/public/wp-admin/includes/template.php:1304
+[16-Aug-2019 17:14:53 UTC] PHP   5. in_array() /app/public/wp-content/plugins/our-metabox/our-metabox.php:186
+[16-Aug-2019 17:14:53 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /app/public/wp-content/plugins/our-metabox/our-metabox.php on line 186
+[16-Aug-2019 17:14:53 UTC] PHP Stack trace:
+[16-Aug-2019 17:14:53 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[16-Aug-2019 17:14:53 UTC] PHP   2. include() /app/public/wp-admin/post-new.php:75
+[16-Aug-2019 17:14:53 UTC] PHP   3. do_meta_boxes() /app/public/wp-admin/edit-form-advanced.php:665
+[16-Aug-2019 17:14:53 UTC] PHP   4. OurMetabox->omb_display_metabox() /app/public/wp-admin/includes/template.php:1304
+[16-Aug-2019 17:14:53 UTC] PHP   5. in_array() /app/public/wp-content/plugins/our-metabox/our-metabox.php:186
+[16-Aug-2019 17:14:53 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /app/public/wp-content/plugins/our-metabox/our-metabox.php on line 186
+[16-Aug-2019 17:14:53 UTC] PHP Stack trace:
+[16-Aug-2019 17:14:53 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[16-Aug-2019 17:14:53 UTC] PHP   2. include() /app/public/wp-admin/post-new.php:75
+[16-Aug-2019 17:14:53 UTC] PHP   3. do_meta_boxes() /app/public/wp-admin/edit-form-advanced.php:665
+[16-Aug-2019 17:14:53 UTC] PHP   4. OurMetabox->omb_display_metabox() /app/public/wp-admin/includes/template.php:1304
+[16-Aug-2019 17:14:53 UTC] PHP   5. in_array() /app/public/wp-content/plugins/our-metabox/our-metabox.php:186
+[16-Aug-2019 17:14:53 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /app/public/wp-content/plugins/our-metabox/our-metabox.php on line 186
+[16-Aug-2019 17:14:53 UTC] PHP Stack trace:
+[16-Aug-2019 17:14:53 UTC] PHP   1. {main}() /app/public/wp-admin/post-new.php:0
+[16-Aug-2019 17:14:53 UTC] PHP   2. include() /app/public/wp-admin/post-new.php:75
+[16-Aug-2019 17:14:53 UTC] PHP   3. do_meta_boxes() /app/public/wp-admin/edit-form-advanced.php:665
+[16-Aug-2019 17:14:53 UTC] PHP   4. OurMetabox->omb_display_metabox() /app/public/wp-admin/includes/template.php:1304
+[16-Aug-2019 17:14:53 UTC] PHP   5. in_array() /app/public/wp-content/plugins/our-metabox/our-metabox.php:186

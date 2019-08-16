@@ -69,10 +69,11 @@ class OurMetabox{
 		$is_favorite = isset($_POST['omb_is_favorite'])?$_POST['omb_is_favorite'] : 0;
 		$colors = isset($_POST['omb_clr'])?$_POST['omb_clr'] : array();
 		$colors2 = isset($_POST['omb_color'])?$_POST['omb_color'] : '';
+		$fav_color = isset($_POST['omb_fav_color'])?$_POST['omb_fav_color'] : '';
 
-		if ($location == '' || $country == '') {
+		/*if ($location == '' || $country == '') {
 			return $post_id;
-		}
+		}*/
 		// Location end
 
 		$location = sanitize_text_field($location);
@@ -83,6 +84,7 @@ class OurMetabox{
 		update_post_meta($post_id,'omb_is_favorite',$is_favorite);
 		update_post_meta($post_id,'omb_clr',$colors);
 		update_post_meta($post_id,'omb_color',$colors2);
+		update_post_meta($post_id,'omb_fav_color',$fav_color);
 	}
 
 	function omb_add_metabox() {
@@ -179,7 +181,8 @@ EOD;
 <p>
 <label for="omb_is_favorite">{$label4}: </label>
 EOD;
-
+		
+		$saved_colors = is_array($saved_colors)?$saved_colors:array();
 		foreach ($colors as $color) {
 			$_color = ucwords($color);
 			$checked = in_array($color, $saved_colors)?'checked':'';
@@ -192,6 +195,7 @@ EOD;
 		
 		$metabox_html .= "</p>";
 
+		
 		$metabox_html .= <<<EOD
 <p>
 <label for="omb_is_favorite">{$label4}: </label>
@@ -207,6 +211,26 @@ EOD;
 EOD;
 		}
 		$metabox_html .= "</p>";
+
+		$fav_color = get_post_meta($post->ID,'omb_fav_color',true);
+
+		$dropdown_html = "<option value='0'>".__('Select a color','our-metabox')."</option>";
+		foreach ($colors as $color) {
+			$selected = '';
+			if ($color == $fav_color) {
+				$selected = 'selected';
+			}
+			$dropdown_html .= sprintf("<option %s value='%s'>%s</option>",$selected,$color,ucwords($color));
+		}
+
+		$metabox_html .= <<<EOD
+<p>
+<label for="omb_fav_color">{$label3}: </label>
+<select name="omb_fav_color" id="omb_fav_color" >
+{$dropdown_html}
+</select>
+</p>
+EOD;
 
 		echo $metabox_html;
 	}
