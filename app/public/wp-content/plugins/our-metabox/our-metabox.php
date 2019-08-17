@@ -163,7 +163,7 @@ EOD;
 			<button class="button" id="upload_image">Upload Image</button>
 			<input type="hidden" name="omb_image_id" id="omb_iamge_id"/>
 			<input type="hidden" name="omb_image_url" id="omb_iamge_url"/>
-			<div id="image-container"></div>
+			<div style="width:100%;height:auto" id="image-container"></div>
 		</div>
 		<div class="folat_c"></div>
 	</div>

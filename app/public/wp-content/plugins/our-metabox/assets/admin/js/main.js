@@ -21,6 +21,14 @@ var frame;
 				multiple: false
 			});
 
+			frame.on('select', function(){
+				var attachment = frame.state().get('selection').first().toJSON();
+				console.log(attachment);
+				$("#omb_image_id").val(attachment.id);
+				$("#omb_image_url").val(attachment.sizes.thumbnail.url);
+				$("#image-container").html(`<img src='${attachment.sizes.thumbnail.url}' />`);
+			});
+
 			frame.open();
 			return false;
 		});
