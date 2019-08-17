@@ -6954,3 +6954,27 @@ Stack trace:
 [16-Aug-2019 17:14:53 UTC] PHP   3. do_meta_boxes() /app/public/wp-admin/edit-form-advanced.php:665
 [16-Aug-2019 17:14:53 UTC] PHP   4. OurMetabox->omb_display_metabox() /app/public/wp-admin/includes/template.php:1304
 [16-Aug-2019 17:14:53 UTC] PHP   5. in_array() /app/public/wp-content/plugins/our-metabox/our-metabox.php:186
+[17-Aug-2019 03:19:59 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[17-Aug-2019 03:19:59 UTC] PHP Stack trace:
+[17-Aug-2019 03:19:59 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[17-Aug-2019 03:19:59 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[17-Aug-2019 03:19:59 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[17-Aug-2019 03:19:59 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[17-Aug-2019 03:19:59 UTC] PHP   5. wp_version_check() /app/public/wp-includes/class-wp-hook.php:286
+[17-Aug-2019 03:19:59 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:160
+[17-Aug-2019 03:20:01 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[17-Aug-2019 03:20:01 UTC] PHP Stack trace:
+[17-Aug-2019 03:20:01 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[17-Aug-2019 03:20:01 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[17-Aug-2019 03:20:01 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[17-Aug-2019 03:20:01 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[17-Aug-2019 03:20:01 UTC] PHP   5. wp_update_plugins() /app/public/wp-includes/class-wp-hook.php:286
+[17-Aug-2019 03:20:01 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:384
+[17-Aug-2019 03:20:01 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[17-Aug-2019 03:20:01 UTC] PHP Stack trace:
+[17-Aug-2019 03:20:01 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[17-Aug-2019 03:20:01 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[17-Aug-2019 03:20:01 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[17-Aug-2019 03:20:01 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[17-Aug-2019 03:20:01 UTC] PHP   5. wp_update_themes() /app/public/wp-includes/class-wp-hook.php:286
+[17-Aug-2019 03:20:01 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:569

@@ -100,6 +100,12 @@ class OurMetabox{
 			array($this,'omb_book_info'),
 			array('book')
 		);
+		add_meta_box(
+			'omb_image_info',
+			__('Image Info','our-metabox'),
+			array($this,'omb_image_info'),
+			array('post')
+		);
 	}
 
 	function omb_book_info() {
@@ -133,6 +139,31 @@ class OurMetabox{
 		</div>
 		<div class="input_c">
 			<input type="text" class="omb_dp" id="book_year">
+		</div>
+		<div class="folat_c"></div>
+	</div>
+</div>
+
+
+EOD;
+
+		echo $metabox_html;
+	}
+
+	function omb_image_info() {
+		wp_nonce_field('omb_image','omb_image_nonce');
+
+		$metabox_html = <<<EOD
+<div class="fields">
+	<div class="field_c">
+		<div class="label_c">
+			<label>Image</label>
+		</div>
+		<div class="input_c">
+			<button class="button" id="upload_image">Upload Image</button>
+			<input type="hidden" name="omb_image_id" id="omb_iamge_id"/>
+			<input type="hidden" name="omb_image_url" id="omb_iamge_url"/>
+			<div id="image-container"></div>
 		</div>
 		<div class="folat_c"></div>
 	</div>

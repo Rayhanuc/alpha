@@ -24,8 +24,15 @@
 	height: 30px;
 }
 
+.input_c button{
+	height: 30px;
+}
+
 .folat_c {
 	clear: both;
 }
 
+.button {
+	border:none;
+}
 
