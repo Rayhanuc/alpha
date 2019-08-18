@@ -2,6 +2,15 @@ var frame;
 
 ;(function($){
 	$(document).ready(function(){
+
+		var image_url = $("#omb_image_url").val();
+
+		if (image_url) {
+			$("#image-container").html(`<img src='${image_url}' />`);
+
+		}
+
+
 		$(".omb_dp").datepicker({
 	      changeMonth: true,
 	      changeYear: true
