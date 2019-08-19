@@ -25,7 +25,23 @@ class OurMetabox{
 
 		// style for admin
 		add_action('admin_enqueue_scripts',array($this,'omb_admin_assets'));
+
+		// metabox for user admin
+		add_filter('user_contactmethods',array($this,'omb_user_contact_methods'));
 	}
+
+
+	// metabox for user admin
+	function omb_user_contact_methods($methods){
+		$methods['facebook'] = __('Facebook','our-metabox');
+		$methods['linkedin'] = __('Linked In','our-metabox');
+		$methods['twitter'] = __('Twitter','our-metabox');
+		$methods['youtube'] = __('YouTube','our-metabox');
+
+		return $methods;
+	}
+
+
 
 	function omb_admin_assets() {
 		wp_enqueue_style('omb-admin-style',plugin_dir_url(__FILE__)."assets/admin/css/style.css",null,time());

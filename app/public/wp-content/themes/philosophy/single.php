@@ -25,7 +25,11 @@ get_header();
     
             <div class="s-content__media col-full">
                 <div class="s-content__post-thumb">
-                    <?php the_post_thumbnail("large");?>
+                    <?php 
+                        if ('the_post_thumbnail' == true) {
+                            the_post_thumbnail("large");
+                        }
+                    ?>
                 </div>
             </div> <!-- end s-content__media -->
 
@@ -33,7 +37,14 @@ get_header();
 
                 <?php
                 the_content() ;
-                wp_link_pages();
+                // wp_link_pages();
+                ?>
+
+                <?php
+                echo esc_url(get_the_author_meta('facebook'))."<br/>";
+                echo esc_url(get_the_author_meta('linkedin'))."<br/>";
+                echo esc_url(get_the_author_meta('twitter'))."<br/>";
+                echo esc_url(get_the_author_meta('youtube'))."<br/>";
                 ?>
 
                 <p class="s-content__tags">
@@ -62,9 +73,11 @@ get_header();
 
                         <ul class="s-content__author-social">
                             <?php
-                            $philosophy_author_facebook = get_field("facebook","user_". get_the_author_meta("ID"));
-                            $philosophy_author_twitter = get_field("twitter","user_". get_the_author_meta("ID"));
-                            $philosophy_author_linkedin = get_field("linkedin","user_". get_the_author_meta("ID"));
+                                if (function_exists('get_field')) {
+                                    $philosophy_author_facebook = get_field("facebook","user_". get_the_author_meta("ID"));
+                                    $philosophy_author_twitter = get_field("twitter","user_". get_the_author_meta("ID"));
+                                    $philosophy_author_linkedin = get_field("linkedin","user_". get_the_author_meta("ID"));
+                                }
                             ?>
                             <?php if($philosophy_author_facebook) : ?>
                                 <li><a href="<?php echo esc_url($philosophy_author_facebook);?>">Facebook</a></li>
