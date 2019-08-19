@@ -46,6 +46,7 @@ function taxm_category_form_field(){
 }
 add_action('category_add_form_fields','taxm_category_form_field');
 add_action('post_tag_add_form_fields','taxm_category_form_field');
+add_action('genre_add_form_fields','taxm_category_form_field');
 
 
 // Extra field add in Edit Category of post
@@ -66,6 +67,7 @@ function taxm_category_edit_form_field($term){
 }
 add_action('category_edit_form_fields','taxm_category_edit_form_field');
 add_action('post_tag_edit_form_fields','taxm_category_edit_form_field');
+add_action('genre_edit_form_fields','taxm_category_edit_form_field');
 // add_action('post_tag_add_form_fields','taxm_category_form_field');
 
 
@@ -78,6 +80,7 @@ function taxm_save_category_meta($term_id){
 }
 add_action('create_category','taxm_save_category_meta');
 add_action('create_post_tag','taxm_save_category_meta');
+add_action('create_genre','taxm_save_category_meta');
 
 // update / edit tag
 function taxm_update_category_meta($term_id){
@@ -88,3 +91,4 @@ function taxm_update_category_meta($term_id){
 }
 add_action('edit_category','taxm_update_category_meta');
 add_action('edit_post_tag','taxm_update_category_meta');
+add_action('edit_genre','taxm_update_category_meta');
