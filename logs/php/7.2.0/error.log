@@ -7041,3 +7041,30 @@ Stack trace:
 #2 /app/public/index.php(17): require('/app/public/wp-...')
 #3 {main}
   thrown in /app/public/wp-content/themes/philosophy/single.php on line 65
+[19-Aug-2019 06:11:10 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'taxm_category_form_field' not found or invalid function name in /app/public/wp-includes/class-wp-hook.php on line 286
+[19-Aug-2019 06:11:10 UTC] PHP Stack trace:
+[19-Aug-2019 06:11:10 UTC] PHP   1. {main}() /app/public/wp-admin/edit-tags.php:0
+[19-Aug-2019 06:11:10 UTC] PHP   2. do_action() /app/public/wp-admin/edit-tags.php:517
+[19-Aug-2019 06:11:10 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:465
+[19-Aug-2019 06:11:10 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[19-Aug-2019 06:11:32 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'taxm_category_form_field' not found or invalid function name in /app/public/wp-includes/class-wp-hook.php on line 286
+[19-Aug-2019 06:11:32 UTC] PHP Stack trace:
+[19-Aug-2019 06:11:32 UTC] PHP   1. {main}() /app/public/wp-admin/edit-tags.php:0
+[19-Aug-2019 06:11:32 UTC] PHP   2. do_action() /app/public/wp-admin/edit-tags.php:517
+[19-Aug-2019 06:11:32 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:465
+[19-Aug-2019 06:11:32 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[19-Aug-2019 06:11:55 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'taxm_category_form_field' not found or invalid function name in /app/public/wp-includes/class-wp-hook.php on line 286
+[19-Aug-2019 06:11:55 UTC] PHP Stack trace:
+[19-Aug-2019 06:11:55 UTC] PHP   1. {main}() /app/public/wp-admin/edit-tags.php:0
+[19-Aug-2019 06:11:55 UTC] PHP   2. do_action() /app/public/wp-admin/edit-tags.php:517
+[19-Aug-2019 06:11:55 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:465
+[19-Aug-2019 06:11:55 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[19-Aug-2019 06:51:21 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/plugins/Tax-Meta/tax-meta.php on line 72
+[19-Aug-2019 06:56:02 UTC] PHP Parse error:  syntax error, unexpected '?>' in /app/public/wp-content/plugins/Tax-Meta/tax-meta.php on line 53
+[19-Aug-2019 13:29:02 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /etc/scripts/local-adminer.php on line 428
+[19-Aug-2019 13:29:02 UTC] PHP Stack trace:
+[19-Aug-2019 13:29:02 UTC] PHP   1. {main}() /app/public/local-adminer-FeypRJkUP.php:0
+[19-Aug-2019 13:29:02 UTC] PHP   2. include() /app/public/local-adminer-FeypRJkUP.php:20
+[19-Aug-2019 13:29:02 UTC] PHP   3. queries_redirect() /etc/scripts/local-adminer.php:644
+[19-Aug-2019 13:29:02 UTC] PHP   4. query_redirect() /etc/scripts/local-adminer.php:84
+[19-Aug-2019 13:29:02 UTC] PHP   5. AdminerSoftware->messageQuery() /etc/scripts/local-adminer.php:74
