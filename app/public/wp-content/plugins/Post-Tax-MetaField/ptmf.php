@@ -31,8 +31,10 @@ add_action('admin_init','ptmf_init');
 // assets enqueue
 function ptmf_admin_assets() {
 	wp_enqueue_style('ptmf-admin-style',plugin_dir_url(__FILE__)."assets/admin/css/style.css",null,time());
-	/*wp_enqueue_style('jquery-ui-css',plugin_dir_url(__FILE__)."assets/admin/css/jquery-ui.css",null,time());
-	wp_enqueue_script('ptmf-admin-js',plugin_dir_url(__FILE__)."assets/admin/js/main.js",array('jquery','jquery-ui-datepicker'),time(),true);*/
+	wp_enqueue_style('select2',"//cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/css/select2.min.css",null,time());
+	// wp_enqueue_style('jquery-ui-css',plugin_dir_url(__FILE__)."assets/admin/css/jquery-ui.css",null,time());
+	wp_enqueue_script('ptmf-admin-js',plugin_dir_url(__FILE__)."assets/admin/js/main.js",array('jquery','jquery-ui-datepicker'),time(),true);
+	wp_enqueue_script('ptmf-admin-js',"//cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/js/select2.min.js",array('jquery'),time(),true);
 }
 
 
@@ -67,6 +69,7 @@ add_action('save_post', 'ptmf_save_metabox' );
 function ptmf_display_metabox($post){
 
 	$selected_post_id = get_post_meta($post->ID,'ptmf_selected_posts',true);
+	// print_r($selected_post_id);
 
 	wp_nonce_field('ptmf_posts','ptmf_posts_nonce');
 
@@ -83,7 +86,7 @@ function ptmf_display_metabox($post){
 	while($_posts->have_posts()) {
 		$extra = '';
 		$_posts->the_post();
-		if (get_the_ID() == $selected_post_id) {
+		if (in_array(get_the_ID(),$selected_post_id)) {
 			$extra = 'selected';
 		}
 		$dropdown_list .= sprintf("<option %s value='%s'>%s</option>",$extra,get_the_ID(),get_the_title());
@@ -99,7 +102,7 @@ function ptmf_display_metabox($post){
 			<label>{$label}</label>
 		</div>
 		<div class="input_c">
-			<select name="ptmf_posts" id="ptmf_posts">
+			<select multiple="multiple" name="ptmf_posts[]" id="ptmf_posts">
 				<option value="0">{$label}</option>
 				{$dropdown_list}
 			</select>

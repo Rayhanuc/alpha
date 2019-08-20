@@ -28,6 +28,10 @@
 	height: 30px;
 }
 
+.input_c select{
+	min-width: 200px;
+}
+
 .folat_c {
 	clear: both;
 }
