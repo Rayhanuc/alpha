@@ -25,7 +25,7 @@ INSERT INTO `wp_usermeta` VALUES
 (22,1,"nav_menu_recently_edited","15"),
 (23,1,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}"),
 (24,1,"enable_custom_fields","1"),
-(25,1,"closedpostboxes_post","a:9:{i:0;s:12:\"revisionsdiv\";i:1;s:11:\"postexcerpt\";i:2;s:13:\"trackbacksdiv\";i:3;s:16:\"commentstatusdiv\";i:4;s:7:\"slugdiv\";i:5;s:9:\"authordiv\";i:6;s:18:\"_philosophy_image_\";i:7;s:15:\"post_group_data\";i:8;s:19:\"post-meta-inspector\";}"),
+(25,1,"closedpostboxes_post","a:10:{i:0;s:12:\"revisionsdiv\";i:1;s:11:\"postexcerpt\";i:2;s:13:\"trackbacksdiv\";i:3;s:10:\"postcustom\";i:4;s:16:\"commentstatusdiv\";i:5;s:7:\"slugdiv\";i:6;s:9:\"authordiv\";i:7;s:18:\"_philosophy_image_\";i:8;s:15:\"post_group_data\";i:9;s:19:\"post-meta-inspector\";}"),
 (26,1,"metaboxhidden_post","a:0:{}"),
 (27,1,"closedpostboxes_acf-field-group","a:0:{}"),
 (28,1,"metaboxhidden_acf-field-group","a:1:{i:0;s:7:\"slugdiv\";}"),
@@ -59,6 +59,7 @@ INSERT INTO `wp_usermeta` VALUES
 (56,1,"metaboxhidden_book","a:1:{i:0;s:7:\"slugdiv\";}"),
 (57,1,"meta-box-order_page","a:4:{s:15:\"acf_after_title\";s:0:\"\";s:4:\"side\";s:36:\"submitdiv,pageparentdiv,postimagediv\";s:6:\"normal\";s:182:\"commentstatusdiv,commentsdiv,slugdiv,authordiv,_philosophy_pt_pricing_table,cmb-group-_philosophy_pt_pricing_table-0,page-metabox,_philosophy_services,cmb-group-_philosophy_service-0\";s:8:\"advanced\";s:19:\"post-meta-inspector\";}"),
 (58,1,"screen_layout_page","2"),
-(59,1,"session_tokens","a:2:{s:64:\"ab8ca63413db8cc1094ced6e6c5365b7ed286f82b4103668f8e6029815038e6c\";a:4:{s:10:\"expiration\";i:1566125037;s:2:\"ip\";s:10:\"172.17.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3872.0 Safari/537.36 Edg/78.0.244.0\";s:5:\"login\";i:1565952237;}s:64:\"b7bfd25aeb7cfd5e2517c301595a98a20936440e0ef60e5be4a8363e7d27ddfb\";a:4:{s:10:\"expiration\";i:1566185320;s:2:\"ip\";s:10:\"172.17.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3872.0 Safari/537.36 Edg/78.0.244.0\";s:5:\"login\";i:1566012520;}}"),
+(59,1,"session_tokens","a:2:{s:64:\"b7bfd25aeb7cfd5e2517c301595a98a20936440e0ef60e5be4a8363e7d27ddfb\";a:4:{s:10:\"expiration\";i:1566185320;s:2:\"ip\";s:10:\"172.17.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3872.0 Safari/537.36 Edg/78.0.244.0\";s:5:\"login\";i:1566012520;}s:64:\"885a6fbc35fea333927f4a0f926616c10825fe1574e6cced970db9a3f7eaae00\";a:4:{s:10:\"expiration\";i:1566308843;s:2:\"ip\";s:10:\"172.17.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3872.0 Safari/537.36 Edg/78.0.244.0\";s:5:\"login\";i:1566136043;}}"),
 (60,1,"wp_media_library_mode","list"),
-(61,1,"tgmpa_dismissed_notice_philosophy","1");
+(61,1,"tgmpa_dismissed_notice_philosophy","1"),
+(62,1,"youtube","https://www.youtube.com/");

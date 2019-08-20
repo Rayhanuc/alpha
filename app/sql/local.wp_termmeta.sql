@@ -7,4 +7,8 @@ INSERT INTO `wp_termmeta` VALUES
 (3,11,"thumbnail","113"),
 (4,11,"_thumbnail","field_5c9cbf0d0131e"),
 (5,28,"language_featured_image","a:1:{s:14:\"featured_image\";s:3:\"273\";}"),
-(6,27,"language_featured_image","a:1:{s:14:\"featured_image\";s:3:\"282\";}");
+(6,27,"language_featured_image","a:1:{s:14:\"featured_image\";s:3:\"282\";}"),
+(7,35,"taxm_extra_info","some text info 3 edited"),
+(8,36,"taxm_extra_info","Some test text of another category"),
+(9,37,"taxm_extra_info","test tag text ++"),
+(10,38,"taxm_extra_info","Genre Test extra text ++");

@@ -32,4 +32,10 @@ INSERT INTO `wp_terms` VALUES
 (29,"Friench","friench",0),
 (30,"Classic","classic",0),
 (31,"Thriller","thriller",0),
-(32,"Horror","horror",0);
+(32,"Horror","horror",0),
+(33,"newterm","newterm",0),
+(34,"newterm2","newterm2",0),
+(35,"newterm3","newterm3",0),
+(36,"Another Test Category","another-test-category",0),
+(37,"Test Tag","test-tag",0),
+(38,"Genre Test","genre-test",0);

@@ -7068,3 +7068,14 @@ Stack trace:
 [19-Aug-2019 13:29:02 UTC] PHP   3. queries_redirect() /etc/scripts/local-adminer.php:644
 [19-Aug-2019 13:29:02 UTC] PHP   4. query_redirect() /etc/scripts/local-adminer.php:84
 [19-Aug-2019 13:29:02 UTC] PHP   5. AdminerSoftware->messageQuery() /etc/scripts/local-adminer.php:74
+[20-Aug-2019 06:49:26 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/plugins/Post-Tax-MetaField/ptmf.php on line 47
+[20-Aug-2019 06:49:41 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/plugins/Post-Tax-MetaField/ptmf.php on line 47
+[20-Aug-2019 06:49:51 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/plugins/Post-Tax-MetaField/ptmf.php on line 47
+[20-Aug-2019 08:15:25 UTC] PHP Parse error:  syntax error, unexpected ';' in /app/public/wp-content/plugins/Post-Tax-MetaField/ptmf.php on line 66
+[20-Aug-2019 08:15:56 UTC] PHP Parse error:  syntax error, unexpected ';' in /app/public/wp-content/plugins/Post-Tax-MetaField/ptmf.php on line 66
+[20-Aug-2019 08:17:59 UTC] PHP Parse error:  syntax error, unexpected ';' in /app/public/wp-content/plugins/Post-Tax-MetaField/ptmf.php on line 66
+[20-Aug-2019 08:53:20 UTC] PHP Parse error:  syntax error, unexpected ';' in /app/public/wp-content/plugins/Post-Tax-MetaField/ptmf.php on line 66
+[20-Aug-2019 08:54:05 UTC] PHP Parse error:  syntax error, unexpected ';' in /app/public/wp-content/plugins/Post-Tax-MetaField/ptmf.php on line 66
+[20-Aug-2019 08:54:06 UTC] PHP Parse error:  syntax error, unexpected ';' in /app/public/wp-content/plugins/Post-Tax-MetaField/ptmf.php on line 66
+[20-Aug-2019 08:54:06 UTC] PHP Parse error:  syntax error, unexpected ';' in /app/public/wp-content/plugins/Post-Tax-MetaField/ptmf.php on line 66
+[20-Aug-2019 08:55:21 UTC] PHP Parse error:  syntax error, unexpected ';' in /app/public/wp-content/plugins/Post-Tax-MetaField/ptmf.php on line 66
