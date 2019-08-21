@@ -56,9 +56,14 @@ function ptmf_save_metabox($post_id){
 		return $post_id;
 	}
 
-	$selected_post_id = $_POST['ptmf_posts'];
+	$selected_post_id = $_POST['ptmf_posts'];	
 	if ($selected_post_id>0) {
 		update_post_meta( $post_id, 'ptmf_selected_posts', $selected_post_id );
+	}
+
+	$selected_term_id = $_POST['ptmf_term'];
+	if ($selected_term_id>0) {
+		update_post_meta( $post_id, 'ptmf_selected_term', $selected_term_id );
 	}
 
 	return $post_id;
@@ -69,7 +74,9 @@ add_action('save_post', 'ptmf_save_metabox' );
 function ptmf_display_metabox($post){
 
 	$selected_post_id = get_post_meta($post->ID,'ptmf_selected_posts',true);
+	$selected_term_id = get_post_meta($post->ID,'ptmf_selected_term',true);
 	// print_r($selected_post_id);
+	// print_r($selected_term_id);
 
 	wp_nonce_field('ptmf_posts','ptmf_posts_nonce');
 
@@ -93,8 +100,26 @@ function ptmf_display_metabox($post){
 	}
 	wp_reset_query();
 
+	// wp query for term
+	$_terms = get_terms( array(
+	    // 'taxonomy' => 'category',
+	    'taxonomy' => 'genre',
+	    'hide_empty' => false,
+	) );
+
+	$term_dropdown_list = '';
+	foreach ($_terms as $_term) {
+		$extra = '';
+		// $_term->term_id;
+		if ($_term->term_id == $selected_term_id ) {
+			$extra = 'selected';
+		}
+		$term_dropdown_list .= sprintf("<option %s value='%s'>%s</option>",$extra,$_term->term_id,$_term->name);
+
+	}
+
 	$label = __('Select Posts','post-tax-metafield');
-	$select_label = __('Select Posts','post-tax-metafield');
+	$label2 = __('Select Term','post-tax-metafield');
 	$metabox_html = <<<EOD
 <div class="fields">
 	<div class="field_c">
@@ -105,6 +130,19 @@ function ptmf_display_metabox($post){
 			<select multiple="multiple" name="ptmf_posts[]" id="ptmf_posts">
 				<option value="0">{$label}</option>
 				{$dropdown_list}
+			</select>
+		</div>
+		<div class="folat_c"></div>
+	</div>
+
+	<div class="field_c">
+		<div class="label_c">
+			<label for="ptmf_term">{$label2}</label>
+		</div>
+		<div class="input_c">
+			<select name="ptmf_term" id="ptmf_term">
+				<option value="0">{$label2}</option>
+				{$term_dropdown_list}
 			</select>
 		</div>
 		<div class="folat_c"></div>

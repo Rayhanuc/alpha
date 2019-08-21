@@ -1429,4 +1429,15 @@ INSERT INTO `wp_postmeta` VALUES
 (2246,675,"featured","0"),
 (2247,675,"_featured","field_5ca8fb6ba95f5"),
 (2250,676,"featured","0"),
-(2251,676,"_featured","field_5ca8fb6ba95f5");
+(2251,676,"_featured","field_5ca8fb6ba95f5"),
+(2252,2,"_edit_lock","1566324743:1"),
+(2253,2,"_edit_last","1"),
+(2254,2,"page-upload-metabox","a:5:{s:11:\"page-upload\";s:0:\"\";s:10:\"page-image\";s:0:\"\";s:12:\"page-gallery\";s:0:\"\";s:10:\"fieldset_1\";a:2:{s:15:\"fieldset_1_text\";s:0:\"\";s:19:\"fieldset_1_textarea\";s:0:\"\";}s:17:\"unique_option_901\";s:0:\"\";}"),
+(2255,2,"page-custom-post-type","a:1:{s:8:\"cpt_type\";s:4:\"none\";}"),
+(2256,2,"ptmf_selected_posts","a:2:{i:0;s:3:\"314\";i:1;s:3:\"122\";}"),
+(2257,2,"omb_location",""),
+(2258,2,"omb_country",""),
+(2259,2,"omb_is_favorite","0"),
+(2260,2,"omb_clr","a:0:{}"),
+(2261,2,"omb_color",""),
+(2262,2,"omb_fav_color","0");
