@@ -1,0 +1,47 @@
+{
+  "name": "regenerate-thumbnails",
+  "version": "3.0.0-alpha",
+  "description": "A WordPress plugin for regenerating the thumbnails for one or more of your image uploads. Useful when changing their sizes or your theme.",
+  "homepage": "https://alex.blog/wordpress-plugins/regenerate-thumbnails/",
+  "author": "Alex Mills (Viper007Bond)",
+  "license": "GPL-2.0+",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viper007Bond/regenerate-thumbnails.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Viper007Bond/regenerate-thumbnails/issues"
+  },
+  "scripts": {
+    "dev": "yarn install-if-deps-outdated && cross-env NODE_ENV=development webpack --progress --hide-modules",
+    "watch": "yarn install-if-deps-outdated && cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
+    "build": "yarn install-if-deps-outdated && cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "install-if-deps-outdated": "( yarn check 2> /dev/null || yarn install --check-files ) && ( check-node-version --package --print || exit 0 )",
+    "distclean": "rm -rf node_modules && rm -rf dist && yarn cache clean"
+  },
+  "engines": {
+    "node": ">=8",
+    "yarn": "^1.3.2"
+  },
+  "dependencies": {
+    "vue": "^2.5.13",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.23.6",
+    "browser-sync-webpack-plugin": "^1.2.0",
+    "check-node-version": "^3.2.0",
+    "clean-webpack-plugin": "^0.1.18",
+    "cross-env": "^5.1.3",
+    "css-loader": "^0.28.9",
+    "file-loader": "^1.1.6",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "vue-loader": "^13.7.0",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^3.10.0"
+  }
+}

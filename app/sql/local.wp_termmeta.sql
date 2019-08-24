@@ -11,4 +11,7 @@ INSERT INTO `wp_termmeta` VALUES
 (7,35,"taxm_extra_info","some text info 3 edited"),
 (8,36,"taxm_extra_info","Some test text of another category"),
 (9,37,"taxm_extra_info","test tag text ++"),
-(10,38,"taxm_extra_info","Genre Test extra text ++");
+(10,38,"taxm_extra_info","Genre Test extra text ++"),
+(11,39,"taxm_extra_info","r"),
+(12,40,"taxm_extra_info","a"),
+(13,41,"taxm_extra_info","S");

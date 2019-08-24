@@ -42,6 +42,18 @@ function philosophy_theme_setup() {
 	));
 
 	add_image_size("philosophy-home-square", 400, 400, true);
+
+	// থিমে নতুন ইমেইজ সাইজ যোগ করা
+	add_image_size("philosophy-square", 400, 400,true ); // center center
+    add_image_size("philosophy-potrait", 400, 9999);
+    add_image_size("philosophy-landscape", 9999, 400);
+    add_image_size("philosophy-landscape-hard-croped", 600, 400);
+
+    add_image_size("philosophy-square-two",400,400,true);
+
+    add_image_size("philosophy-square-new1",401,401,array("left","top"));
+    add_image_size("philosophy-square-new2",500,500,array("center","center"));
+    add_image_size("philosophy-square-new3",600,600,array("right","center"));
 }
 add_action("after_setup_theme", "philosophy_theme_setup");
 
@@ -384,3 +396,9 @@ function custom_login_stylesheet() {
 	wp_enqueue_style('custom-login', get_stylesheet_directory_uri() . '/login/login-styles.css');
 }
 add_action('login_enqueue_scripts', 'custom_login_stylesheet');
+
+
+function philosophy_image_srcset(){
+	return null;
+}
+add_filter("wp_calculate_image_srcset","philosophy_image_srcset");

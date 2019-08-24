@@ -1,0 +1,8 @@
+/.idea/
+/.svn/
+/dist/
+/node_modules/
+/npm-debug.log
+/tests/rest-api.http
+/vendor/
+/yarn-error.log

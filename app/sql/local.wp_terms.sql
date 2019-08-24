@@ -38,4 +38,7 @@ INSERT INTO `wp_terms` VALUES
 (35,"newterm3","newterm3",0),
 (36,"Another Test Category","another-test-category",0),
 (37,"Test Tag","test-tag",0),
-(38,"Genre Test","genre-test",0);
+(38,"Genre Test","genre-test",0),
+(39,"Romantic","romantic",0),
+(40,"Action","action",0),
+(41,"Sci-fi","sci-fi",0);

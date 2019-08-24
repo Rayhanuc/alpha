@@ -7203,3 +7203,468 @@ Stack trace:
 [21-Aug-2019 06:26:40 UTC] PHP   3. do_meta_boxes() /app/public/wp-admin/edit-form-advanced.php:665
 [21-Aug-2019 06:26:40 UTC] PHP   4. ptmf_display_metabox() /app/public/wp-admin/includes/template.php:1304
 [21-Aug-2019 06:26:40 UTC] PHP   5. sprintf() /app/public/wp-content/plugins/Post-Tax-MetaField/ptmf.php:104
+[23-Aug-2019 04:59:50 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[23-Aug-2019 04:59:50 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[23-Aug-2019 04:59:50 UTC] PHP Stack trace:
+[23-Aug-2019 04:59:50 UTC] PHP Stack trace:
+[23-Aug-2019 04:59:50 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[23-Aug-2019 04:59:50 UTC] PHP   1. {main}() /usr/local/bin/wp:0
+[23-Aug-2019 04:59:50 UTC] PHP   1. {main}() /usr/local/bin/wp:0
+[23-Aug-2019 04:59:50 UTC] PHP Stack trace:
+[23-Aug-2019 04:59:50 UTC] PHP   2. include() /usr/local/bin/wp:4
+[23-Aug-2019 04:59:50 UTC] PHP   2. include() /usr/local/bin/wp:4
+[23-Aug-2019 04:59:50 UTC] PHP   1. {main}() /usr/local/bin/wp:0
+[23-Aug-2019 04:59:50 UTC] PHP   3. include() phar:///usr/local/bin/wp/php/boot-phar.php:8
+[23-Aug-2019 04:59:50 UTC] PHP   3. include() phar:///usr/local/bin/wp/php/boot-phar.php:8
+[23-Aug-2019 04:59:50 UTC] PHP   2. include() /usr/local/bin/wp:4
+[23-Aug-2019 04:59:50 UTC] PHP   4. WP_CLI\bootstrap() phar:///usr/local/bin/wp/php/wp-cli.php:23
+[23-Aug-2019 04:59:50 UTC] PHP   4. WP_CLI\bootstrap() phar:///usr/local/bin/wp/php/wp-cli.php:23
+[23-Aug-2019 04:59:50 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar:///usr/local/bin/wp/php/bootstrap.php:75
+[23-Aug-2019 04:59:50 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar:///usr/local/bin/wp/php/bootstrap.php:75
+[23-Aug-2019 04:59:50 UTC] PHP   3. include() phar:///usr/local/bin/wp/php/boot-phar.php:8
+[23-Aug-2019 04:59:50 UTC] PHP   6. WP_CLI\Runner->start() phar:///usr/local/bin/wp/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[23-Aug-2019 04:59:50 UTC] PHP   6. WP_CLI\Runner->start() phar:///usr/local/bin/wp/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[23-Aug-2019 04:59:50 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /app/public/wp-content/themes/philosophy/functions.php on line 366
+[23-Aug-2019 04:59:50 UTC] PHP   4. WP_CLI\bootstrap() phar:///usr/local/bin/wp/php/wp-cli.php:23
+[23-Aug-2019 04:59:50 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1032
+[23-Aug-2019 04:59:50 UTC] PHP Stack trace:
+[23-Aug-2019 04:59:50 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1032
+[23-Aug-2019 04:59:50 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar:///usr/local/bin/wp/php/bootstrap.php:75
+[23-Aug-2019 04:59:50 UTC] PHP   8. require() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1105
+[23-Aug-2019 04:59:50 UTC] PHP   8. require() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1105
+[23-Aug-2019 04:59:50 UTC] PHP   9. do_action() /app/public/wp-settings.php:525
+[23-Aug-2019 04:59:50 UTC] PHP   6. WP_CLI\Runner->start() phar:///usr/local/bin/wp/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[23-Aug-2019 04:59:50 UTC] PHP   1. {main}() /usr/local/bin/wp:0
+[23-Aug-2019 04:59:50 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1032
+[23-Aug-2019 04:59:50 UTC] PHP  10. WP_Hook->do_action() /app/public/wp-includes/plugin.php:465
+[23-Aug-2019 04:59:50 UTC] PHP   9. do_action() /app/public/wp-settings.php:525
+[23-Aug-2019 04:59:50 UTC] PHP   2. include() /usr/local/bin/wp:4
+[23-Aug-2019 04:59:50 UTC] PHP   8. require() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1105
+[23-Aug-2019 04:59:50 UTC] PHP  11. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[23-Aug-2019 04:59:50 UTC] PHP   3. include() phar:///usr/local/bin/wp/php/boot-phar.php:8
+[23-Aug-2019 04:59:50 UTC] PHP   9. do_action() /app/public/wp-settings.php:525
+[23-Aug-2019 04:59:50 UTC] PHP  10. WP_Hook->do_action() /app/public/wp-includes/plugin.php:465
+[23-Aug-2019 04:59:50 UTC] PHP  12. pqrc_init() /app/public/wp-includes/class-wp-hook.php:286
+[23-Aug-2019 04:59:50 UTC] PHP   4. WP_CLI\bootstrap() phar:///usr/local/bin/wp/php/wp-cli.php:23
+[23-Aug-2019 04:59:50 UTC] PHP  10. WP_Hook->do_action() /app/public/wp-includes/plugin.php:465
+[23-Aug-2019 04:59:50 UTC] PHP  11. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[23-Aug-2019 04:59:50 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar:///usr/local/bin/wp/php/bootstrap.php:75
+[23-Aug-2019 04:59:50 UTC] PHP  13. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:35
+[23-Aug-2019 04:59:50 UTC] PHP  11. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[23-Aug-2019 04:59:50 UTC] PHP  14. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[23-Aug-2019 04:59:50 UTC] PHP   6. WP_CLI\Runner->start() phar:///usr/local/bin/wp/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[23-Aug-2019 04:59:50 UTC] PHP  12. pqrc_init() /app/public/wp-includes/class-wp-hook.php:286
+[23-Aug-2019 04:59:50 UTC] PHP  12. pqrc_init() /app/public/wp-includes/class-wp-hook.php:286
+[23-Aug-2019 04:59:50 UTC] PHP  15. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[23-Aug-2019 04:59:50 UTC] PHP  13. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:35
+[23-Aug-2019 04:59:50 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1032
+[23-Aug-2019 04:59:50 UTC] PHP  13. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:35
+[23-Aug-2019 04:59:50 UTC] PHP  16. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[23-Aug-2019 04:59:50 UTC] PHP  14. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[23-Aug-2019 04:59:50 UTC] PHP  14. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[23-Aug-2019 04:59:50 UTC] PHP   8. require() phar:///usr/local/bin/wp/php/WP_CLI/Runner.php:1105
+[23-Aug-2019 04:59:50 UTC] PHP  15. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[23-Aug-2019 04:59:50 UTC] PHP  15. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[23-Aug-2019 04:59:50 UTC] PHP  16. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[23-Aug-2019 04:59:50 UTC] PHP  16. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[23-Aug-2019 04:59:50 UTC] PHP   9. do_action() /app/public/wp-settings.php:525
+[23-Aug-2019 04:59:50 UTC] PHP  10. WP_Hook->do_action() /app/public/wp-includes/plugin.php:465
+[23-Aug-2019 04:59:50 UTC] PHP  11. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[23-Aug-2019 04:59:50 UTC] PHP  12. pqrc_init() /app/public/wp-includes/class-wp-hook.php:286
+[23-Aug-2019 04:59:50 UTC] PHP  13. apply_filters() /app/public/wp-content/plugins/posts-to-qucode/posts_to_qucode.php:35
+[23-Aug-2019 04:59:50 UTC] PHP  14. WP_Hook->apply_filters() /app/public/wp-includes/plugin.php:208
+[23-Aug-2019 04:59:50 UTC] PHP  15. philosophy_settings_country_list() /app/public/wp-includes/class-wp-hook.php:286
+[23-Aug-2019 04:59:50 UTC] PHP  16. array_push() /app/public/wp-content/themes/philosophy/functions.php:366
+[23-Aug-2019 16:31:35 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[23-Aug-2019 16:31:35 UTC] PHP Stack trace:
+[23-Aug-2019 16:31:35 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[23-Aug-2019 16:31:35 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[23-Aug-2019 16:31:35 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[23-Aug-2019 16:31:35 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[23-Aug-2019 16:31:35 UTC] PHP   5. wp_version_check() /app/public/wp-includes/class-wp-hook.php:286
+[23-Aug-2019 16:31:35 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:160
+[23-Aug-2019 16:31:36 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[23-Aug-2019 16:31:36 UTC] PHP Stack trace:
+[23-Aug-2019 16:31:36 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[23-Aug-2019 16:31:36 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[23-Aug-2019 16:31:36 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[23-Aug-2019 16:31:36 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[23-Aug-2019 16:31:36 UTC] PHP   5. wp_update_plugins() /app/public/wp-includes/class-wp-hook.php:286
+[23-Aug-2019 16:31:36 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:384
+[23-Aug-2019 16:31:36 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[23-Aug-2019 16:31:36 UTC] PHP Stack trace:
+[23-Aug-2019 16:31:36 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[23-Aug-2019 16:31:36 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[23-Aug-2019 16:31:36 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[23-Aug-2019 16:31:36 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[23-Aug-2019 16:31:36 UTC] PHP   5. wp_update_themes() /app/public/wp-includes/class-wp-hook.php:286
+[23-Aug-2019 16:31:36 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:569
+[23-Aug-2019 16:38:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 16:38:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 16:38:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 17:23:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 17:23:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 17:23:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 17:29:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 17:29:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 17:29:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 17:52:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 17:52:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 17:52:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 18:04:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 18:04:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 18:04:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 18:13:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 18:13:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 18:13:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 18:20:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 18:20:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 18:21:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 18:30:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 18:30:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 18:30:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 18:38:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/media.php(3219): get_attachment_link(Object(WP_Post))
+#6 [internal function]: wp_prepare_attachment_for_js(Object(WP_Post))
+#7 /app/public/wp-admin/includes/ajax-actions.php(2773): array_map('wp_prepare_atta...', Array)
+#8 /app/public/wp-includes/class-wp-hook.php(286): wp_ajax_query_attachments('')
+#9 /app/public/wp-includes/class-wp-h in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 18:38:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/media.php(3219): get_attachment_link(Object(WP_Post))
+#6 [internal function]: wp_prepare_attachment_for_js(Object(WP_Post))
+#7 /app/public/wp-admin/includes/ajax-actions.php(2773): array_map('wp_prepare_atta...', Array)
+#8 /app/public/wp-includes/class-wp-hook.php(286): wp_ajax_query_attachments('')
+#9 /app/public/wp-includes/class-wp-h in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 18:38:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/media.php(3219): get_attachment_link(Object(WP_Post))
+#6 [internal function]: wp_prepare_attachment_for_js(Object(WP_Post))
+#7 /app/public/wp-admin/includes/ajax-actions.php(2773): array_map('wp_prepare_atta...', Array)
+#8 /app/public/wp-includes/class-wp-hook.php(286): wp_ajax_query_attachments('')
+#9 /app/public/wp-includes/class-wp-h in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[23-Aug-2019 18:38:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/media.php(3219): get_attachment_link(Object(WP_Post))
+#6 [internal function]: wp_prepare_attachment_for_js(Object(WP_Post))
+#7 /app/public/wp-admin/includes/ajax-actions.php(2773): array_map('wp_prepare_atta...', Array)
+#8 /app/public/wp-includes/class-wp-hook.php(286): wp_ajax_query_attachments('')
+#9 /app/public/wp-includes/class-wp-h in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[24-Aug-2019 03:27:50 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[24-Aug-2019 03:27:50 UTC] PHP Stack trace:
+[24-Aug-2019 03:27:50 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[24-Aug-2019 03:27:50 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[24-Aug-2019 03:27:50 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[24-Aug-2019 03:27:50 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[24-Aug-2019 03:27:50 UTC] PHP   5. wp_version_check() /app/public/wp-includes/class-wp-hook.php:286
+[24-Aug-2019 03:27:50 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:160
+[24-Aug-2019 03:27:55 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[24-Aug-2019 03:27:55 UTC] PHP Stack trace:
+[24-Aug-2019 03:27:55 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[24-Aug-2019 03:27:55 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[24-Aug-2019 03:27:55 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[24-Aug-2019 03:27:55 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[24-Aug-2019 03:27:55 UTC] PHP   5. wp_update_plugins() /app/public/wp-includes/class-wp-hook.php:286
+[24-Aug-2019 03:27:55 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:384
+[24-Aug-2019 03:27:55 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[24-Aug-2019 03:27:55 UTC] PHP Stack trace:
+[24-Aug-2019 03:27:55 UTC] PHP   1. {main}() /app/public/wp-cron.php:0
+[24-Aug-2019 03:27:55 UTC] PHP   2. do_action_ref_array() /app/public/wp-cron.php:133
+[24-Aug-2019 03:27:55 UTC] PHP   3. WP_Hook->do_action() /app/public/wp-includes/plugin.php:531
+[24-Aug-2019 03:27:55 UTC] PHP   4. WP_Hook->apply_filters() /app/public/wp-includes/class-wp-hook.php:310
+[24-Aug-2019 03:27:55 UTC] PHP   5. wp_update_themes() /app/public/wp-includes/class-wp-hook.php:286
+[24-Aug-2019 03:27:55 UTC] PHP   6. trigger_error() /app/public/wp-includes/update.php:569
+[24-Aug-2019 03:37:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[24-Aug-2019 03:37:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286
+[24-Aug-2019 03:37:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /app/public/wp-content/themes/philosophy/functions.php:286
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(288): philosophy_cpt_slug_fix('http://alpha.lo...', Object(WP_Post))
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('http://alpha.lo...', Array)
+#2 /app/public/wp-includes/link-template.php(313): apply_filters('post_type_link', 'http://alpha.lo...', Object(WP_Post), false, false)
+#3 /app/public/wp-includes/link-template.php(150): get_post_permalink(Object(WP_Post), false, false)
+#4 /app/public/wp-includes/link-template.php(425): get_permalink(Object(WP_Post))
+#5 /app/public/wp-includes/link-template.php(148): get_attachment_link(Object(WP_Post), true)
+#6 /app/public/wp-admin/includes/post.php(1346): get_permalink(Object(WP_Post), true)
+#7 /app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1620): get_sample_permalink(270, 'images6', '')
+#8 /app/public/wp-includes/rest-api/endpoints/class-wp-r in /app/public/wp-content/themes/philosophy/functions.php on line 286

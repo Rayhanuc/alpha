@@ -38,4 +38,7 @@ INSERT INTO `wp_term_taxonomy` VALUES
 (35,35,"category","",0,0),
 (36,36,"category","",0,0),
 (37,37,"post_tag","",0,0),
-(38,38,"genre","",0,0);
+(38,38,"genre","",0,0),
+(39,39,"genre","",0,0),
+(40,40,"genre","",0,0),
+(41,41,"genre","",0,0);

@@ -38,6 +38,12 @@ get_header();
                 <?php
                 the_content() ;
                 // wp_link_pages();
+
+                the_post_thumbnail("philosophy-square-new1");
+                echo "<br/>";
+                the_post_thumbnail("philosophy-square-new2");
+                echo "<br/>";
+                the_post_thumbnail("philosophy-square-new3");
                 ?>
 
                 <?php
